@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad
 {
+    
+    // this is where i will be coding my main program from.
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
