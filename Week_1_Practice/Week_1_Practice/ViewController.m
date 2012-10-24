@@ -16,8 +16,13 @@
 
 - (void)viewDidLoad
 {
+    // just messing around with objects!
     
-    // this is where i will be coding my main program from.
+    textLabel = [[UILabel alloc] initWithFrame:(CGRectMake(0, 0, 320, 100))];
+    
+    textLabel.text = @"default text";
+    [self.view addSubview:textLabel];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
