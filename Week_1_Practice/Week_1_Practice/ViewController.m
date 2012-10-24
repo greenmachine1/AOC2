@@ -20,12 +20,16 @@
     
     textLabel = [[UILabel alloc] initWithFrame:(CGRectMake(0, 0, 320, 100))];
     
-    textLabel.text = @"default text";
+    textLabel.text = @"Hello";
     [self.view addSubview:textLabel];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
