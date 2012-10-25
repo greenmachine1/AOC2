@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BaseClass.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,12 @@
 
 - (void)viewDidLoad
 {
+    BaseClass *base = [[BaseClass alloc] init];
+    if(base != nil)
+    {
+        // -> used to access properties of a class directly
+        base->temp = 45;
+    }
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

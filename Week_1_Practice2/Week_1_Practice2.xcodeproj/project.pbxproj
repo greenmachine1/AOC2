@@ -18,6 +18,7 @@
 		D6464E7C16392F79008950DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6464E7B16392F79008950DE /* Default-568h@2x.png */; };
 		D6464E7F16392F79008950DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6464E7E16392F79008950DE /* ViewController.m */; };
 		D6464E8216392F79008950DE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6464E8016392F79008950DE /* ViewController.xib */; };
+		D6464E8A16392FFC008950DE /* BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D6464E8916392FFC008950DE /* BaseClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		D6464E7D16392F79008950DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D6464E7E16392F79008950DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D6464E8116392F79008950DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		D6464E8816392FFC008950DE /* BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClass.h; sourceTree = "<group>"; };
+		D6464E8916392FFC008950DE /* BaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				D6464E7E16392F79008950DE /* ViewController.m */,
 				D6464E8016392F79008950DE /* ViewController.xib */,
 				D6464E6C16392F78008950DE /* Supporting Files */,
+				D6464E8816392FFC008950DE /* BaseClass.h */,
+				D6464E8916392FFC008950DE /* BaseClass.m */,
 			);
 			path = Week_1_Practice2;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				D6464E7216392F78008950DE /* main.m in Sources */,
 				D6464E7616392F78008950DE /* AppDelegate.m in Sources */,
 				D6464E7F16392F79008950DE /* ViewController.m in Sources */,
+				D6464E8A16392FFC008950DE /* BaseClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
