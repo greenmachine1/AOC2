@@ -39,9 +39,20 @@
     
     [espGuitar printValues];
     
+    // creating my labels
+    UILabel *topGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    topGuitarLabel.text = [espGuitar printValues];
     
+    UILabel *middleGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];
+    middleGuitarLabel.text = [jacksonGuitar printValues];
     
+    UILabel *bottomGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
+    bottomGuitarLabel.text = [ibanezGuitar printValues];
     
+    // setting them to subview
+    [self.view addSubview:topGuitarLabel];
+    [self.view addSubview:middleGuitarLabel];
+    [self.view addSubview:bottomGuitarLabel];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

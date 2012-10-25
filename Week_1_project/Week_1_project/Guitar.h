@@ -25,7 +25,7 @@ typedef enum {
     BOOL hasTremelo;
 }
 
--(void)printValues;
+-(NSString *)printValues;
 -(void)setValues:(int)numberOStrings headStockType:(NSString *)headStockT hasTremeloType:(BOOL)hasTremeloT;
 
 @end

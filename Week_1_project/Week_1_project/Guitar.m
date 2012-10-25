@@ -30,7 +30,7 @@
     hasTremelo = hasTremeloT;
 }
 
--(void)printValues
+-(NSString *)printValues
 {
     NSString *tremeloValue = [[NSString alloc] init];
     if(hasTremelo == true)
@@ -42,7 +42,9 @@
         tremeloValue = @"No";
     }
     
-    NSLog(@"The values of the guitar are: number of Strings = %i, headstock type %@, and has a tremelo? = %@", numberOfStrings,headStockType,tremeloValue);
+    NSString *returnedString = [[NSString alloc] initWithFormat:@"The values of the guitar are: number of Strings = %i, headstock type %@, and has a tremelo? = %@", numberOfStrings, headStockType, tremeloValue];
+    
+    return returnedString;
 }
 
 @end
