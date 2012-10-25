@@ -23,6 +23,7 @@
     return self;
 }
 
+// my setter method
 -(void)setValues:(int)numberOStrings headStockType:(NSString *)headStockT hasTremeloType:(BOOL)hasTremeloT
 {
     numberOfStrings = numberOStrings;
@@ -30,6 +31,7 @@
     hasTremelo = hasTremeloT;
 }
 
+// my getter method
 -(NSString *)printValues
 {
     NSString *tremeloValue = [[NSString alloc] init];

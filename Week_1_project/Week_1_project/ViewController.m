@@ -22,17 +22,15 @@
 - (void)viewDidLoad
 {
     
-    
+    // instantiating my classes
     Guitar *baseGuitar = [[Guitar alloc] init];
-    [baseGuitar printValues];
+
     
     JacksonDinky *jacksonGuitar = [[JacksonDinky alloc] init];
-    [jacksonGuitar printValues];
+
     
     IbanezS *ibanezGuitar = [[IbanezS alloc] init];
-    [ibanezGuitar printValues];
-    
-    
+
     // wrote a setter and getter method for my esp guitar
     ESPBuz *espGuitar = [[ESPBuz alloc] init];
     [espGuitar setValues:6 headStockType:@"reveresed" hasTremeloType:true];
@@ -42,12 +40,15 @@
     // creating my labels
     UILabel *topGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     topGuitarLabel.text = [espGuitar printValues];
+    topGuitarLabel.numberOfLines = 5;
     
     UILabel *middleGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];
     middleGuitarLabel.text = [jacksonGuitar printValues];
+    middleGuitarLabel.numberOfLines = 5;
     
     UILabel *bottomGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
     bottomGuitarLabel.text = [ibanezGuitar printValues];
+    bottomGuitarLabel.numberOfLines = 5;
     
     // setting them to subview
     [self.view addSubview:topGuitarLabel];
