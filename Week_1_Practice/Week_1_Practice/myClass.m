@@ -16,8 +16,12 @@
 -(id)init
 {
     self = [super init];
-    if (self != nil){
-        // any init for this object
+    if (self != nil)
+    {
+        intValue = 10;
+        floatValue = 3.4f;
+        thisIsBool = TRUE;
+        
     }
     
     return self;
@@ -25,7 +29,9 @@
 
 -(NSString *)getText
 {
-    return @"HelllooooooooooooOoO!";
+    NSString *newStringThing = [[NSString alloc] initWithFormat:@"the numbers are intValue = %d, float value = %f", intValue, floatValue];
+    
+    return newStringThing;
 }
 
 @end

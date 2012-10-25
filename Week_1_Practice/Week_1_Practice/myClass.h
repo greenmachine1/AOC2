@@ -16,6 +16,8 @@
     int intValue;
     
     float floatValue;
+    
+    BOOL thisIsBool;
 }
 
 // creating methods for the object to use
