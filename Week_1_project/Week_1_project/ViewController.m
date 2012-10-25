@@ -32,10 +32,12 @@
     IbanezS *ibanezGuitar = [[IbanezS alloc] init];
     [ibanezGuitar printValues];
     
+    
+    // wrote a setter and getter method for my esp guitar
     ESPBuz *espGuitar = [[ESPBuz alloc] init];
+    [espGuitar setValues:6 headStockType:@"reveresed" hasTremeloType:true];
+    
     [espGuitar printValues];
-    
-    
     
     
     

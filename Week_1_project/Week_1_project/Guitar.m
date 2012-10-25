@@ -23,6 +23,13 @@
     return self;
 }
 
+-(void)setValues:(int)numberOStrings headStockType:(NSString *)headStockT hasTremeloType:(BOOL)hasTremeloT
+{
+    numberOfStrings = numberOStrings;
+    headStockType = headStockT;
+    hasTremelo = hasTremeloT;
+}
+
 -(void)printValues
 {
     NSString *tremeloValue = [[NSString alloc] init];
