@@ -10,5 +10,17 @@
 #import "Guitar.h"
 
 @implementation ESPBuz
+-(id)init
+{
+    if(self = [super init])
+    {
+        numberOfStrings = 8;
+        
+        headStockType = @"reverse";
+        
+        hasTremelo = true;
+    }
+    return self;
+}
 
 @end

@@ -10,5 +10,17 @@
 #import "Guitar.h"
 
 @implementation JacksonDinky
+-(id)init
+{
+    if(self = [super init])
+    {
+        numberOfStrings = 7;
+        
+        headStockType = @"reverse";
+        
+        hasTremelo = true;
+    }
+    return self;
+}
 
 @end

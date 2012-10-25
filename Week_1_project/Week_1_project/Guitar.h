@@ -8,6 +8,23 @@
 
 #import <Foundation/Foundation.h>
 
+// defining my different guitar types
+typedef enum {
+    JACKSONDINKY=0,
+    IBANEZS,
+    ESPBUZ
+}EGuitarType;
+
+// setting my different variables for my base class
 @interface Guitar : NSObject
+{
+    int numberOfStrings;
+    
+    NSString *headStockType;
+    
+    BOOL hasTremelo;
+}
+
+-(void)printValues;
 
 @end

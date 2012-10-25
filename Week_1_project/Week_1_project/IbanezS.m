@@ -10,5 +10,17 @@
 #import "Guitar.h"
 
 @implementation IbanezS
+-(id)init
+{
+    if(self = [super init])
+    {
+        numberOfStrings = 7;
+        
+        headStockType = @"normal";
+        
+        hasTremelo = false;
+    }
+    return self;
+}
 
 @end
