@@ -25,7 +25,7 @@ typedef enum {
 }
 
 -(id)initWithDetails:(int)numberOfStrings name:(NSString *)name;
--(void)printName;
+-(NSString *)printName;
 
 
 

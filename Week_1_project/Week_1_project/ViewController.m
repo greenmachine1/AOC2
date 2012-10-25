@@ -26,42 +26,31 @@
     if(jacksonGuitar != nil)
     {
         Guitar *jackson = [jacksonGuitar returnedGuitarType:0];
-        [jackson printName];
+        UILabel *topGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+        topGuitarLabel.text = [jackson printName];
+        topGuitarLabel.numberOfLines = 5;
+        [self.view addSubview:topGuitarLabel];
     }
     GuitarFactory *ibanezGuitar = [[GuitarFactory alloc] init];
     if(jacksonGuitar != nil)
     {
         Guitar *ibanez = [ibanezGuitar returnedGuitarType:2];
-        [ibanez printName];
+        UILabel *middleGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];
+        middleGuitarLabel.text = [ibanez printName];
+        middleGuitarLabel.numberOfLines = 5;
+        [self.view addSubview:middleGuitarLabel];
     }
     GuitarFactory *espGuitar = [[GuitarFactory alloc] init];
     if(espGuitar != nil)
     {
         Guitar *esp = [espGuitar returnedGuitarType:1];
-        [esp printName];
+        UILabel *bottomGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
+        bottomGuitarLabel.text = [esp printName];
+        bottomGuitarLabel.numberOfLines = 5;
+        [self.view addSubview:bottomGuitarLabel];
+        
     }
-    
-    
-    
-// creating my labels
-/*
-    UILabel *topGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    topGuitarLabel.text = [espGuitar printValues];
-    topGuitarLabel.numberOfLines = 5;
-    
-    UILabel *middleGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];
-    middleGuitarLabel.text = [jacksonGuitar printValues];
-    middleGuitarLabel.numberOfLines = 5;
-    
-    UILabel *bottomGuitarLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
-    bottomGuitarLabel.text = [ibanezGuitar printValues];
-    bottomGuitarLabel.numberOfLines = 5;
-    
-    // setting them to subview
-    [self.view addSubview:topGuitarLabel];
-    [self.view addSubview:middleGuitarLabel];
-    [self.view addSubview:bottomGuitarLabel];
-  */ 
+ 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

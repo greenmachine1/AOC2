@@ -21,9 +21,11 @@
     return self;
 }
 
--(void)printName
+-(NSString *)printName
 {
-    NSLog(@"I am a %@ with %i strings", _name, _numberOfStrings);
+    NSString *returnedStringValue = [[NSString alloc] initWithFormat:@"I am a %@ with %i strings", _name, _numberOfStrings];
+    
+    return returnedStringValue;
 }
 
 
