@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "Shape.h"
+#import "triangle.h"
+#import "square.h"
 
 @interface ViewController ()
 
@@ -16,6 +19,16 @@
 
 - (void)viewDidLoad
 {
+    
+    Shape *newShape = [[Shape alloc] init];
+    [newShape printNumSides];
+    
+    triangle *triangleShape = [[triangle alloc] init];
+    [triangleShape printNumSides];
+    
+    square *newSquare = [[square alloc] init];
+    [newSquare printNumSides];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

@@ -18,6 +18,9 @@
 		D6464EE91639444D008950DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6464EE81639444D008950DE /* Default-568h@2x.png */; };
 		D6464EEC1639444D008950DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6464EEB1639444D008950DE /* ViewController.m */; };
 		D6464EEF1639444D008950DE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6464EED1639444D008950DE /* ViewController.xib */; };
+		D6464EF716394497008950DE /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = D6464EF616394497008950DE /* Shape.m */; };
+		D6464EFE16394693008950DE /* triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = D6464EFD16394693008950DE /* triangle.m */; };
+		D6464F05163948DC008950DE /* square.m in Sources */ = {isa = PBXBuildFile; fileRef = D6464F04163948DC008950DE /* square.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		D6464EEA1639444D008950DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D6464EEB1639444D008950DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D6464EEE1639444D008950DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		D6464EF516394497008950DE /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		D6464EF616394497008950DE /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
+		D6464EFC16394693008950DE /* triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangle.h; sourceTree = "<group>"; };
+		D6464EFD16394693008950DE /* triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = triangle.m; sourceTree = "<group>"; };
+		D6464F03163948DC008950DE /* square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = square.h; sourceTree = "<group>"; };
+		D6464F04163948DC008950DE /* square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = square.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,8 @@
 				D6464EEB1639444D008950DE /* ViewController.m */,
 				D6464EED1639444D008950DE /* ViewController.xib */,
 				D6464ED91639444C008950DE /* Supporting Files */,
+				D6464EF516394497008950DE /* Shape.h */,
+				D6464EF616394497008950DE /* Shape.m */,
 			);
 			path = Week_1_practice3;
 			sourceTree = "<group>";
@@ -103,6 +114,10 @@
 				D6464EE41639444D008950DE /* Default.png */,
 				D6464EE61639444D008950DE /* Default@2x.png */,
 				D6464EE81639444D008950DE /* Default-568h@2x.png */,
+				D6464EFC16394693008950DE /* triangle.h */,
+				D6464EFD16394693008950DE /* triangle.m */,
+				D6464F03163948DC008950DE /* square.h */,
+				D6464F04163948DC008950DE /* square.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,6 +191,9 @@
 				D6464EDF1639444C008950DE /* main.m in Sources */,
 				D6464EE31639444D008950DE /* AppDelegate.m in Sources */,
 				D6464EEC1639444D008950DE /* ViewController.m in Sources */,
+				D6464EF716394497008950DE /* Shape.m in Sources */,
+				D6464EFE16394693008950DE /* triangle.m in Sources */,
+				D6464F05163948DC008950DE /* square.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
