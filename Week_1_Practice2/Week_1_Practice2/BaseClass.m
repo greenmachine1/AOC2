@@ -11,7 +11,7 @@
 @implementation BaseClass
 
 // creates auto setter and getter methods
-@synthesize temp;
+@synthesize temp, nameString;
 
 -(id)init
 {
@@ -23,5 +23,9 @@
     return self;
 }
 
++(void)printValue:(int)temp
+{
+    NSLog(@"value = %i", temp);
+}
 
 @end
