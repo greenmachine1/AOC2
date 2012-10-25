@@ -23,7 +23,7 @@
 
 -(void)printName
 {
-    NSLog(@"I am a %@", _name);
+    NSLog(@"I am a %@ with %i strings", _name, _numberOfStrings);
 }
 
 

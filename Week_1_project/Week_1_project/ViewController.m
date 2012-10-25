@@ -22,11 +22,23 @@
 - (void)viewDidLoad
 {
     
-    GuitarFactory *guitar = [[GuitarFactory alloc] init];
-    if(guitar != nil)
+    GuitarFactory *jacksonGuitar = [[GuitarFactory alloc] init];
+    if(jacksonGuitar != nil)
     {
-        Guitar *jackson = [guitar returnedGuitarType:0];
+        Guitar *jackson = [jacksonGuitar returnedGuitarType:0];
         [jackson printName];
+    }
+    GuitarFactory *ibanezGuitar = [[GuitarFactory alloc] init];
+    if(jacksonGuitar != nil)
+    {
+        Guitar *ibanez = [ibanezGuitar returnedGuitarType:2];
+        [ibanez printName];
+    }
+    GuitarFactory *espGuitar = [[GuitarFactory alloc] init];
+    if(espGuitar != nil)
+    {
+        Guitar *esp = [espGuitar returnedGuitarType:1];
+        [esp printName];
     }
     
     
@@ -49,7 +61,7 @@
     [self.view addSubview:topGuitarLabel];
     [self.view addSubview:middleGuitarLabel];
     [self.view addSubview:bottomGuitarLabel];
- */   
+  */ 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
