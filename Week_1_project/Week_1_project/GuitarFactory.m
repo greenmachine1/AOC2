@@ -21,15 +21,15 @@
 {
     if (EGuitarType == 0)
     {
-        return [[Guitar alloc] initWithDetails:6 name:@"Jackson"];
+        return [[Guitar alloc] initWithDetails:6 name:@"Jackson" price:1799];
     }
     else if(EGuitarType == 1)
     {
-        return [[Guitar alloc] initWithDetails:7 name:@"ESP"];
+        return [[Guitar alloc] initWithDetails:7 name:@"ESP" price:1699];
     }
     else if (EGuitarType == 2)
     {
-        return [[Guitar alloc] initWithDetails:8 name:@"Ibanez"];
+        return [[Guitar alloc] initWithDetails:8 name:@"Ibanez" price:1499];
     }
     return nil;
 }

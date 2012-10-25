@@ -21,11 +21,14 @@ typedef enum {
     int _numberOfStrings;
     
     NSString *_name;
+    
+    int _price;
 
 }
 
--(id)initWithDetails:(int)numberOfStrings name:(NSString *)name;
+-(id)initWithDetails:(int)numberOfStrings name:(NSString *)name price:(int)price;
 -(NSString *)printName;
+-(int)priceOfGuitar:(int)price;
 
 
 

@@ -10,10 +10,12 @@
 
 @implementation Guitar
 
--(id)initWithDetails:(int)numberOfStrings name:(NSString *)name
+-(id)initWithDetails:(int)numberOfStrings name:(NSString *)name price:(int)price
 {
     if(self = [super init])
     {
+        _price = price;
+        
         _numberOfStrings = numberOfStrings;
         
         _name = name;
@@ -29,7 +31,13 @@
 }
 
 
-
+-(int)priceOfGuitar:(int)price
+{
+    float salesTax = price * 0.7f;
+    float finalPrice = salesTax + price;
+    
+    return finalPrice;
+}
 
 
 
