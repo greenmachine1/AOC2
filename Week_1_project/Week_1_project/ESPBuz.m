@@ -14,11 +14,10 @@
 {
     if(self = [super init])
     {
-        numberOfStrings = 8;
+        _numberOfStrings = 8;
         
-        headStockType = @"reverse";
+        _name = @"ESP";
         
-        hasTremelo = true;
     }
     return self;
 }

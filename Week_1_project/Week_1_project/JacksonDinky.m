@@ -14,11 +14,10 @@
 {
     if(self = [super init])
     {
-        numberOfStrings = 7;
+        _numberOfStrings = 7;
         
-        headStockType = @"reverse";
+        _name = @"Jackson";
         
-        hasTremelo = true;
     }
     return self;
 }

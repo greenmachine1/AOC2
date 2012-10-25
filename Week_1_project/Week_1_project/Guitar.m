@@ -10,43 +10,25 @@
 
 @implementation Guitar
 
--(id)init
+-(id)initWithDetails:(int)numberOfStrings name:(NSString *)name
 {
     if(self = [super init])
     {
-        numberOfStrings = 6;
+        _numberOfStrings = numberOfStrings;
         
-        headStockType = @"normal";
-        
-        hasTremelo = true;
+        _name = name;
     }
     return self;
 }
 
-// my setter method
--(void)setValues:(int)numberOStrings headStockType:(NSString *)headStockT hasTremeloType:(BOOL)hasTremeloT
+-(void)printName
 {
-    numberOfStrings = numberOStrings;
-    headStockType = headStockT;
-    hasTremelo = hasTremeloT;
+    NSLog(@"I am a %@", _name);
 }
 
-// my getter method
--(NSString *)printValues
-{
-    NSString *tremeloValue = [[NSString alloc] init];
-    if(hasTremelo == true)
-    {
-        tremeloValue = @"Yes";
-    }
-    else
-    {
-        tremeloValue = @"No";
-    }
-    
-    NSString *returnedString = [[NSString alloc] initWithFormat:@"The values of the guitar are: number of Strings = %i, headstock type %@, and has a tremelo? = %@", numberOfStrings, headStockType, tremeloValue];
-    
-    return returnedString;
-}
+
+
+
+
 
 @end

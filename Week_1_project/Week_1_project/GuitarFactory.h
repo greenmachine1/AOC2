@@ -14,4 +14,6 @@
 
 @interface GuitarFactory : Guitar
 
+-(Guitar *)returnedGuitarType:(int)EGuitarType;
+
 @end

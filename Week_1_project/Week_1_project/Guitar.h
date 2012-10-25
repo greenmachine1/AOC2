@@ -18,14 +18,15 @@ typedef enum {
 // setting my different variables for my base class
 @interface Guitar : NSObject
 {
-    int numberOfStrings;
+    int _numberOfStrings;
     
-    NSString *headStockType;
-    
-    BOOL hasTremelo;
+    NSString *_name;
+
 }
 
--(NSString *)printValues;
--(void)setValues:(int)numberOStrings headStockType:(NSString *)headStockT hasTremeloType:(BOOL)hasTremeloT;
+-(id)initWithDetails:(int)numberOfStrings name:(NSString *)name;
+-(void)printName;
+
+
 
 @end

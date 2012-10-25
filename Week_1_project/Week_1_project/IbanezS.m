@@ -14,13 +14,13 @@
 {
     if(self = [super init])
     {
-        numberOfStrings = 7;
+        _numberOfStrings = 6;
         
-        headStockType = @"normal";
+        _name = @"Ibanez";
         
-        hasTremelo = false;
     }
     return self;
 }
+
 
 @end
