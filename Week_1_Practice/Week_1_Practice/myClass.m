@@ -8,6 +8,24 @@
 
 #import "myClass.h"
 
+
+// definition of myClass
 @implementation myClass
+
+// creating an object construct
+-(id)init
+{
+    self = [super init];
+    if (self != nil){
+        // any init for this object
+    }
+    
+    return self;
+}
+
+-(NSString *)getText
+{
+    return @"HelllooooooooooooOoO!";
+}
 
 @end

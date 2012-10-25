@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "myClass.h"
 
 @interface ViewController ()
 
@@ -18,12 +19,20 @@
 {
     // just messing around with objects!
     
-    textLabel = [[UILabel alloc] initWithFrame:(CGRectMake(0, 0, 320, 100))];
+    // instantiating a object called newClass
+    newClass = [[myClass alloc]init];
+    if (newClass != nil)
+    {
+        
+        textLabel = [[UILabel alloc] initWithFrame:(CGRectMake(0, 0, 320, 100))];
+        
+        textLabel.text = [newClass getText];
+        [self.view addSubview:textLabel];
+        
+        [super viewDidLoad];
+        
+    }
     
-    textLabel.text = @"Hello";
-    [self.view addSubview:textLabel];
-    
-    [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class myClass;
+
 @interface ViewController : UIViewController
 {
     UILabel *textLabel;
+    
+    myClass *newClass;
 }
 
 

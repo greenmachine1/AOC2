@@ -9,5 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface myClass : NSObject
+{
+    // creating object variables
+    NSString *text;
+    
+    int intValue;
+    
+    float floatValue;
+}
 
+// creating methods for the object to use
+-(NSString *)getText;
 @end
