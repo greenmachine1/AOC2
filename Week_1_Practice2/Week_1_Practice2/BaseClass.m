@@ -10,6 +10,9 @@
 
 @implementation BaseClass
 
+// creates auto setter and getter methods
+@synthesize temp;
+
 -(id)init
 {
     if(self = [super init])
@@ -19,4 +22,6 @@
     }
     return self;
 }
+
+
 @end

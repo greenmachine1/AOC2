@@ -10,11 +10,15 @@
 
 @interface BaseClass : NSObject
 {
+    
 
 // setting certain properties to public access
-@public
+@private
     int temp;
     NSString *nameString;
 }
+
+@property int temp;
+
 
 @end
