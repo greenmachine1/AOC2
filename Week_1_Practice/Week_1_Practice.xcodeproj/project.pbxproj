@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6959CE71638C8E400FC7157 /* myClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D6959CE61638C8E400FC7157 /* myClass.m */; };
 		D6A9A4831636893D009AC6AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9A4821636893D009AC6AE /* UIKit.framework */; };
 		D6A9A4851636893D009AC6AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9A4841636893D009AC6AE /* Foundation.framework */; };
 		D6A9A4871636893D009AC6AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A9A4861636893D009AC6AE /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D6959CE51638C8E400FC7157 /* myClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myClass.h; sourceTree = "<group>"; };
+		D6959CE61638C8E400FC7157 /* myClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myClass.m; sourceTree = "<group>"; };
 		D6A9A47E1636893D009AC6AE /* Week_1_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week_1_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A9A4821636893D009AC6AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6A9A4841636893D009AC6AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +92,8 @@
 				D6A9A49B1636893D009AC6AE /* ViewController.m */,
 				D6A9A49D1636893D009AC6AE /* ViewController.xib */,
 				D6A9A4891636893D009AC6AE /* Supporting Files */,
+				D6959CE51638C8E400FC7157 /* myClass.h */,
+				D6959CE61638C8E400FC7157 /* myClass.m */,
 			);
 			path = Week_1_Practice;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				D6A9A48F1636893D009AC6AE /* main.m in Sources */,
 				D6A9A4931636893D009AC6AE /* AppDelegate.m in Sources */,
 				D6A9A49C1636893D009AC6AE /* ViewController.m in Sources */,
+				D6959CE71638C8E400FC7157 /* myClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +296,7 @@
 				D6A9A4A41636893D009AC6AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
