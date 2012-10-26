@@ -19,7 +19,7 @@
 {
 
     BaseGuitarClass *newGuitarClass = [[BaseGuitarClass alloc] init];
-    [newGuitarClass setterMethod:6 nameOManufacture:@"Jackson"];
+    [newGuitarClass setterMethod:6 nameOManufacture:@"Jackson" costOfGuitar:1200];
     
     UILabel *newLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     newLabel.text = [newGuitarClass gettermethod];

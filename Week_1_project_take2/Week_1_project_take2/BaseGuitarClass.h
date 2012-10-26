@@ -13,11 +13,13 @@
     int numberOfStrings;
     
     NSString *nameOfManufacture;
+    
+    int costOfGuitar;
 }
 
--(void)setterMethod:(int)numberOStrings nameOManufacture:(NSString *)nameOManufacture;
+-(void)setterMethod:(int)numberOStrings nameOManufacture:(NSString *)nameOManufacture costOfGuitar:(int)cost;
 -(NSString *)gettermethod;
 
--(void)calculationMethod;
+-(float)calculationMethod:(int)costOfGuitarInWholeDollars;
 
 @end

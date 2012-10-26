@@ -18,27 +18,36 @@
         numberOfStrings = 6;
         
         nameOfManufacture = @"Fender";
+        
+        costOfGuitar = 1000;
     }
     return self;
 }
 
 // creating my setter method
--(void)setterMethod:(int)numberOStrings nameOManufacture:(NSString *)nameOManufacture
+-(void)setterMethod:(int)numberOStrings nameOManufacture:(NSString *)nameOManufacture costOfGuitar:(int)cost
 {
     numberOfStrings = numberOStrings;
     
     nameOfManufacture = nameOManufacture;
+    
+    costOfGuitar = cost;
+}
+
+
+// calculation method used to figure out total cost of the guitar
+// in a seperate class, will use some other states sales tax and use as an override
+-(float)calculationMethod:(int)costOfGuitarInWholeDollars
+{
+    float tax = costOfGuitarInWholeDollars * 0.07f;
+    float finalValueOfGuitar = costOfGuitarInWholeDollars + tax;
+    return finalValueOfGuitar;
 }
 
 // creating my getter method
 -(NSString *)gettermethod
 {
-    NSString *returnedString = [[NSString alloc] initWithFormat:@"The guitar manufactured by %@ has %i strings.", nameOfManufacture, numberOfStrings];
+    NSString *returnedString = [[NSString alloc] initWithFormat:@"The guitar manufactured by %@ has %i strings. The total price of this guitar including tax is %f", nameOfManufacture, numberOfStrings,[self calculationMethod:costOfGuitar]];
     return returnedString;
-}
-
--(void)calculationMethod
-{
-    
 }
 @end
