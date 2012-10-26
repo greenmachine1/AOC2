@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BaseGuitarClass.h"
+#import "Jackson.h"
 
 @interface ViewController ()
 
@@ -18,15 +19,24 @@
 - (void)viewDidLoad
 {
 
+    // this way of instantiating a class will be moved to the GuitarFactory class
+    // when I make it
     BaseGuitarClass *newGuitarClass = [[BaseGuitarClass alloc] init];
-    [newGuitarClass setterMethod:6 nameOManufacture:@"Jackson" costOfGuitar:1200];
+    [newGuitarClass setterMethod:6 nameOManufacture:@"ESP" costOfGuitar:1200];
     
     UILabel *newLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     newLabel.text = [newGuitarClass gettermethod];
     newLabel.numberOfLines = 5;
     
-   
     
+    Jackson *jacksonGuitarClass = [[Jackson alloc] init];
+    [jacksonGuitarClass setterMethod:7 nameOManufacture:@"jackson" costOfGuitar:1999];
+    
+    UILabel *jacksonLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];
+    jacksonLabel.text = [jacksonGuitarClass gettermethod];
+    jacksonLabel.numberOfLines = 5;
+   
+    [self.view addSubview:jacksonLabel];
     [self.view addSubview:newLabel];
     
     

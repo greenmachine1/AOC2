@@ -9,8 +9,9 @@
 #import "BaseGuitarClass.h"
 
 @implementation BaseGuitarClass
--(id)init
 
+// constructor - constructs one verson of the class
+-(id)init
 {
     self = [super init];
     if(self != nil)
@@ -44,10 +45,10 @@
     return finalValueOfGuitar;
 }
 
-// creating my getter method
+// creating my getter method - calls on the calculationMethod from within itself
 -(NSString *)gettermethod
 {
-    NSString *returnedString = [[NSString alloc] initWithFormat:@"The guitar manufactured by %@ has %i strings. The total price of this guitar including tax is %f", nameOfManufacture, numberOfStrings,[self calculationMethod:costOfGuitar]];
+    NSString *returnedString = [[NSString alloc] initWithFormat:@"The guitar manufactured by %@ has %i strings. The total price of this guitar including tax is %.02f", nameOfManufacture, numberOfStrings,[self calculationMethod:costOfGuitar]];
     return returnedString;
 }
 @end
