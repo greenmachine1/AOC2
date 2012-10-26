@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
+// defining my different guitar types
+typedef enum {
+    JACKSON=0,
+    IBANEZ,
+    ESP
+}EGuitarType;
+
 @interface BaseGuitarClass : NSObject
 {
     int numberOfStrings;

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "BaseGuitarClass.h"
 #import "Guitar_different_taxes.h"
+#import "GuitarFactory.h"
 
 
 @interface ViewController ()
@@ -20,27 +21,16 @@
 - (void)viewDidLoad
 {
 
-    // this way of instantiating a class will be moved to the GuitarFactory class
-    // when I make it
-    BaseGuitarClass *newGuitarClass = [[BaseGuitarClass alloc] init];
-    [newGuitarClass setterMethod:6 nameOManufacture:@"ESP" costOfGuitar:1200];
+    // instantiating classes and applying labels to them
+    // using enum, I can have a word representation for my integer values
+    // that represent the different classes..
+    GuitarFactory *newFactory = [[GuitarFactory alloc] init];
     
-    UILabel *newLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-    newLabel.text = [newGuitarClass gettermethod];
-    newLabel.numberOfLines = 5;
+    UILabel *newNewLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 300, 320, 100)];
+    newNewLabel.text = [newFactory guitarChoise:JACKSON];
+    newNewLabel.numberOfLines = 5;
     
-    
-    Guitar_different_taxes *jacksonGuitarClass = [[Guitar_different_taxes alloc] init];
-    [jacksonGuitarClass setterMethod:7 nameOManufacture:@"jackson" costOfGuitar:1999];
-    
-    UILabel *jacksonLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];
-    jacksonLabel.text = [jacksonGuitarClass gettermethod];
-    jacksonLabel.numberOfLines = 5;
-   
-    [self.view addSubview:jacksonLabel];
-    [self.view addSubview:newLabel];
-    
-    
+    [self.view addSubview:newNewLabel];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

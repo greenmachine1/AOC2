@@ -13,6 +13,6 @@
 
 @interface GuitarFactory : BaseGuitarClass
 
--(BaseGuitarClass *)guitarChoise:(int)choise;
+-(NSString *)guitarChoise:(int)EGuitarType;
 
 @end

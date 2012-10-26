@@ -7,25 +7,35 @@
 //
 
 #import "GuitarFactory.h"
+#import "Guitar_different_taxes.h"
 
 @implementation GuitarFactory
 
 
--(BaseGuitarClass *)guitarChoise:(int)choise
+-(NSString *)guitarChoise:(int)EGuitarType
 {
-    if(choise == 0)
+    if(EGuitarType == 0)
     {
-            
+        BaseGuitarClass *esp = [[BaseGuitarClass alloc] init];
+        [esp setterMethod:6 nameOManufacture:@"ESP" costOfGuitar:1400];
+        return [esp gettermethod];
     }
-    else if(choise == 1)
+    else if(EGuitarType == 1)
     {
-            
+        Guitar_different_taxes *jackson = [[Guitar_different_taxes alloc] init];
+        [jackson setterMethod:7 nameOManufacture:@"Jackson" costOfGuitar:1899];
+        return [jackson gettermethod];
     }
-    else if(choise == 2)
+    else if(EGuitarType == 2)
     {
-    
+        BaseGuitarClass *ibanez = [[BaseGuitarClass alloc] init];
+        [ibanez setterMethod:8 nameOManufacture:@"Ibanez" costOfGuitar:1999];
+        return [ibanez gettermethod];
     }
-    return nil;
+    else
+    {
+        return nil;
+    }
 }
 
 @end
