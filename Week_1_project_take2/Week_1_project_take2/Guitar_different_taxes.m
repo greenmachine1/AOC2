@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Cory Green. All rights reserved.
 //
 
-#import "Jackson.h"
+#import "Guitar_different_taxes.h"
 
-@implementation Jackson
+@implementation Guitar_different_taxes
 {
     
 }

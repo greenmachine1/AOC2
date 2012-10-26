@@ -45,7 +45,7 @@
     return finalValueOfGuitar;
 }
 
-// creating my getter method - calls on the calculationMethod from within itself
+// creating my getter method - calls on the calculationMethod from within the class itself
 -(NSString *)gettermethod
 {
     NSString *returnedString = [[NSString alloc] initWithFormat:@"The guitar manufactured by %@ has %i strings. The total price of this guitar including tax is %.02f", nameOfManufacture, numberOfStrings,[self calculationMethod:costOfGuitar]];

@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "BaseGuitarClass.h"
-#import "Jackson.h"
+#import "Guitar_different_taxes.h"
+
 
 @interface ViewController ()
 
@@ -29,7 +30,7 @@
     newLabel.numberOfLines = 5;
     
     
-    Jackson *jacksonGuitarClass = [[Jackson alloc] init];
+    Guitar_different_taxes *jacksonGuitarClass = [[Guitar_different_taxes alloc] init];
     [jacksonGuitarClass setterMethod:7 nameOManufacture:@"jackson" costOfGuitar:1999];
     
     UILabel *jacksonLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];

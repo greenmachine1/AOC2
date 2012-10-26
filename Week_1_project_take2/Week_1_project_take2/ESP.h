@@ -1,5 +1,5 @@
 //
-//  Jackson.h
+//  ESP.h
 //  Week_1_project_take2
 //
 //  Created by Cory Green on 10/26/12.
@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "BaseGuitarClass.h"
 
-@interface Jackson : BaseGuitarClass
-
--(float)calculationMethod:(int)costOfGuitarInWholeDollars;
+@interface ESP : BaseGuitarClass
 
 @end
