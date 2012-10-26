@@ -20,6 +20,7 @@
 		D66B45E8163A6D7A008CFA30 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66B45E6163A6D7A008CFA30 /* ViewController.xib */; };
 		D66B45F0163A6D97008CFA30 /* BaseGuitarClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B45EF163A6D97008CFA30 /* BaseGuitarClass.m */; };
 		D66B45FF163A7D57008CFA30 /* Guitar_different_taxes.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B45FE163A7D57008CFA30 /* Guitar_different_taxes.m */; };
+		D66B4609163A872B008CFA30 /* GuitarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D66B4608163A872B008CFA30 /* GuitarFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		D66B45EF163A6D97008CFA30 /* BaseGuitarClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGuitarClass.m; sourceTree = "<group>"; };
 		D66B45FD163A7D57008CFA30 /* Guitar_different_taxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guitar_different_taxes.h; sourceTree = "<group>"; };
 		D66B45FE163A7D57008CFA30 /* Guitar_different_taxes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guitar_different_taxes.m; sourceTree = "<group>"; };
+		D66B4607163A872B008CFA30 /* GuitarFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuitarFactory.h; sourceTree = "<group>"; };
+		D66B4608163A872B008CFA30 /* GuitarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuitarFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				D66B45EF163A6D97008CFA30 /* BaseGuitarClass.m */,
 				D66B45FD163A7D57008CFA30 /* Guitar_different_taxes.h */,
 				D66B45FE163A7D57008CFA30 /* Guitar_different_taxes.m */,
+				D66B4607163A872B008CFA30 /* GuitarFactory.h */,
+				D66B4608163A872B008CFA30 /* GuitarFactory.m */,
 			);
 			path = Week_1_project_take2;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				D66B45E5163A6D7A008CFA30 /* ViewController.m in Sources */,
 				D66B45F0163A6D97008CFA30 /* BaseGuitarClass.m in Sources */,
 				D66B45FF163A7D57008CFA30 /* Guitar_different_taxes.m in Sources */,
+				D66B4609163A872B008CFA30 /* GuitarFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
