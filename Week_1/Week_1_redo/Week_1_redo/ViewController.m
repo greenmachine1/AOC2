@@ -24,6 +24,14 @@
         [newGuitar printSpecs];
     }
     
+    BaseGuitarClass *espGuitar = [GuitarFactory getGuitar:ESPGUITAR];
+    if (espGuitar != nil)
+    {
+        [espGuitar printSpecs];
+    }
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

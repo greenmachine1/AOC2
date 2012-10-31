@@ -7,24 +7,25 @@
 //
 
 #import "GuitarFactory.h"
+#import "ESP.h"
 
 @implementation GuitarFactory
 
 +(BaseGuitarClass *)getGuitar:(int)guitarType
 {
-    if (guitarType == 0)
+    if (guitarType == JACKSON)
     {
         return [[BaseGuitarClass alloc] initWithDetails:6 nameOManufacture:@"Jackson" price:1499.00];
     }
-    else if (guitarType == 1)
+    else if (guitarType == FENDER)
     {
         return [[BaseGuitarClass alloc] initWithDetails:6 nameOManufacture:@"Fender" price:1250.00];
     }
-    else if (guitarType == 2)
+    else if (guitarType == ESPGUITAR)
     {
-        return [[BaseGuitarClass alloc] initWithDetails:7 nameOManufacture:@"ESP" price:1399.95];
+        return [[ESP alloc] init];
     }
-    else if (guitarType == 3)
+    else if (guitarType == IBANEZ)
     {
         return [[BaseGuitarClass alloc] initWithDetails:8 nameOManufacture:@"Ibanez" price:1595.95];
     }

@@ -14,7 +14,7 @@
 typedef enum{
     JACKSON = 0,
     FENDER,
-    ESP,
+    ESPGUITAR,
     IBANEZ
 }guitarType;
 

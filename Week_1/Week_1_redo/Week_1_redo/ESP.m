@@ -10,4 +10,17 @@
 
 @implementation ESP
 
+
+-(id)init
+{
+    if(self = [super init])
+    {
+        stringNumber = 6;
+        
+        name = @"ESP";
+        
+        pricing = 1390.95;
+    }
+    return self;
+}
 @end

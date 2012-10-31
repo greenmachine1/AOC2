@@ -10,6 +10,8 @@
 
 @implementation BaseGuitarClass
 
+
+// will change to a generic init method.
 -(id)initWithDetails:(int)numberOStrings nameOManufacture:(NSString*)nameOmanufacture price:(float)price
 {
     if(self = [super init])
