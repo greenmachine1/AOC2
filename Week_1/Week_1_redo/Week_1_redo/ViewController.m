@@ -24,35 +24,9 @@
 {
     // using the static method found in my guitar factory, all this coding looks much cleaner
     // and also easier to read.
-    /*
-    BaseGuitarClass *ibanezGuitar = [GuitarFactory getGuitar:IBANEZ];
-    if (ibanezGuitar != nil)
-    {
-        UILabel *topLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
-        topLabel.numberOfLines = 6;
-        topLabel.text = [ibanezGuitar printSpecs];
-        [self.view addSubview:topLabel];
-    }
-    
-    BaseGuitarClass *espGuitar = [GuitarFactory getGuitar:ESPGUITAR];
-    if (espGuitar != nil)
-    {
-        UILabel *secondLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];
-        secondLabel.numberOfLines = 6;
-        secondLabel.text = [espGuitar printSpecs];
-        [self.view addSubview:secondLabel];
-    }
-    
-    BaseGuitarClass *jacksonGuitar = [GuitarFactory getGuitar:JACKSON];
-    if (jacksonGuitar != nil)
-    {
-        UILabel *thirdLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
-        thirdLabel.numberOfLines = 6;
-        thirdLabel.text = [jacksonGuitar printSpecs];
-        [self.view addSubview:thirdLabel];
-    }
-    */
-    
+   
+    // here I have all my labels for the project as well as calling on the objects accessor
+    // and mutator methods.
     Jackson *newGuitarThing = (Jackson*)[GuitarFactory getGuitar:JACKSON];
     if(newGuitarThing != nil)
     {
