@@ -17,7 +17,7 @@
     float _price;
 }
 
--(id)initWithDetails:(int)numberOStrings nameOManufacture:(NSString*)nameOmanufacture price:(float)price;
+-(id)init; //WithDetails:(int)numberOStrings nameOManufacture:(NSString*)nameOmanufacture price:(float)price;
 
 -(void)printSpecs;
 

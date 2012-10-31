@@ -7,18 +7,23 @@
 //
 
 #import "BaseGuitarClass.h"
+#import "ESP.h"
 
 @implementation BaseGuitarClass
 
 
 // will change to a generic init method.
--(id)initWithDetails:(int)numberOStrings nameOManufacture:(NSString*)nameOmanufacture price:(float)price
+-(id)init //WithDetails:(int)numberOStrings nameOManufacture:(NSString*)nameOmanufacture price:(float)price
 {
     if(self = [super init])
     {
-        numberOfStrings = numberOStrings;
+        numberOfStrings = 6;
+        nameOfManufacture = @"";
+        _price = 2300.00f;
+        
+       /* numberOfStrings = numberOStrings;
         nameOfManufacture = nameOmanufacture;
-        _price = price;
+        _price = price; */
     }
     return self;
 }

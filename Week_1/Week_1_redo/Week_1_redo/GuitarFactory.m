@@ -13,6 +13,7 @@
 
 +(BaseGuitarClass *)getGuitar:(int)guitarType
 {
+    /*
     if (guitarType == JACKSON)
     {
         return [[BaseGuitarClass alloc] initWithDetails:6 nameOManufacture:@"Jackson" price:1499.00];
@@ -29,6 +30,14 @@
     {
         return [[BaseGuitarClass alloc] initWithDetails:8 nameOManufacture:@"Ibanez" price:1595.95];
     }
+     */
+    
+    
+    if(guitarType == ESPGUITAR)
+    {
+        return [[ESP alloc] init];
+    }
+    
     return nil;
 }
 

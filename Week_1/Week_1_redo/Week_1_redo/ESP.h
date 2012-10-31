@@ -11,13 +11,7 @@
 #import "BaseGuitarClass.h"
 
 @interface ESP : BaseGuitarClass
-{
-    int stringNumber;
-    
-    NSString *name;
-    
-    float pricing;
-}
+
 
 -(id)init;
 
