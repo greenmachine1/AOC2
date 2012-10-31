@@ -26,7 +26,7 @@
         
         [self setNameOfManufacture:nil];
         
-        [self set_price:nil];
+        [self set_price:0];
     }
     return self;
 }

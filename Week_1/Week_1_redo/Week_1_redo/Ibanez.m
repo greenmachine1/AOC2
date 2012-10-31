@@ -14,11 +14,11 @@
 {
     if(self = [super init])
     {
-        numberOfStrings = 8;
+        [self setNumberOfStrings:8];
         
-        nameOfManufacture = @"Ibanez";
+        [self setNameOfManufacture:@"Ibanez"];
         
-        _price = 1900.00f;
+        [self set_price:1900.00f];
     }
     return self;
 }
