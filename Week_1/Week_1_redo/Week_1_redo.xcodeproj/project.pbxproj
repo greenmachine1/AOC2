@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6AC0B991640E054000E695A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AC0B981640E054000E695A /* UIKit.framework */; };
+		D6AC0B9B1640E054000E695A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AC0B9A1640E054000E695A /* Foundation.framework */; };
+		D6AC0B9D1640E054000E695A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6AC0B9C1640E054000E695A /* CoreGraphics.framework */; };
+		D6AC0BA31640E054000E695A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6AC0BA11640E054000E695A /* InfoPlist.strings */; };
+		D6AC0BA51640E054000E695A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BA41640E054000E695A /* main.m */; };
+		D6AC0BA91640E054000E695A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BA81640E054000E695A /* AppDelegate.m */; };
+		D6AC0BAB1640E054000E695A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AC0BAA1640E054000E695A /* Default.png */; };
+		D6AC0BAD1640E054000E695A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AC0BAC1640E054000E695A /* Default@2x.png */; };
+		D6AC0BAF1640E054000E695A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AC0BAE1640E054000E695A /* Default-568h@2x.png */; };
+		D6AC0BB21640E054000E695A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BB11640E054000E695A /* ViewController.m */; };
+		D6AC0BB51640E054000E695A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AC0BB31640E054000E695A /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6AC0B941640E054000E695A /* Week_1_redo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week_1_redo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6AC0B981640E054000E695A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6AC0B9A1640E054000E695A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6AC0B9C1640E054000E695A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6AC0BA01640E054000E695A /* Week_1_redo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Week_1_redo-Info.plist"; sourceTree = "<group>"; };
+		D6AC0BA21640E054000E695A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6AC0BA41640E054000E695A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6AC0BA61640E054000E695A /* Week_1_redo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Week_1_redo-Prefix.pch"; sourceTree = "<group>"; };
+		D6AC0BA71640E054000E695A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6AC0BA81640E054000E695A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6AC0BAA1640E054000E695A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D6AC0BAC1640E054000E695A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D6AC0BAE1640E054000E695A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D6AC0BB01640E054000E695A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D6AC0BB11640E054000E695A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D6AC0BB41640E054000E695A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6AC0B911640E054000E695A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6AC0B991640E054000E695A /* UIKit.framework in Frameworks */,
+				D6AC0B9B1640E054000E695A /* Foundation.framework in Frameworks */,
+				D6AC0B9D1640E054000E695A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6AC0B891640E054000E695A = {
+			isa = PBXGroup;
+			children = (
+				D6AC0B9E1640E054000E695A /* Week_1_redo */,
+				D6AC0B971640E054000E695A /* Frameworks */,
+				D6AC0B951640E054000E695A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6AC0B951640E054000E695A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6AC0B941640E054000E695A /* Week_1_redo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6AC0B971640E054000E695A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6AC0B981640E054000E695A /* UIKit.framework */,
+				D6AC0B9A1640E054000E695A /* Foundation.framework */,
+				D6AC0B9C1640E054000E695A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6AC0B9E1640E054000E695A /* Week_1_redo */ = {
+			isa = PBXGroup;
+			children = (
+				D6AC0BA71640E054000E695A /* AppDelegate.h */,
+				D6AC0BA81640E054000E695A /* AppDelegate.m */,
+				D6AC0BB01640E054000E695A /* ViewController.h */,
+				D6AC0BB11640E054000E695A /* ViewController.m */,
+				D6AC0BB31640E054000E695A /* ViewController.xib */,
+				D6AC0B9F1640E054000E695A /* Supporting Files */,
+			);
+			path = Week_1_redo;
+			sourceTree = "<group>";
+		};
+		D6AC0B9F1640E054000E695A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6AC0BA01640E054000E695A /* Week_1_redo-Info.plist */,
+				D6AC0BA11640E054000E695A /* InfoPlist.strings */,
+				D6AC0BA41640E054000E695A /* main.m */,
+				D6AC0BA61640E054000E695A /* Week_1_redo-Prefix.pch */,
+				D6AC0BAA1640E054000E695A /* Default.png */,
+				D6AC0BAC1640E054000E695A /* Default@2x.png */,
+				D6AC0BAE1640E054000E695A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6AC0B931640E054000E695A /* Week_1_redo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6AC0BB81640E054000E695A /* Build configuration list for PBXNativeTarget "Week_1_redo" */;
+			buildPhases = (
+				D6AC0B901640E054000E695A /* Sources */,
+				D6AC0B911640E054000E695A /* Frameworks */,
+				D6AC0B921640E054000E695A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Week_1_redo;
+			productName = Week_1_redo;
+			productReference = D6AC0B941640E054000E695A /* Week_1_redo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6AC0B8B1640E054000E695A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Cory Green";
+			};
+			buildConfigurationList = D6AC0B8E1640E054000E695A /* Build configuration list for PBXProject "Week_1_redo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6AC0B891640E054000E695A;
+			productRefGroup = D6AC0B951640E054000E695A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6AC0B931640E054000E695A /* Week_1_redo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6AC0B921640E054000E695A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6AC0BA31640E054000E695A /* InfoPlist.strings in Resources */,
+				D6AC0BAB1640E054000E695A /* Default.png in Resources */,
+				D6AC0BAD1640E054000E695A /* Default@2x.png in Resources */,
+				D6AC0BAF1640E054000E695A /* Default-568h@2x.png in Resources */,
+				D6AC0BB51640E054000E695A /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6AC0B901640E054000E695A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6AC0BA51640E054000E695A /* main.m in Sources */,
+				D6AC0BA91640E054000E695A /* AppDelegate.m in Sources */,
+				D6AC0BB21640E054000E695A /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6AC0BA11640E054000E695A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6AC0BA21640E054000E695A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6AC0BB31640E054000E695A /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6AC0BB41640E054000E695A /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6AC0BB61640E054000E695A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6AC0BB71640E054000E695A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6AC0BB91640E054000E695A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Week_1_redo/Week_1_redo-Prefix.pch";
+				INFOPLIST_FILE = "Week_1_redo/Week_1_redo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6AC0BBA1640E054000E695A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Week_1_redo/Week_1_redo-Prefix.pch";
+				INFOPLIST_FILE = "Week_1_redo/Week_1_redo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6AC0B8E1640E054000E695A /* Build configuration list for PBXProject "Week_1_redo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6AC0BB61640E054000E695A /* Debug */,
+				D6AC0BB71640E054000E695A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6AC0BB81640E054000E695A /* Build configuration list for PBXNativeTarget "Week_1_redo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6AC0BB91640E054000E695A /* Debug */,
+				D6AC0BBA1640E054000E695A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6AC0B8B1640E054000E695A /* Project object */;
+}
