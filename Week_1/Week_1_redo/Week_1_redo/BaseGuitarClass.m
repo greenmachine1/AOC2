@@ -12,7 +12,7 @@
 @implementation BaseGuitarClass
 
 
-@synthesize numberOfStrings, nameOfManufacture, _price;
+@synthesize numberOfStrings, _price; // nameOfManufacture
 
 
 // init method, creates a constructor (generic class)
@@ -24,7 +24,7 @@
     {
         [self setNumberOfStrings:0];
         
-        [self setNameOfManufacture:@""];
+        //[self setNameOfManufacture:@""];
         
         [self set_price:0];
     }
@@ -34,13 +34,15 @@
 
 
 // printSpecs returns the info for the guitar
+
+/*
 -(NSString*)printSpecs
 {
     NSString *returnedString = [[NSString alloc] initWithFormat:@"The specs of the guitar are: manufacture = %@, number of strings = %i, and the price = %0.2f", nameOfManufacture, numberOfStrings, _price];
                 
     return returnedString;
 }
-
+*/
 
 -(float)calculateFinalPriceOfGuitar
 {
