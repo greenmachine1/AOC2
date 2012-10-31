@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ESP.h"
+#import "Jackson.h"
+#import "Ibanez.h"
 
 
 @interface BaseGuitarClass : NSObject

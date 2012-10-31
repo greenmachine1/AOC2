@@ -11,8 +11,8 @@
 
 @interface Jackson : BaseGuitarClass
 
-@property BOOL hasSwirlyDesign;
+@property int hasSwirlyDesign;
 
--(id)init;
+//-(id)init;
 
 @end

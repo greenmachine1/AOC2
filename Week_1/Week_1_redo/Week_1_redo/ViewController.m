@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "BaseGuitarClass.h"
 #import "GuitarFactory.h"
+#import "ESP.h"
+#import "Jackson.h"
+#import "Ibanez.h"
+
 
 @interface ViewController ()
 
@@ -48,15 +52,18 @@
         [self.view addSubview:thirdLabel];
     }
     */
-    
-    BaseGuitarClass *newGuitar = [GuitarFactory getGuitar:JACKSON];
-    if(newGuitar != nil)
+    /*
+    Jackson *newGuitarThing = (Jackson*)[GuitarFactory getGuitar:JACKSON];
+    if(newGuitarThing != nil)
     {
         
+        // sets the Bool to true
+        [newGuitarThing setHasSwirlyDesign:1];
+        
+        NSLog(@"This is %c", newGuitarThing.hasSwirlyDesign);
     }
     
-    
-    
+    */
     
     
     

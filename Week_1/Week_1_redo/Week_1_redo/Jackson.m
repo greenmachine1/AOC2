@@ -18,7 +18,7 @@
 {
     if(self = [super init])
     {
-        [self setHasSwirlyDesign:TRUE];
+        [self setHasSwirlyDesign:0];
     }
     return self;
 }
@@ -28,7 +28,7 @@
 {
     float addedPrice = 0.0f;
     
-    if(hasSwirlyDesign == TRUE)
+    if(hasSwirlyDesign == 1)
     {
         addedPrice = 300.00f;
     }

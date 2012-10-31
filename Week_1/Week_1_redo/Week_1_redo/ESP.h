@@ -16,7 +16,7 @@
 
 
 
--(id)init;
+//-(id)init;
 
 
 @end

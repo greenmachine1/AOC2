@@ -23,7 +23,7 @@
 
 -(float)calculateFinalPriceOfGuitar
 {
-    float finalValueOfGuitar = [[self _price] + discount];
+    float finalValueOfGuitar = discount + [self _price];
     return finalValueOfGuitar;
 }
 
