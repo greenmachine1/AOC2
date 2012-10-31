@@ -21,7 +21,10 @@
     BaseGuitarClass *ibanezGuitar = [GuitarFactory getGuitar:IBANEZ];
     if (ibanezGuitar != nil)
     {
-        [ibanezGuitar printSpecs];
+        UILabel *topLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+        topLabel.numberOfLines = 6;
+        topLabel.text = [ibanezGuitar printSpecs];
+        [self.view addSubview:topLabel];
     }
     
     BaseGuitarClass *espGuitar = [GuitarFactory getGuitar:ESPGUITAR];
@@ -41,6 +44,8 @@
     {
         [jacksonGuitar printSpecs];
     }
+    
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

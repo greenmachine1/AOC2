@@ -8,7 +8,7 @@
 
 #import "BaseGuitarClass.h"
 
-
+// my baseClass
 @implementation BaseGuitarClass
 
 
@@ -25,8 +25,10 @@
 }
 
 // printSpecs returns the info for the guitar
--(void)printSpecs
+-(NSString*)printSpecs
 {
-    NSLog(@"The specs of the guitar are: manufacture = %@, number of strings = %i, and the price = %0.2f", nameOfManufacture, numberOfStrings, _price);
+    NSString *returnedString = [[NSString alloc] initWithFormat:@"The specs of the guitar are: manufacture = %@, number of strings = %i, and the price = %0.2f", nameOfManufacture, numberOfStrings, _price];
+                
+    return returnedString;
 }
 @end

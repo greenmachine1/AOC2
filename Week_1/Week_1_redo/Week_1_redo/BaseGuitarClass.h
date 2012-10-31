@@ -20,6 +20,6 @@
 
 -(id)init; //WithDetails:(int)numberOStrings nameOManufacture:(NSString*)nameOmanufacture price:(float)price;
 
--(void)printSpecs;
+-(NSString*)printSpecs;
 
 @end
