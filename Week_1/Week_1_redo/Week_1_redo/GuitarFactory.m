@@ -7,7 +7,6 @@
 //
 
 #import "GuitarFactory.h"
-#import "ESP.h"
 
 @implementation GuitarFactory
 
@@ -37,6 +36,17 @@
     {
         return [[ESP alloc] init];
     }
+    
+    if(guitarType == FENDER)
+    {
+        return [[Fender alloc]init];
+    }
+    
+    if(guitarType == JACKSON)
+    {
+        return [[Jackson alloc] init];
+    }
+    
     
     return nil;
 }

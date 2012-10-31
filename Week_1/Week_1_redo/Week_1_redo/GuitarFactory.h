@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseGuitarClass.h"
+#import "ESP.h"
+#import "Jackson.h"
+#import "Fender.h"
 
 
 // the different types of guitars

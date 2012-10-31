@@ -1,15 +1,14 @@
 //
-//  ESP.m
+//  Fender.m
 //  Week_1_redo
 //
 //  Created by Cory Green on 10/30/12.
 //  Copyright (c) 2012 Cory Green. All rights reserved.
 //
 
-#import "ESP.h"
+#import "Fender.h"
 
-@implementation ESP
-
+@implementation Fender
 
 -(id)init
 {
@@ -17,10 +16,11 @@
     {
         numberOfStrings = 6;
         
-        nameOfManufacture = @"ESP";
+        nameOfManufacture = @"Fender";
         
-        _price = 1390.95f;
+        _price = 1200.95f;
     }
     return self;
 }
+
 @end

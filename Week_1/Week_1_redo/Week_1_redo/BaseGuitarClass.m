@@ -7,26 +7,24 @@
 //
 
 #import "BaseGuitarClass.h"
-#import "ESP.h"
+
 
 @implementation BaseGuitarClass
 
 
-// will change to a generic init method.
--(id)init //WithDetails:(int)numberOStrings nameOManufacture:(NSString*)nameOmanufacture price:(float)price
+// init method, creates a constructor (generic class)
+-(id)init 
 {
     if(self = [super init])
     {
         numberOfStrings = 6;
         nameOfManufacture = @"";
         _price = 2300.00f;
-        
-       /* numberOfStrings = numberOStrings;
-        nameOfManufacture = nameOmanufacture;
-        _price = price; */
     }
     return self;
 }
+
+// printSpecs returns the info for the guitar
 -(void)printSpecs
 {
     NSLog(@"The specs of the guitar are: manufacture = %@, number of strings = %i, and the price = %0.2f", nameOfManufacture, numberOfStrings, _price);
