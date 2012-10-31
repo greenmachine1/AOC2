@@ -10,17 +10,10 @@
 #import "BaseGuitarClass.h"
 #import "ESP.h"
 #import "Jackson.h"
-#import "Fender.h"
 #import "Ibanez.h"
 
 
-// the different types of guitars
-typedef enum{
-    JACKSON = 0,
-    FENDER,
-    ESPGUITAR,
-    IBANEZ
-}guitarType;
+
 
 @interface GuitarFactory : NSObject
 

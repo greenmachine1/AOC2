@@ -20,6 +20,7 @@
 {
     // using the static method found in my guitar factory, all this coding looks much cleaner
     // and also easier to read.
+    /*
     BaseGuitarClass *ibanezGuitar = [GuitarFactory getGuitar:IBANEZ];
     if (ibanezGuitar != nil)
     {
@@ -38,23 +39,24 @@
         [self.view addSubview:secondLabel];
     }
     
-    BaseGuitarClass *fenderGuitar = [GuitarFactory getGuitar:FENDER];
-    if (fenderGuitar != nil)
-    {
-        UILabel *thirdLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
-        thirdLabel.numberOfLines = 6;
-        thirdLabel.text = [fenderGuitar printSpecs];
-        [self.view addSubview:thirdLabel];
-    }
-    
     BaseGuitarClass *jacksonGuitar = [GuitarFactory getGuitar:JACKSON];
     if (jacksonGuitar != nil)
     {
-        UILabel *forthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 330, 320, 100)];
-        forthLabel.numberOfLines = 6;
-        forthLabel.text = [jacksonGuitar printSpecs];
-        [self.view addSubview:forthLabel];
+        UILabel *thirdLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
+        thirdLabel.numberOfLines = 6;
+        thirdLabel.text = [jacksonGuitar printSpecs];
+        [self.view addSubview:thirdLabel];
     }
+    */
+    
+    BaseGuitarClass *newGuitar = [GuitarFactory getGuitar:JACKSON];
+    if(newGuitar != nil)
+    {
+        
+    }
+    
+    
+    
     
     
     

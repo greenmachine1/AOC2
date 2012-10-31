@@ -11,6 +11,8 @@
 
 @interface Ibanez : BaseGuitarClass
 
+
+@property float discount;
 -(id)init;
 
 @end

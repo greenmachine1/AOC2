@@ -14,13 +14,13 @@
 {
     if(self = [super init])
     {
-        [self setNumberOfStrings:6];
         
-        [self setNameOfManufacture:@"Fender"];
-        
-        [self set_price:1200.95f];
     }
     return self;
 }
 
+-(float)calculateFinalPriceOfGuitar
+{
+    return 0.0f;
+}
 @end

@@ -10,6 +10,17 @@
 
 
 @interface BaseGuitarClass : NSObject
+{
+    int guitarType;
+}
+
+// the different types of guitars
+typedef enum{
+    JACKSON = 0,
+    FENDER,
+    ESPGUITAR,
+    IBANEZ
+}guitarType;
 
 @property int numberOfStrings;
     
@@ -20,6 +31,6 @@
 
 -(id)init; 
 -(NSString*)printSpecs;
--(int)calculation:(int)firstNumber second:(int)secondNumber;
+-(float)calculateFinalPriceOfGuitar;
 
 @end

@@ -24,7 +24,7 @@
     {
         [self setNumberOfStrings:0];
         
-        [self setNameOfManufacture:nil];
+        [self setNameOfManufacture:@""];
         
         [self set_price:0];
     }
@@ -42,8 +42,8 @@
 }
 
 
--(int)calculation:(int)firstNumber second:(int)secondNumber
+-(float)calculateFinalPriceOfGuitar
 {
-    return firstNumber + secondNumber;
+    return _price;
 }
 @end

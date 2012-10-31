@@ -11,17 +11,28 @@
 
 @implementation Jackson
 
+@synthesize hasSwirlyDesign;
 
+// has to be generalization of the object
 -(id)init
 {
     if(self = [super init])
     {
-        [self setNumberOfStrings:6];
-        
-        [self setNameOfManufacture:@"Jackson"];
-        
-        [self set_price:1295.00f];
+        [self setHasSwirlyDesign:TRUE];
     }
     return self;
+}
+
+// calculates the final price of the guitar if it has a swirly design
+-(float)calculateFinalPriceOfGuitar
+{
+    float addedPrice = 0.0f;
+    
+    if(hasSwirlyDesign == TRUE)
+    {
+        addedPrice = 300.00f;
+    }
+    
+    return addedPrice + [self _price];
 }
 @end

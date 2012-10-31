@@ -22,7 +22,6 @@
 		D6AC0BC01640E0E2000E695A /* GuitarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BBF1640E0E2000E695A /* GuitarFactory.m */; };
 		D6AC0BC31640E5CD000E695A /* ESP.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BC21640E5CD000E695A /* ESP.m */; };
 		D6AC0BC61640F210000E695A /* Jackson.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BC51640F210000E695A /* Jackson.m */; };
-		D6AC0BC91640F6BB000E695A /* Fender.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BC81640F6BB000E695A /* Fender.m */; };
 		D6AC0BCC1640F89B000E695A /* Ibanez.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BCB1640F89B000E695A /* Ibanez.m */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +50,6 @@
 		D6AC0BC21640E5CD000E695A /* ESP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP.m; sourceTree = "<group>"; };
 		D6AC0BC41640F210000E695A /* Jackson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jackson.h; sourceTree = "<group>"; };
 		D6AC0BC51640F210000E695A /* Jackson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jackson.m; sourceTree = "<group>"; };
-		D6AC0BC71640F6BB000E695A /* Fender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fender.h; sourceTree = "<group>"; };
-		D6AC0BC81640F6BB000E695A /* Fender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fender.m; sourceTree = "<group>"; };
 		D6AC0BCA1640F89B000E695A /* Ibanez.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ibanez.h; sourceTree = "<group>"; };
 		D6AC0BCB1640F89B000E695A /* Ibanez.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ibanez.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +112,6 @@
 				D6AC0BC21640E5CD000E695A /* ESP.m */,
 				D6AC0BC41640F210000E695A /* Jackson.h */,
 				D6AC0BC51640F210000E695A /* Jackson.m */,
-				D6AC0BC71640F6BB000E695A /* Fender.h */,
-				D6AC0BC81640F6BB000E695A /* Fender.m */,
 				D6AC0BCA1640F89B000E695A /* Ibanez.h */,
 				D6AC0BCB1640F89B000E695A /* Ibanez.m */,
 			);
@@ -210,7 +205,6 @@
 				D6AC0BC01640E0E2000E695A /* GuitarFactory.m in Sources */,
 				D6AC0BC31640E5CD000E695A /* ESP.m in Sources */,
 				D6AC0BC61640F210000E695A /* Jackson.m in Sources */,
-				D6AC0BC91640F6BB000E695A /* Fender.m in Sources */,
 				D6AC0BCC1640F89B000E695A /* Ibanez.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +320,7 @@
 				D6AC0BBA1640E054000E695A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

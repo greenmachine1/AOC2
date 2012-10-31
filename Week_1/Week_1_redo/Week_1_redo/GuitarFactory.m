@@ -17,11 +17,6 @@
         return [[ESP alloc] init];
     }
     
-    if(guitarType == FENDER)
-    {
-        return [[Fender alloc]init];
-    }
-    
     if(guitarType == JACKSON)
     {
         return [[Jackson alloc] init];

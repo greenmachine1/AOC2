@@ -10,17 +10,21 @@
 
 @implementation Ibanez
 
+@synthesize discount;
+
 -(id)init
 {
     if(self = [super init])
     {
-        [self setNumberOfStrings:8];
-        
-        [self setNameOfManufacture:@"Ibanez"];
-        
-        [self set_price:1900.00f];
+        [self setDiscount:0.0f];
     }
     return self;
+}
+
+-(float)calculateFinalPriceOfGuitar
+{
+    float finalValueOfGuitar = [[self _price] + discount];
+    return finalValueOfGuitar;
 }
 
 @end

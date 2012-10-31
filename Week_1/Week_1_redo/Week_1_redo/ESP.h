@@ -12,6 +12,9 @@
 
 @interface ESP : BaseGuitarClass
 
+@property int guitarWeight;
+
+
 
 -(id)init;
 
