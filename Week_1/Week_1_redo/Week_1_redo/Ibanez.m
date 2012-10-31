@@ -15,7 +15,9 @@
     if(self = [super init])
     {
         numberOfStrings = 8;
+        
         nameOfManufacture = @"Ibanez";
+        
         _price = 1900.00f;
     }
     return self;
