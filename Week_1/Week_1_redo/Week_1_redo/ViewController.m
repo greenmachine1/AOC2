@@ -30,19 +30,28 @@
     BaseGuitarClass *espGuitar = [GuitarFactory getGuitar:ESPGUITAR];
     if (espGuitar != nil)
     {
-        [espGuitar printSpecs];
+        UILabel *secondLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 100)];
+        secondLabel.numberOfLines = 6;
+        secondLabel.text = [espGuitar printSpecs];
+        [self.view addSubview:secondLabel];
     }
     
     BaseGuitarClass *fenderGuitar = [GuitarFactory getGuitar:FENDER];
     if (fenderGuitar != nil)
     {
-        [fenderGuitar printSpecs];
+        UILabel *thirdLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
+        thirdLabel.numberOfLines = 6;
+        thirdLabel.text = [fenderGuitar printSpecs];
+        [self.view addSubview:thirdLabel];
     }
     
     BaseGuitarClass *jacksonGuitar = [GuitarFactory getGuitar:JACKSON];
     if (jacksonGuitar != nil)
     {
-        [jacksonGuitar printSpecs];
+        UILabel *forthLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 330, 320, 100)];
+        forthLabel.numberOfLines = 6;
+        forthLabel.text = [jacksonGuitar printSpecs];
+        [self.view addSubview:forthLabel];
     }
     
     

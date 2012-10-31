@@ -24,6 +24,8 @@
     return self;
 }
 
+
+
 // printSpecs returns the info for the guitar
 -(NSString*)printSpecs
 {
