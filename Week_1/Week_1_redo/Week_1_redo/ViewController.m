@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad
 {
+    // using the static method found in my guitar factory, all this coding looks much cleaner
+    // and also easier to read.
     BaseGuitarClass *ibanezGuitar = [GuitarFactory getGuitar:IBANEZ];
     if (ibanezGuitar != nil)
     {

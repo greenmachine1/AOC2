@@ -10,16 +10,16 @@
 
 
 @interface BaseGuitarClass : NSObject
-{
-    int numberOfStrings;
-    
-    NSString *nameOfManufacture;
-    
-    float _price;
-}
 
--(id)init; //WithDetails:(int)numberOStrings nameOManufacture:(NSString*)nameOmanufacture price:(float)price;
+@property int numberOfStrings;
+    
+@property NSString *nameOfManufacture;
+    
+@property float _price;
 
+
+-(id)init; 
 -(NSString*)printSpecs;
+-(int)calculation:(int)firstNumber second:(int)secondNumber;
 
 @end

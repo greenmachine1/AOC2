@@ -12,14 +12,21 @@
 @implementation BaseGuitarClass
 
 
+@synthesize numberOfStrings, nameOfManufacture, _price;
+
+
 // init method, creates a constructor (generic class)
+// using the @synthesize, each property gets a set method which also needs a capitol
+// letter for the first letter of the property
 -(id)init 
 {
     if(self = [super init])
     {
-        numberOfStrings = 6;
-        nameOfManufacture = @"";
-        _price = 2300.00f;
+        [self setNumberOfStrings:0];
+        
+        [self setNameOfManufacture:nil];
+        
+        [self set_price:nil];
     }
     return self;
 }
@@ -32,5 +39,11 @@
     NSString *returnedString = [[NSString alloc] initWithFormat:@"The specs of the guitar are: manufacture = %@, number of strings = %i, and the price = %0.2f", nameOfManufacture, numberOfStrings, _price];
                 
     return returnedString;
+}
+
+
+-(int)calculation:(int)firstNumber second:(int)secondNumber
+{
+    return firstNumber + secondNumber;
 }
 @end
