@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GuitarFactory.h"
 #import "ESP.h"
 #import "Jackson.h"
 #import "Ibanez.h"

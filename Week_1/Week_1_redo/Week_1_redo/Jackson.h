@@ -13,6 +13,6 @@
 
 @property int hasSwirlyDesign;
 
-//-(id)init;
+-(id)init;
 
 @end

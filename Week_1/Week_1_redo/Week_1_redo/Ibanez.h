@@ -14,6 +14,6 @@
 
 @property float discount;
 
-//-(id)init;
+-(id)init;
 
 @end
