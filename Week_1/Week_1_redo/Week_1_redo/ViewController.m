@@ -52,18 +52,19 @@
         [self.view addSubview:thirdLabel];
     }
     */
-    /*
+    
     Jackson *newGuitarThing = (Jackson*)[GuitarFactory getGuitar:JACKSON];
     if(newGuitarThing != nil)
     {
         
         // sets the Bool to true
         [newGuitarThing setHasSwirlyDesign:1];
+        [newGuitarThing setNameOfManufacture:@"Jackson"];
         
-        NSLog(@"This is %c", newGuitarThing.hasSwirlyDesign);
+        NSLog(@"This is %@", newGuitarThing.nameOfManufacture);
     }
     
-    */
+    
     
     
     
