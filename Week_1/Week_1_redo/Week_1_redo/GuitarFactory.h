@@ -11,6 +11,7 @@
 #import "ESP.h"
 #import "Jackson.h"
 #import "Fender.h"
+#import "Ibanez.h"
 
 
 // the different types of guitars

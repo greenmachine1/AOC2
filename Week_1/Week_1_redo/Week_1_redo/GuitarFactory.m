@@ -47,6 +47,10 @@
         return [[Jackson alloc] init];
     }
     
+    if(guitarType == IBANEZ)
+    {
+        return [[Ibanez alloc] init];
+    }
     
     return nil;
 }

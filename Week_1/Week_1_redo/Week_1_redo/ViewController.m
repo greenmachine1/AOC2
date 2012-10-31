@@ -18,10 +18,10 @@
 
 - (void)viewDidLoad
 {
-    BaseGuitarClass *newGuitar = [GuitarFactory getGuitar:IBANEZ];
-    if (newGuitar != nil)
+    BaseGuitarClass *ibanezGuitar = [GuitarFactory getGuitar:IBANEZ];
+    if (ibanezGuitar != nil)
     {
-        [newGuitar printSpecs];
+        [ibanezGuitar printSpecs];
     }
     
     BaseGuitarClass *espGuitar = [GuitarFactory getGuitar:ESPGUITAR];
@@ -30,7 +30,17 @@
         [espGuitar printSpecs];
     }
     
+    BaseGuitarClass *fenderGuitar = [GuitarFactory getGuitar:FENDER];
+    if (fenderGuitar != nil)
+    {
+        [fenderGuitar printSpecs];
+    }
     
+    BaseGuitarClass *jacksonGuitar = [GuitarFactory getGuitar:JACKSON];
+    if (jacksonGuitar != nil)
+    {
+        [jacksonGuitar printSpecs];
+    }
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
