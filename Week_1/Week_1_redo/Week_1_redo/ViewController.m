@@ -56,12 +56,47 @@
     Jackson *newGuitarThing = (Jackson*)[GuitarFactory getGuitar:JACKSON];
     if(newGuitarThing != nil)
     {
-        
-        // sets the Bool to true
         [newGuitarThing setHasSwirlyDesign:1];
         [newGuitarThing setNameOfManufacture:@"Jackson"];
+        [newGuitarThing set_price:1300.00f];
+        [newGuitarThing setNumberOfStrings:6];
         
-        NSLog(@"This is %@", newGuitarThing.nameOfManufacture);
+        
+        UILabel *firstLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+        firstLabel.numberOfLines = 6;
+        firstLabel.text = newGuitarThing.printSpecs;
+        
+        [self.view addSubview:firstLabel];
+    }
+    
+    Ibanez *secondGuitarThing = (Ibanez*)[GuitarFactory getGuitar:IBANEZ];
+    if(secondGuitarThing != nil)
+    {
+        [secondGuitarThing set_price:1200.95];
+        [secondGuitarThing setDiscount:0.20];
+        [secondGuitarThing setNameOfManufacture:@"Ibanez"];
+        [secondGuitarThing setNumberOfStrings:7];
+        
+        UILabel *secondLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 110, 320, 100)];
+        secondLabel.numberOfLines = 6;
+        secondLabel.text = secondGuitarThing.printSpecs;
+        
+        [self.view addSubview:secondLabel];
+    }
+    
+    ESP *thirdGuitarThing = (ESP*)[GuitarFactory getGuitar:ESPGUITAR];
+    if(thirdGuitarThing != nil)
+    {
+        [thirdGuitarThing set_price:1500.00];
+        [thirdGuitarThing setNumberOfStrings:7];
+        [thirdGuitarThing setNameOfManufacture:@"ESP"];
+        [thirdGuitarThing setGuitarWeight:12];
+        
+        UILabel *thirdLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 100)];
+        thirdLabel.numberOfLines = 6;
+        thirdLabel.text = thirdGuitarThing.printSpecs;
+        
+        [self.view addSubview:thirdLabel];
     }
     
     

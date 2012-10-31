@@ -38,7 +38,7 @@
 
 -(NSString*)printSpecs
 {
-    NSString *returnedString = [[NSString alloc] initWithFormat:@"The specs of the guitar are: manufacture = %@, number of strings = %i, and the price = %0.2f", nameOfManufacture, numberOfStrings, _price];
+    NSString *returnedString = [[NSString alloc] initWithFormat:@"The specs of the guitar are: manufacture = %@, number of strings = %i, and the price = %0.2f, and the final price of the guitar %0.02f", nameOfManufacture, numberOfStrings, _price, [self calculateFinalPriceOfGuitar]];
                 
     return returnedString;
 }
