@@ -20,6 +20,7 @@
 		D6AC0BB51640E054000E695A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AC0BB31640E054000E695A /* ViewController.xib */; };
 		D6AC0BBD1640E0C9000E695A /* BaseGuitarClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BBC1640E0C9000E695A /* BaseGuitarClass.m */; };
 		D6AC0BC01640E0E2000E695A /* GuitarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BBF1640E0E2000E695A /* GuitarFactory.m */; };
+		D6AC0BC31640E5CD000E695A /* ESP.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BC21640E5CD000E695A /* ESP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		D6AC0BBC1640E0C9000E695A /* BaseGuitarClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGuitarClass.m; sourceTree = "<group>"; };
 		D6AC0BBE1640E0E2000E695A /* GuitarFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuitarFactory.h; sourceTree = "<group>"; };
 		D6AC0BBF1640E0E2000E695A /* GuitarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuitarFactory.m; sourceTree = "<group>"; };
+		D6AC0BC11640E5CD000E695A /* ESP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESP.h; sourceTree = "<group>"; };
+		D6AC0BC21640E5CD000E695A /* ESP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESP.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				D6AC0BBC1640E0C9000E695A /* BaseGuitarClass.m */,
 				D6AC0BBE1640E0E2000E695A /* GuitarFactory.h */,
 				D6AC0BBF1640E0E2000E695A /* GuitarFactory.m */,
+				D6AC0BC11640E5CD000E695A /* ESP.h */,
+				D6AC0BC21640E5CD000E695A /* ESP.m */,
 			);
 			path = Week_1_redo;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				D6AC0BB21640E054000E695A /* ViewController.m in Sources */,
 				D6AC0BBD1640E0C9000E695A /* BaseGuitarClass.m in Sources */,
 				D6AC0BC01640E0E2000E695A /* GuitarFactory.m in Sources */,
+				D6AC0BC31640E5CD000E695A /* ESP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,5 +24,4 @@
 {
     NSLog(@"The specs of the guitar are: manufacture = %@, number of strings = %i, and the price = %0.2f", nameOfManufacture, numberOfStrings, _price);
 }
-
 @end

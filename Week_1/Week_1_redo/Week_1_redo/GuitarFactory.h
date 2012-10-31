@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "BaseGuitarClass.h"
 
+
+// the different types of guitars
 typedef enum{
     JACKSON = 0,
     FENDER,
@@ -18,6 +20,8 @@ typedef enum{
 
 @interface GuitarFactory : NSObject
 
+
+// static method getGuitar
 +(BaseGuitarClass *)getGuitar:(int)guitarType;
 
 @end
