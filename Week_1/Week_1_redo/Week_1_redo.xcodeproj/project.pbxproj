@@ -18,6 +18,8 @@
 		D6AC0BAF1640E054000E695A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AC0BAE1640E054000E695A /* Default-568h@2x.png */; };
 		D6AC0BB21640E054000E695A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BB11640E054000E695A /* ViewController.m */; };
 		D6AC0BB51640E054000E695A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AC0BB31640E054000E695A /* ViewController.xib */; };
+		D6AC0BBD1640E0C9000E695A /* BaseGuitarClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BBC1640E0C9000E695A /* BaseGuitarClass.m */; };
+		D6AC0BC01640E0E2000E695A /* GuitarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AC0BBF1640E0E2000E695A /* GuitarFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		D6AC0BB01640E054000E695A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D6AC0BB11640E054000E695A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D6AC0BB41640E054000E695A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		D6AC0BBB1640E0C9000E695A /* BaseGuitarClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGuitarClass.h; sourceTree = "<group>"; };
+		D6AC0BBC1640E0C9000E695A /* BaseGuitarClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGuitarClass.m; sourceTree = "<group>"; };
+		D6AC0BBE1640E0E2000E695A /* GuitarFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuitarFactory.h; sourceTree = "<group>"; };
+		D6AC0BBF1640E0E2000E695A /* GuitarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuitarFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				D6AC0BB11640E054000E695A /* ViewController.m */,
 				D6AC0BB31640E054000E695A /* ViewController.xib */,
 				D6AC0B9F1640E054000E695A /* Supporting Files */,
+				D6AC0BBB1640E0C9000E695A /* BaseGuitarClass.h */,
+				D6AC0BBC1640E0C9000E695A /* BaseGuitarClass.m */,
+				D6AC0BBE1640E0E2000E695A /* GuitarFactory.h */,
+				D6AC0BBF1640E0E2000E695A /* GuitarFactory.m */,
 			);
 			path = Week_1_redo;
 			sourceTree = "<group>";
@@ -176,6 +186,8 @@
 				D6AC0BA51640E054000E695A /* main.m in Sources */,
 				D6AC0BA91640E054000E695A /* AppDelegate.m in Sources */,
 				D6AC0BB21640E054000E695A /* ViewController.m in Sources */,
+				D6AC0BBD1640E0C9000E695A /* BaseGuitarClass.m in Sources */,
+				D6AC0BC01640E0E2000E695A /* GuitarFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

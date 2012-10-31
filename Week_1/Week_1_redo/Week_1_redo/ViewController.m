@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "BaseGuitarClass.h"
+#import "GuitarFactory.h"
 
 @interface ViewController ()
 
@@ -16,6 +18,12 @@
 
 - (void)viewDidLoad
 {
+    BaseGuitarClass *newGuitar = [GuitarFactory getGuitar:IBANEZ];
+    if (newGuitar != nil)
+    {
+        [newGuitar printSpecs];
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
