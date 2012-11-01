@@ -18,8 +18,7 @@
 {
     // experimenting with my IBOutlet connections
     mainTextField.text = @"Helloooo";
-    
-    onOffSwitch.on = false;
+
     
     [super viewDidLoad];
 
@@ -84,19 +83,19 @@
     {
         if(newButtonThing.tag == 0)
         {
-            
+            NSLog(@"Switch was pressed");
         }
         if(newButtonThing.tag == 1)
         {
-            
+            NSLog(@"+ button was pressed");
         }
         if(newButtonThing.tag == 2)
         {
-            
+            NSLog(@"= button was pressed");
         }
         if(newButtonThing.tag == 3)
         {
-            
+            NSLog(@"Clear button was pressed");
         }
     }
 }
