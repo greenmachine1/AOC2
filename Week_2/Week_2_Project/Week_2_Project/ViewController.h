@@ -31,6 +31,8 @@
     IBOutlet UIButton *clear;
     IBOutlet UIButton *info;
     
+    IBOutlet UISegmentedControl *segment;
+    
     int firstNumber;
     int secondNumber;
     
@@ -46,6 +48,8 @@
 -(IBAction)onSwitch:(id)sender;
 
 -(IBAction)onChangeButton:(id)sender;
+
+
 
 
 @end
