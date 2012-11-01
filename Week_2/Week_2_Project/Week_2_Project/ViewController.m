@@ -20,6 +20,8 @@
     
     // defaults to white background
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    // by default plus and equals are false
     plus.enabled = false;
     equals.enabled = false;
     
@@ -101,15 +103,14 @@
         firstNumberVariable = firstNumber;
         secondNumberVariable = secondNumber;
 
+       
         
         if(button.tag == 0)
         {
             NSLog(@"You pressed the 1 key");
             mainTextField.text = @"1";
 
-            equals.enabled = false;
-            plus.enabled = false;
-            
+           
             // the characteristics of this will be - select one number,
             // enable the plus button
             // select another number
@@ -123,14 +124,10 @@
                 firstNumber = 1;
                 
                 NSLog(@"%i", firstNumber);
-                plus.enabled = true;
-                if(plus.enabled == true)
-                {
-                    equals.enabled = true;
-                    plus.enabled = false;
-                }
                 
-                //equals.enabled = true;
+                // when number 1 is pressed, the plus button is enabled
+                plus.enabled = true;
+               
             }
             
             // only assigns second number to 1 if the equals sign has been enabled
@@ -139,9 +136,7 @@
                 // second number = 1
                 secondNumber = 1;
                 NSLog(@"equals is set to true %i", secondNumber);
-                
-                plus.enabled = false;
-                equals.enabled = true;
+               
                 
             }
            
@@ -312,21 +307,26 @@
     {
       
         // will do the capture of the first number here
+        // + button
         if(newButtonThing.tag == 0)
         {
             NSLog(@"+ button was pressed");
             mainTextField.text = @"";
-            //equals.enabled = true;
+            
+            // if pushed the equals button is disabled
+
         }
         
         // will call on calculation method from here
+        // = button
         if(newButtonThing.tag == 1)
         {
             NSLog(@"= button was pressed");
-            //plus.enabled = false;
+
         }
         
         // clears all text from the mainField
+        // clear button
         if(newButtonThing.tag == 2)
         {
             firstNumberVariable = 0;
@@ -339,6 +339,7 @@
         }
         
         // this is for the info button
+        // info button
         if(newButtonThing.tag == 3)
         {
             // calls on the second view to display the programmers name
