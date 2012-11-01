@@ -26,6 +26,16 @@
     IBOutlet UIButton *nine;
     IBOutlet UIButton *zero;
     
+    IBOutlet UIButton *plus;
+    IBOutlet UIButton *equals;
+    IBOutlet UIButton *clear;
+    IBOutlet UIButton *info;
+    
+    int firstNumber;
+    int secondNumber;
+    
+    int finalOutput;
+    
 }
 
 // these are my click events.  One handles 0 - 9 buttons and the other handles everything else
@@ -34,5 +44,8 @@
 
 // handles the switch functionality
 -(IBAction)onSwitch:(id)sender;
+
+-(IBAction)onChangeButton:(id)sender;
+
 
 @end

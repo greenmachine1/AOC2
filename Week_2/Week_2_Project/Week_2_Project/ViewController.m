@@ -17,7 +17,9 @@
 
 - (void)viewDidLoad
 {
-    //onlySwitch.on = false;
+    
+    // defaults to white background
+    self.view.backgroundColor = [UIColor whiteColor];
     [super viewDidLoad];
 
 	// Do any additional setup after loading the view, typically from a nib.
@@ -30,8 +32,13 @@
     if(mainSwitch != nil)
     {
         // made main switch togglable
-        if(mainSwitch.on == true)
+        if(mainSwitch.on == false)
         {
+            // clears the text field
+            mainTextField.text = @"";
+            
+            
+            
             one.enabled = false;
             two.enabled = false;
             three.enabled = false;
@@ -43,7 +50,7 @@
             nine.enabled = false;
             zero.enabled = false;
         }
-        else if(mainSwitch.on == false)
+        else if(mainSwitch.on == true)
         {
             one.enabled = true;
             two.enabled = true;
@@ -61,6 +68,30 @@
     
 }
 
+// for my segment control bar
+// currently changes the color of the background
+-(IBAction)onChangeButton:(id)sender
+{
+    UISegmentedControl *segmentControl = (UISegmentedControl *)sender;
+    if(segmentControl != nil)
+    {
+        int selectedIndex = segmentControl.selectedSegmentIndex;
+        
+        if(selectedIndex == 0)
+        {
+            self.view.backgroundColor = [UIColor whiteColor];
+        }
+        if(selectedIndex == 1)
+        {
+            self.view.backgroundColor = [UIColor greenColor];
+        }
+        if(selectedIndex == 2)
+        {
+            self.view.backgroundColor = [UIColor blueColor];
+        }
+    }
+}
+
 
 // my on click event handler.
 // need to find a way to move over to the right 
@@ -69,6 +100,8 @@
     UIButton *button = (UIButton*)sender;
     if (button != nil)
     {
+        firstNumber = 0;
+        
         if(button.tag == 0)
         {
             NSLog(@"You pressed the 1 key");
@@ -128,18 +161,26 @@
     UIButton *newButtonThing = (UIButton*)sender;
     if (newButtonThing != nil)
     {
+        // will do the capture of the first number here
         if(newButtonThing.tag == 0)
         {
             NSLog(@"+ button was pressed");
         }
+        
+        // will call on calculation method from here
         if(newButtonThing.tag == 1)
         {
             NSLog(@"= button was pressed");
         }
+        
+        // clears all text from the mainField
         if(newButtonThing.tag == 2)
         {
+            mainTextField.text = @"";
             NSLog(@"Clear button was pressed");
         }
+        
+        // this is for the info button
         if(newButtonThing.tag == 3)
         {
             // calls on the second view to display the programmers name

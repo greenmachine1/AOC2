@@ -132,26 +132,31 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBSegmentControlStyle">1</int>
-						<int key="IBNumberOfSegments">2</int>
+						<int key="IBNumberOfSegments">3</int>
 						<int key="IBSelectedSegmentIndex">0</int>
 						<array key="IBSegmentTitles">
-							<string>Blue</string>
+							<string>White</string>
 							<string>Green</string>
+							<string>Blue</string>
 						</array>
 						<array class="NSMutableArray" key="IBSegmentWidths">
+							<real value="0.0"/>
 							<real value="0.0"/>
 							<real value="0.0"/>
 						</array>
 						<array class="NSMutableArray" key="IBSegmentEnabledStates">
 							<boolean value="YES"/>
 							<boolean value="YES"/>
+							<boolean value="YES"/>
 						</array>
 						<array class="NSMutableArray" key="IBSegmentContentOffsets">
+							<string>{0, 0}</string>
 							<string>{0, 0}</string>
 							<string>{0, 0}</string>
 						</array>
 						<array class="NSMutableArray" key="IBSegmentImages">
 							<object class="NSNull" id="4"/>
+							<reference ref="4"/>
 							<reference ref="4"/>
 						</array>
 					</object>
@@ -681,6 +686,38 @@
 					<int key="connectionID">692</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">clear</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="788470616"/>
+					</object>
+					<int key="connectionID">694</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">equals</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="564664435"/>
+					</object>
+					<int key="connectionID">695</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">info</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="752128845"/>
+					</object>
+					<int key="connectionID">696</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">plus</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="864636553"/>
+					</object>
+					<int key="connectionID">697</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">onSwitch:</string>
 						<reference key="source" ref="81872085"/>
@@ -688,6 +725,15 @@
 						<int key="IBEventType">13</int>
 					</object>
 					<int key="connectionID">691</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">onChangeButton:</string>
+						<reference key="source" ref="615174378"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">693</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -2152,7 +2198,7 @@
 				<boolean value="NO" key="250.IBViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="345.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<boolean value="NO" key="345.IBViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
-				<integer value="1" key="345.IUISegmentedControlInspectorSelectedSegmentMetadataKey"/>
+				<integer value="2" key="345.IUISegmentedControlInspectorSelectedSegmentMetadataKey"/>
 				<string key="354.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="356.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="444.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -2315,7 +2361,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">692</int>
+			<int key="maxID">697</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2332,12 +2378,17 @@
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="everyThingElseClick:">id</string>
+						<string key="onChangeButton:">id</string>
 						<string key="onClick:">id</string>
 						<string key="onSwitch:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="everyThingElseClick:">
 							<string key="name">everyThingElseClick:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="onChangeButton:">
+							<string key="name">onChangeButton:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="onClick:">
@@ -2350,13 +2401,17 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="clear">UIButton</string>
 						<string key="eight">UIButton</string>
+						<string key="equals">UIButton</string>
 						<string key="five">UIButton</string>
 						<string key="four">UIButton</string>
+						<string key="info">UIButton</string>
 						<string key="mainTextField">UITextField</string>
 						<string key="nine">UIButton</string>
 						<string key="one">UIButton</string>
 						<string key="onlySwitch">UISwitch</string>
+						<string key="plus">UIButton</string>
 						<string key="seven">UIButton</string>
 						<string key="six">UIButton</string>
 						<string key="three">UIButton</string>
@@ -2364,8 +2419,16 @@
 						<string key="zero">UIButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="clear">
+							<string key="name">clear</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="eight">
 							<string key="name">eight</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="equals">
+							<string key="name">equals</string>
 							<string key="candidateClassName">UIButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="five">
@@ -2374,6 +2437,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="four">
 							<string key="name">four</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="info">
+							<string key="name">info</string>
 							<string key="candidateClassName">UIButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="mainTextField">
@@ -2391,6 +2458,10 @@
 						<object class="IBToOneOutletInfo" key="onlySwitch">
 							<string key="name">onlySwitch</string>
 							<string key="candidateClassName">UISwitch</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="plus">
+							<string key="name">plus</string>
+							<string key="candidateClassName">UIButton</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="seven">
 							<string key="name">seven</string>
