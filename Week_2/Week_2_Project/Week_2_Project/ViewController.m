@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -106,6 +107,15 @@
         if(newButtonThing.tag == 3)
         {
             NSLog(@"Clear button was pressed");
+        }
+        if(newButtonThing.tag == 4)
+        {
+            SecondViewController *newViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+            if(newViewController != nil)
+            {
+                [self presentViewController:newViewController animated:true completion:nil];
+               
+            }
         }
     }
 }

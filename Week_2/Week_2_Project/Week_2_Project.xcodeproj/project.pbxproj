@@ -19,6 +19,7 @@
 		D6527D56163E670800DDCC02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6527D55163E670800DDCC02 /* ViewController.m */; };
 		D6527D59163E670800DDCC02 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6527D57163E670800DDCC02 /* ViewController.xib */; };
 		D69663B216425C8100031550 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69663B116425C8100031550 /* SecondView.xib */; };
+		D69663B616425F0C00031550 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69663B516425F0C00031550 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		D6527D55163E670800DDCC02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D6527D58163E670800DDCC02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		D69663B116425C8100031550 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		D69663B416425F0C00031550 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D69663B516425F0C00031550 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				D6527D57163E670800DDCC02 /* ViewController.xib */,
 				D6527D43163E670800DDCC02 /* Supporting Files */,
 				D69663B116425C8100031550 /* SecondView.xib */,
+				D69663B416425F0C00031550 /* SecondViewController.h */,
+				D69663B516425F0C00031550 /* SecondViewController.m */,
 			);
 			path = Week_2_Project;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				D6527D49163E670800DDCC02 /* main.m in Sources */,
 				D6527D4D163E670800DDCC02 /* AppDelegate.m in Sources */,
 				D6527D56163E670800DDCC02 /* ViewController.m in Sources */,
+				D69663B616425F0C00031550 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
