@@ -106,19 +106,40 @@
         {
             NSLog(@"You pressed the 1 key");
             mainTextField.text = @"1";
+
+            equals.enabled = false;
+            plus.enabled = false;
+            
+            // the characteristics of this will be - select one number,
+            // enable the plus button
+            // select another number
+            // disable plus button
+            // enable equals button
             
             // first number = 1
-            firstNumber = 1;
-            NSLog(@"%i", firstNumber);
-            plus.enabled = true;
-            equals.enabled = false;
+            
+            if(equals.enabled == false)
+            {
+                firstNumber = 1;
+                
+                NSLog(@"%i", firstNumber);
+                plus.enabled = true;
+                if(plus.enabled == true)
+                {
+                    equals.enabled = true;
+                    plus.enabled = false;
+                }
+                
+                //equals.enabled = true;
+            }
             
             // only assigns second number to 1 if the equals sign has been enabled
-            if(equals.enabled == true)
+            else if(equals.enabled == true)
             {
                 // second number = 1
                 secondNumber = 1;
                 NSLog(@"equals is set to true %i", secondNumber);
+                
                 plus.enabled = false;
                 equals.enabled = true;
                 
@@ -295,14 +316,14 @@
         {
             NSLog(@"+ button was pressed");
             mainTextField.text = @"";
-            equals.enabled = true;
+            //equals.enabled = true;
         }
         
         // will call on calculation method from here
         if(newButtonThing.tag == 1)
         {
             NSLog(@"= button was pressed");
-            plus.enabled = false;
+            //plus.enabled = false;
         }
         
         // clears all text from the mainField
