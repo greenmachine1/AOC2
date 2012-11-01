@@ -17,12 +17,48 @@
 
 - (void)viewDidLoad
 {
-    // experimenting with my IBOutlet connections
-    mainTextField.text = @"Helloooo";
-    numberOne = 0;
+    //onlySwitch.on = false;
     [super viewDidLoad];
 
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+// my switch function
+-(IBAction)onSwitch:(id)sender
+{
+    UISwitch *mainSwitch = (UISwitch *)sender;
+    if(mainSwitch != nil)
+    {
+        // made main switch togglable
+        if(mainSwitch.on == true)
+        {
+            one.enabled = false;
+            two.enabled = false;
+            three.enabled = false;
+            four.enabled = false;
+            five.enabled = false;
+            six.enabled = false;
+            seven.enabled = false;
+            eight.enabled = false;
+            nine.enabled = false;
+            zero.enabled = false;
+        }
+        else if(mainSwitch.on == false)
+        {
+            one.enabled = true;
+            two.enabled = true;
+            three.enabled = true;
+            four.enabled = true;
+            five.enabled = true;
+            six.enabled = true;
+            seven.enabled = true;
+            eight.enabled = true;
+            nine.enabled = true;
+            zero.enabled = true;
+        }
+    }
+    
+    
 }
 
 
@@ -94,22 +130,19 @@
     {
         if(newButtonThing.tag == 0)
         {
-            NSLog(@"Switch was pressed");
+            NSLog(@"+ button was pressed");
         }
         if(newButtonThing.tag == 1)
         {
-            NSLog(@"+ button was pressed");
+            NSLog(@"= button was pressed");
         }
         if(newButtonThing.tag == 2)
         {
-            NSLog(@"= button was pressed");
+            NSLog(@"Clear button was pressed");
         }
         if(newButtonThing.tag == 3)
         {
-            NSLog(@"Clear button was pressed");
-        }
-        if(newButtonThing.tag == 4)
-        {
+            // calls on the second view to display the programmers name
             SecondViewController *newViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
             if(newViewController != nil)
             {
@@ -119,6 +152,7 @@
         }
     }
 }
+
 
 
 

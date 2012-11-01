@@ -10,9 +10,11 @@
 
 @interface ViewController : UIViewController
 {
+    // my main textfield and switch declarations
     IBOutlet UITextField *mainTextField;
-    IBOutlet UISwitch *onOffSwitch;
+    IBOutlet UISwitch *onlySwitch;
     
+    // my number button declarations
     IBOutlet UIButton *one;
     IBOutlet UIButton *two;
     IBOutlet UIButton *three;
@@ -24,13 +26,13 @@
     IBOutlet UIButton *nine;
     IBOutlet UIButton *zero;
     
-    int numberOne;
-    int numberTwo;
-    
 }
 
 // these are my click events.  One handles 0 - 9 buttons and the other handles everything else
 -(IBAction)onClick:(id)sender;
 -(IBAction)everyThingElseClick:(id)sender;
+
+// handles the switch functionality
+-(IBAction)onSwitch:(id)sender;
 
 @end
