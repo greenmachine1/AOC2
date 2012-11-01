@@ -89,12 +89,25 @@
     UIButton *button = (UIButton*)sender;
     if (button != nil)
     {
-        
+        int firstNumber = 0;
+        int secondNumber = 0;
         
         if(button.tag == 0)
         {
             NSLog(@"You pressed the 1 key");
             mainTextField.text = @"1";
+            
+            // first number = 1
+            firstNumber = 1;
+            NSLog(@"%i", firstNumber);
+            
+            // only assigns second number to 1 if the equals sign has been enabled
+            if(equals.enabled == true)
+            {
+                // second number = 1
+                secondNumber = 3;
+                NSLog(@"equals is set to true %i", secondNumber);
+            }
            
         }
         else if(button.tag == 1)
