@@ -24,7 +24,8 @@
     IBOutlet UIButton *nine;
     IBOutlet UIButton *zero;
     
-   
+    int numberOne;
+    int numberTwo;
     
 }
 
