@@ -20,6 +20,9 @@
     
     // defaults to white background
     self.view.backgroundColor = [UIColor whiteColor];
+    plus.enabled = false;
+    equals.enabled = false;
+    
     [super viewDidLoad];
 
 	// Do any additional setup after loading the view, typically from a nib.
@@ -36,6 +39,7 @@
         {
             // clears the text field
             mainTextField.text = @"";
+            mainTextField.enabled = false;
             
             plus.enabled = false;
             equals.enabled = false;
@@ -94,6 +98,10 @@
         int firstNumber = 0;
         int secondNumber = 0;
         
+        firstNumberVariable = firstNumber;
+        secondNumberVariable = secondNumber;
+
+        
         if(button.tag == 0)
         {
             NSLog(@"You pressed the 1 key");
@@ -102,13 +110,18 @@
             // first number = 1
             firstNumber = 1;
             NSLog(@"%i", firstNumber);
+            plus.enabled = true;
+            equals.enabled = false;
             
             // only assigns second number to 1 if the equals sign has been enabled
             if(equals.enabled == true)
             {
+                // second number = 1
                 secondNumber = 1;
                 NSLog(@"equals is set to true %i", secondNumber);
                 plus.enabled = false;
+                equals.enabled = true;
+                
             }
            
         }
@@ -282,9 +295,6 @@
         {
             NSLog(@"+ button was pressed");
             mainTextField.text = @"";
-            
-            
-            
             equals.enabled = true;
         }
         
@@ -292,13 +302,18 @@
         if(newButtonThing.tag == 1)
         {
             NSLog(@"= button was pressed");
+            plus.enabled = false;
         }
         
         // clears all text from the mainField
         if(newButtonThing.tag == 2)
         {
+            firstNumberVariable = 0;
+            secondNumberVariable = 0;
+            
             mainTextField.text = @"";
             NSLog(@"Clear button was pressed");
+            plus.enabled = false;
             equals.enabled = false;
         }
         

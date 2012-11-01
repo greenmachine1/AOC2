@@ -33,8 +33,8 @@
     
     IBOutlet UISegmentedControl *segment;
     
-    //int firstNumber;
-    //int secondNumber;
+    int firstNumberVariable;
+    int secondNumberVariable;
     
     int finalOutput;
     
