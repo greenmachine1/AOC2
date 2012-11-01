@@ -33,8 +33,8 @@
     
     IBOutlet UISegmentedControl *segment;
     
-    int firstNumber;
-    int secondNumber;
+    //int firstNumber;
+    //int secondNumber;
     
     int finalOutput;
     
@@ -49,6 +49,7 @@
 
 -(IBAction)onChangeButton:(id)sender;
 
+-(int)calculation:(int)firstNumber second:(int)secondNumber;
 
 
 
