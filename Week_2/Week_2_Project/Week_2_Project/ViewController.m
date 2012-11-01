@@ -18,10 +18,15 @@
 {
     // experimenting with my IBOutlet connections
     mainTextField.text = @"Helloooo";
-    [super viewDidLoad];
+    
     onOffSwitch.on = false;
+    
+    [super viewDidLoad];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
 // my on click event handler.
 -(IBAction)onClick:(id)sender
 {
@@ -67,6 +72,31 @@
         else if(button.tag == 9)
         {
             NSLog(@"You pressed the 0 key");
+        }
+    }
+    
+}
+
+-(IBAction)everyThingElseClick:(id)sender
+{
+    UIButton *newButtonThing = (UIButton*)sender;
+    if (newButtonThing != nil)
+    {
+        if(newButtonThing.tag == 0)
+        {
+            
+        }
+        if(newButtonThing.tag == 1)
+        {
+            
+        }
+        if(newButtonThing.tag == 2)
+        {
+            
+        }
+        if(newButtonThing.tag == 3)
+        {
+            
         }
     }
 }
