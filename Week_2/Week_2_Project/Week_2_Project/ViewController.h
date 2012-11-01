@@ -12,18 +12,10 @@
 {
     IBOutlet UITextField *mainTextField;
     IBOutlet UISwitch *onOffSwitch;
-    
-    IBOutlet UIButton *one;
-    IBOutlet UIButton *two;
-    IBOutlet UIButton *three;
-    IBOutlet UIButton *four;
-    IBOutlet UIButton *five;
-    IBOutlet UIButton *six;
-    IBOutlet UIButton *seven;
-    IBOutlet UIButton *eight;
-    IBOutlet UIButton *nine;
-    IBOutlet UIButton *zero;
+   
     
 }
+
+-(IBAction)onClick:(id)sender;
 
 @end
