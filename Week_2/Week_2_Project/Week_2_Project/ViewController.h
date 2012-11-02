@@ -35,6 +35,7 @@
     
     int firstNumberVariable;
     int secondNumberVariable;
+    int operatorValue;
     
     int finalOutput;
     
