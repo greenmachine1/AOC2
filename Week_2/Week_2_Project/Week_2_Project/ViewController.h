@@ -50,7 +50,7 @@
 
 -(IBAction)onChangeButton:(id)sender;
 
--(int)calculation:(int)firstNumber second:(int)secondNumber;
+
 
 
 

@@ -63,8 +63,8 @@
         }
         else if(mainSwitch.on == true)
         {
-            plus.enabled = true;
-            equals.enabled = true;
+            //plus.enabled = true;
+            //equals.enabled = true;
             clear.enabled = true;
             info.enabled = true;
             
@@ -107,7 +107,6 @@
         
         if(button.tag == 0)
         {
-            NSLog(@"You pressed the 1 key");
             mainTextField.text = @"1";
 
            
@@ -122,8 +121,7 @@
             if(plus.enabled == false)
             {
                 firstNumberVariable = 1;
-                
-                NSLog(@"%i", firstNumberVariable);
+              
                 
                 // when number 1 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -136,7 +134,7 @@
             {
                 // second number = 1
                 secondNumberVariable = 1;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
+
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -147,7 +145,7 @@
         
         else if(button.tag == 1)
         {
-            NSLog(@"You pressed the 2 key");
+
             mainTextField.text = @"2";
             
             
@@ -162,8 +160,7 @@
             if(plus.enabled == false)
             {
                 firstNumberVariable = 2;
-                
-                NSLog(@"%i", firstNumberVariable);
+ 
                 
                 // when number 2 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -176,7 +173,6 @@
             {
                 // second number = 2
                 secondNumberVariable = 2;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -186,7 +182,6 @@
         
         else if(button.tag == 2)
         {
-            NSLog(@"You pressed the 3 key");
             mainTextField.text = @"3";
             
             
@@ -202,7 +197,6 @@
             {
                 firstNumberVariable = 3;
                 
-                NSLog(@"%i", firstNumberVariable);
                 
                 // when number 3 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -215,7 +209,6 @@
             {
                 // second number = 3
                 secondNumberVariable = 3;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -224,7 +217,6 @@
         
         else if(button.tag == 3)
         {
-            NSLog(@"You pressed the 4 key");
             mainTextField.text = @"4";
             
             
@@ -240,7 +232,6 @@
             {
                 firstNumberVariable = 4;
                 
-                NSLog(@"%i", firstNumberVariable);
                 
                 // when number 4 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -253,7 +244,6 @@
             {
                 // second number = 4
                 secondNumberVariable = 4;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -263,7 +253,6 @@
         
         else if(button.tag == 4)
         {
-            NSLog(@"You pressed the 5 key");
             mainTextField.text = @"5";
             
             
@@ -279,7 +268,6 @@
             {
                 firstNumberVariable = 5;
                 
-                NSLog(@"%i", firstNumberVariable);
                 
                 // when number 5 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -292,7 +280,6 @@
             {
                 // second number = 5
                 secondNumber = 5;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -300,7 +287,6 @@
         }
         else if(button.tag == 5)
         {
-            NSLog(@"You pressed the 6 key");
             mainTextField.text = @"6";
             
             
@@ -316,7 +302,6 @@
             {
                 firstNumberVariable = 6;
                 
-                NSLog(@"%i", firstNumberVariable);
                 
                 // when number 1 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -329,7 +314,6 @@
             {
                 // second number = 6
                 secondNumberVariable = 6;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -337,7 +321,6 @@
         }
         else if(button.tag == 6)
         {
-            NSLog(@"You pressed the 7 key");
             mainTextField.text = @"7";
             
             
@@ -353,7 +336,6 @@
             {
                 firstNumberVariable = 7;
                 
-                NSLog(@"%i", firstNumberVariable);
                 
                 // when number 7 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -366,7 +348,6 @@
             {
                 // second number = 7
                 secondNumberVariable = 7;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -374,7 +355,6 @@
         }
         else if(button.tag == 7)
         {
-            NSLog(@"You pressed the 8 key");
             mainTextField.text = @"8";
             
             
@@ -390,7 +370,6 @@
             {
                 firstNumberVariable = 8;
                 
-                NSLog(@"%i", firstNumberVariable);
                 
                 // when number 8 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -403,7 +382,6 @@
             {
                 // second number = 8
                 secondNumberVariable = 8;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -411,7 +389,6 @@
         }
         else if(button.tag == 8)
         {
-            NSLog(@"You pressed the 9 key");
             mainTextField.text = @"9";
             
             
@@ -427,7 +404,6 @@
             {
                 firstNumberVariable = 9;
                 
-                NSLog(@"%i", firstNumberVariable);
                 
                 // when number 9 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -440,7 +416,6 @@
             {
                 // second number = 9
                 secondNumberVariable = 9;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -448,7 +423,6 @@
         }
         else if(button.tag == 9)
         {
-            NSLog(@"You pressed the 0 key");
             mainTextField.text = @"0";
             
             
@@ -464,7 +438,6 @@
             {
                 firstNumberVariable = 0;
                 
-                NSLog(@"%i", firstNumberVariable);
                 
                 // when number 0 is pressed, the plus button is enabled
                 plus.enabled = true;
@@ -477,7 +450,6 @@
             {
                 // second number = 0
                 secondNumberVariable = 0;
-                NSLog(@"equals is set to true %i", secondNumberVariable);
                 equals.enabled = true;
                 plus.enabled = false;
                 
@@ -501,7 +473,6 @@
         {
             // made the + button represent a variable
             operatorValue = 0;
-            NSLog(@"+ button was pressed");
             mainTextField.text = @"";
             
             // if pushed the equals button is disabled
@@ -521,12 +492,7 @@
                 // made a place holder string to hold the main text field text.
                 NSString *mainStringText = [[NSString alloc] initWithFormat:@"%i", (firstNumberVariable + secondNumberVariable)];
                 mainTextField.text = mainStringText;
-                
-                NSLog(@"%i", (firstNumberVariable + secondNumberVariable));
             }
-            
-            NSLog(@"= button was pressed");
-
         }
         
         // clears all text from the mainField
@@ -537,7 +503,6 @@
             secondNumberVariable = 0;
             
             mainTextField.text = @"";
-            NSLog(@"Clear button was pressed");
             plus.enabled = false;
             equals.enabled = false;
         }
@@ -557,10 +522,6 @@
     }
 }
 
--(int)calculation:(int)firstNumber second:(int)secondNumber
-{
-    return firstNumber + secondNumber;
-}
 
 
 
