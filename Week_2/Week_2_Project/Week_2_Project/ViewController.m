@@ -92,7 +92,7 @@
 
 
 // my on click event handler.
-// need to find a way to move over to the right
+
 
 // this assigns different numbers to my two variables if the equals button has been enabled
 -(IBAction)onClick:(id)sender
