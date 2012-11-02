@@ -25,6 +25,9 @@
     plus.enabled = false;
     equals.enabled = false;
     
+    // declaring my text alignment
+    mainTextField.textAlignment = NSTextAlignmentRight;
+    
     [super viewDidLoad];
 
 	// Do any additional setup after loading the view, typically from a nib.
@@ -107,6 +110,7 @@
         
         if(button.tag == 0)
         {
+            //mainTextField.textAlignment = NSTextAlignmentRight;
             mainTextField.text = @"1";
 
            
