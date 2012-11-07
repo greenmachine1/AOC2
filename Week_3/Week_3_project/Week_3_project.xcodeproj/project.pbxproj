@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D66EF0F2164A53B100080595 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66EF0F1164A53B100080595 /* SecondViewController.m */; };
 		D6A89F8E16491C2C00848D69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A89F8D16491C2C00848D69 /* UIKit.framework */; };
 		D6A89F9016491C2C00848D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A89F8F16491C2C00848D69 /* Foundation.framework */; };
 		D6A89F9216491C2C00848D69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A89F9116491C2C00848D69 /* CoreGraphics.framework */; };
@@ -18,10 +19,12 @@
 		D6A89FA416491C2C00848D69 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6A89FA316491C2C00848D69 /* Default-568h@2x.png */; };
 		D6A89FA716491C2C00848D69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A89FA616491C2C00848D69 /* ViewController.m */; };
 		D6A89FAA16491C2C00848D69 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A89FA816491C2C00848D69 /* ViewController.xib */; };
-		D6F705DA1649CB1200C34FBA /* addEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F705D91649CB1200C34FBA /* addEventView.xib */; };
+		D6F705DA1649CB1200C34FBA /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F705D91649CB1200C34FBA /* SecondView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D66EF0F0164A53B100080595 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D66EF0F1164A53B100080595 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D6A89F8916491C2C00848D69 /* Week_3_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week_3_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A89F8D16491C2C00848D69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6A89F8F16491C2C00848D69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,7 +41,7 @@
 		D6A89FA516491C2C00848D69 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D6A89FA616491C2C00848D69 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D6A89FA916491C2C00848D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		D6F705D91649CB1200C34FBA /* addEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addEventView.xib; sourceTree = "<group>"; };
+		D6F705D91649CB1200C34FBA /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +94,9 @@
 				D6A89FA616491C2C00848D69 /* ViewController.m */,
 				D6A89FA816491C2C00848D69 /* ViewController.xib */,
 				D6A89F9416491C2C00848D69 /* Supporting Files */,
-				D6F705D91649CB1200C34FBA /* addEventView.xib */,
+				D6F705D91649CB1200C34FBA /* SecondView.xib */,
+				D66EF0F0164A53B100080595 /* SecondViewController.h */,
+				D66EF0F1164A53B100080595 /* SecondViewController.m */,
 			);
 			path = Week_3_project;
 			sourceTree = "<group>";
@@ -166,7 +171,7 @@
 				D6A89FA216491C2C00848D69 /* Default@2x.png in Resources */,
 				D6A89FA416491C2C00848D69 /* Default-568h@2x.png in Resources */,
 				D6A89FAA16491C2C00848D69 /* ViewController.xib in Resources */,
-				D6F705DA1649CB1200C34FBA /* addEventView.xib in Resources */,
+				D6F705DA1649CB1200C34FBA /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +185,7 @@
 				D6A89F9A16491C2C00848D69 /* main.m in Sources */,
 				D6A89F9E16491C2C00848D69 /* AppDelegate.m in Sources */,
 				D6A89FA716491C2C00848D69 /* ViewController.m in Sources */,
+				D66EF0F2164A53B100080595 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

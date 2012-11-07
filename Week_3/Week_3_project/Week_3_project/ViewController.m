@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -37,6 +38,12 @@
         {
             NSLog(@"You just pushed the add new event button");
         }
+    }
+    
+    SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+    if(viewController != nil)
+    {
+        int temp = 3;
     }
 }
 @end
