@@ -28,22 +28,13 @@
 }
 
 
+// All button clicks are handled with this guy
 -(IBAction)onClick:(id)sender
 {
-    // casting button to sender
-    UIButton *button = (UIButton*)sender;
-    if(button != nil)
-    {
-        if(button.tag ==0)
-        {
-            NSLog(@"You just pushed the add new event button");
-        }
-    }
-    
     SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
     if(viewController != nil)
     {
-        int temp = 3;
+        [self presentViewController:viewController animated:TRUE completion:nil];
     }
 }
 @end
