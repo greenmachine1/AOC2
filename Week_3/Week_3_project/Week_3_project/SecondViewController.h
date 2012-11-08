@@ -14,7 +14,8 @@
 
 @required
 
--(void)didClose:(NSString *)nameString;
+-(void)returnedDate:(NSString *)nameString;
+-(void)returnedString:(NSString*)nameOfEvent;
 
 @end
 

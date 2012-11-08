@@ -42,12 +42,19 @@
 
 }
 
--(void)didClose:(NSString *)nameString 
+-(void)returnedDate:(NSString *)nameString
 {
     NSString *newReturnedString = [NSString stringWithFormat:@" %@ ", nameString];
     
     
     textView.text = newReturnedString;
     
+}
+
+-(void)returnedString:(NSString*)nameOfEvent
+{
+    NSString *anotherReturnedString = [NSString stringWithFormat:@" %@", nameOfEvent];
+    
+    textView.text = anotherReturnedString;
 }
 @end

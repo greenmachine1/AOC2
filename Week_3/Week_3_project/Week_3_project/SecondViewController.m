@@ -60,7 +60,9 @@
         
         // getting close to understanding this
         NSString *dateThingy = [NSString stringWithFormat:@"%@", [date description]];
-        [delegate didClose: dateThingy];
+        [delegate returnedDate: dateThingy];
+        
+    
     }
 }
 
@@ -71,7 +73,7 @@
     [self dismissViewControllerAnimated:TRUE completion:nil];
     if(delegate != nil)
     {
-        [delegate didClose:textField.text];
+        [delegate returnedString:textField.text];
         
     }
     
