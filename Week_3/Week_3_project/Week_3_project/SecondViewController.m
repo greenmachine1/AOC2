@@ -27,14 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    
-    
-    
-    
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,9 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+// does the same thing as the return key press function
 -(IBAction)onClose:(id)sender
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];
+
 }
 
 

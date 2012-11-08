@@ -13,5 +13,11 @@
     
 }
 
+@end
+
+@protocol TopViewDelegate <NSObject>
+
+-(void)didClose:(NSString*)nameString;
+
 -(IBAction)onClose:(id)sender;
 @end

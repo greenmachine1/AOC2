@@ -12,7 +12,7 @@
 {
     IBOutlet UITextView *textView;
     IBOutlet UIButton *addEvent;
-    IBOutlet UIButton *close;
+    //IBOutlet UIButton *close;
 }
 
 -(IBAction)onClick:(id)sender;
