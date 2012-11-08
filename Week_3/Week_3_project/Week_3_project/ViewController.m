@@ -51,10 +51,10 @@
     
     if(textView.text != nil)
     {
-     //   textView.text = [newReturnedString stringByAppendingString:newReturnedString];
+        textView.text = [newReturnedString stringByAppendingString:newReturnedString];
     }
-    textView.text = newReturnedString;
-    
+    //textView.text = newReturnedString;
+
 }
 
 
