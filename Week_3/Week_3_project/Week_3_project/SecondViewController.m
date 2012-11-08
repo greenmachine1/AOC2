@@ -28,9 +28,6 @@
 
 - (void)viewDidLoad
 {
-
-    
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -73,6 +70,8 @@
                 //NSString *newStringReturn = [NSString stringWithString:[newDate description]];
                 // date gets passed back to dateString string
                 dateString = [newFormattedDate stringFromDate:newDate];
+                NSLog(@" %@",dateString);
+            
             }
         }
     }
