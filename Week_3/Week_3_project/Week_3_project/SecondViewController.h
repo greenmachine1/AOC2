@@ -9,20 +9,28 @@
 #import <UIKit/UIKit.h>
 
 
+// custom delegate
 @protocol TopViewDelegate <NSObject>
 
 @required
--(void)didClose:(NSString*)nameString;
+
+-(void)didClose:(NSString *)nameString date:(NSString*)date ;
 
 @end
-
 @interface SecondViewController : UIViewController<UITextFieldDelegate>
 {
     id<TopViewDelegate> delegate;
+    IBOutlet UIButton *closeKeyboard;
+    IBOutlet UIButton *saveButton;
+    
+    IBOutlet UIPickerView *pickerView;
+
 }
 
--(IBAction)onClose:(id)sender;
+-(IBAction)secondViewOnClick:(id)sender;
+-(IBAction)datePickerView:(id)sender;
 
 @property (strong) id<TopViewDelegate> delegate;
+
 @end
 

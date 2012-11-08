@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SecondViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -37,12 +38,12 @@
         viewController.delegate = self;
         [self presentViewController:viewController animated:TRUE completion:nil];
     }
-    
-    
+
 }
 
--(void)didClose:(NSString *)nameString
+-(void)didClose:(NSString *)nameString date:(NSString*)date
 {
-    textView.text = nameString;
+    NSString *newReturnedString = [NSString stringWithFormat:@" %@ %@", nameString, date];
+    textView.text = newReturnedString;
 }
 @end

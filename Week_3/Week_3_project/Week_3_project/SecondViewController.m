@@ -20,7 +20,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
         delegate = nil;
         // Custom initialization
     }
@@ -29,6 +28,9 @@
 
 - (void)viewDidLoad
 {
+
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -39,29 +41,56 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+// clears the text field upon clicking inside
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     textField.text = @"";
     return TRUE;
 }
 
+
+-(IBAction)datePickerView:(id)sender
+{
+    UIDatePicker *datePicker = (UIDatePicker*)sender;
+    if(datePicker != nil)
+    {
+        NSDate *date = datePicker.date;
+        NSLog(@"%@",[date description]);
+    }
+}
+
+
+// upon hitting the return button
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];
-    
     if(delegate != nil)
     {
-        [delegate didClose:textField.text];
+        [delegate didClose:textField.text date:];
     }
     return TRUE;
 }
 
-// does the same thing as the return key press function
--(IBAction)onClose:(id)sender
-{
-    [self dismissViewControllerAnimated:TRUE completion:nil];
 
+
+-(IBAction)secondViewOnClick:(id)sender
+{
+    UIButton *button = (UIButton*)sender;
+    if(button != nil)
+    {
+        if(button.tag == 0)
+        {
+            
+        }
+        else if(button.tag == 1)
+        {
+            
+        }
+        
+    }
 }
+
 
 
 @end
