@@ -18,7 +18,6 @@
 
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -45,16 +44,17 @@
 -(void)returnedDate:(NSString *)nameString
 {
     NSString *newReturnedString = [NSString stringWithFormat:@" %@ ", nameString];
+    NSLog(@"Hello");
     
-    
+   // textView.text = newReturnedString;
     textView.text = newReturnedString;
     
 }
 
 -(void)returnedString:(NSString*)nameOfEvent
 {
-    NSString *anotherReturnedString = [NSString stringWithFormat:@" %@", nameOfEvent];
-    
-    textView.text = anotherReturnedString;
+   // NSString *anotherReturnedString = [NSString stringWithFormat:@" %@", nameOfEvent];
+    NSLog(@"Hello");
+    //textView.text = anotherReturnedString;
 }
 @end

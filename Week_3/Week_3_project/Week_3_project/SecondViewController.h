@@ -22,14 +22,15 @@
 @interface SecondViewController : UIViewController<UITextFieldDelegate,UIPickerViewDelegate>
 {
     id<TopViewDelegate> delegate;
-    IBOutlet UIButton *closeKeyboard;
     IBOutlet UIButton *saveButton;
     
-    IBOutlet UIPickerView *pickerView;
+    IBOutlet UIDatePicker *datePick;
+    IBOutlet UITextField *mainTextField;
 
 }
 
 -(IBAction)secondViewOnClick:(id)sender;
+
 -(IBAction)datePickerView:(id)sender;
 
 @property (strong) id<TopViewDelegate> delegate;

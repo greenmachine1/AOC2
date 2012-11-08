@@ -50,7 +50,7 @@
 }
 
 
--(IBAction)datePickerView:(id)sender
+-(IBAction)datePicker:(id)sender
 {
     UIDatePicker *datePicker = (UIDatePicker*)sender;
     if(datePicker != nil)
@@ -60,7 +60,11 @@
         
         // getting close to understanding this
         NSString *dateThingy = [NSString stringWithFormat:@"%@", [date description]];
+        
+        
         [delegate returnedDate: dateThingy];
+        
+        
         
     
     }
@@ -73,12 +77,7 @@
     
     // made it so that my keyboard resigns from being the first responder
     [textField resignFirstResponder];
-    /*[self dismissViewControllerAnimated:TRUE completion:nil];
-    if(delegate != nil)
-    {
-        [delegate returnedString:textField.text];
-        
-    } */
+    
     
     return TRUE;
 }
@@ -92,13 +91,16 @@
     {
         if(button.tag == 0)
         {
-            //[delegate didClose:@"NO" date:@"Yes"];
+            NSLog(@"Hello");
+            
+            
+            [delegate returnedDate:mainTextField.text];
             [self dismissViewControllerAnimated:TRUE completion:nil];
 
         }
         else if(button.tag == 1)
         {
-            
+            NSLog(@"Hello");
         }
         
     }
