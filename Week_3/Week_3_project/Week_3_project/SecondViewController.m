@@ -50,24 +50,46 @@
 }
 
 
--(IBAction)datePickerView:(id)sender
+// still working on my date pickerview
+// still need to figure out how to once you have selected a date
+// to not go a head and send (note, I have a bad migrane agagin)
+-(IBAction)datePickerView:(UIDatePicker*)sender
 {
-    UIDatePicker *datePicker = (UIDatePicker*)sender;
+    
+    
+    if(sender != nil)
+    {
+        NSDate *newDate = sender.date;
+        if(newDate != nil)
+        {
+            NSDateFormatter *newFormattedDate = [[NSDateFormatter alloc] init];
+            
+            if(newFormattedDate != nil)
+            {
+                // date gets formatted correctly
+                [newFormattedDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
+            
+            
+                //NSString *newStringReturn = [NSString stringWithString:[newDate description]];
+                // date gets passed back to dateString string
+                dateString = [newFormattedDate stringFromDate:newDate];
+            }
+        }
+    }
+    /*UIDatePicker *datePicker = (UIDatePicker*)sender;
     if(datePicker != nil)
     {
-        NSDate *date = datePicker.date;
-        NSLog(@"%@",[date description]);
+        NSDate *date = sender.date;
         
-        // getting close to understanding this
-        //NSString *dateThingy = [NSString stringWithFormat:@"%@", [date description]];
-        
+        // setting the string dateString to equal the date input
+
        dateString = [date description];
         //[delegate returnedString: dateThingy];
         
-        
+        */
         
     
-    }
+    
 }
 
 
