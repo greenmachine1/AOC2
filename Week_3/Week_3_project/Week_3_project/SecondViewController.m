@@ -50,7 +50,7 @@
 }
 
 
--(IBAction)datePicker:(id)sender
+-(IBAction)datePickerView:(id)sender
 {
     UIDatePicker *datePicker = (UIDatePicker*)sender;
     if(datePicker != nil)
@@ -61,7 +61,7 @@
         // getting close to understanding this
         //NSString *dateThingy = [NSString stringWithFormat:@"%@", [date description]];
         
-        dateString = [NSString stringWithFormat:@" %@",[date description]];
+       dateString = [date description];
         //[delegate returnedString: dateThingy];
         
         
