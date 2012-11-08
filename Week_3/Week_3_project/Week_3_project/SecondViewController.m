@@ -100,11 +100,13 @@
         if(button.tag == 0)
         {
             
-            
-            [delegate returnedString:mainTextField.text secondString:dateString];
+          [delegate returnedString:mainTextField.text secondString:dateString];
             [self dismissViewControllerAnimated:TRUE completion:nil];
         }
-    
+        else if (button.tag == 1)
+        {
+            [mainTextField resignFirstResponder];
+        }
         
     }
 }

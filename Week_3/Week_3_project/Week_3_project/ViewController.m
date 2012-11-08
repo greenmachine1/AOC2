@@ -18,11 +18,7 @@
 
 - (void)viewDidLoad
 {
-    // need to make it so that more than one event can be present
-    if(textView.text.length != nil)
-    {
-        
-    }
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -52,6 +48,11 @@
     NSString *newReturnedString = [NSString stringWithFormat:@" %@ %@", nameString,date];
     
    // textView.text = newReturnedString;
+    
+    if(textView.text != nil)
+    {
+     //   textView.text = [newReturnedString stringByAppendingString:newReturnedString];
+    }
     textView.text = newReturnedString;
     
 }
