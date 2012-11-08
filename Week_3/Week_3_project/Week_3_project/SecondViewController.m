@@ -59,10 +59,10 @@
         NSLog(@"%@",[date description]);
         
         // getting close to understanding this
-        NSString *dateThingy = [NSString stringWithFormat:@"%@", [date description]];
+        //NSString *dateThingy = [NSString stringWithFormat:@"%@", [date description]];
         
-        
-        [delegate returnedDate: dateThingy];
+        dateString = [NSString stringWithFormat:@" %@",[date description]];
+        //[delegate returnedString: dateThingy];
         
         
         
@@ -83,7 +83,7 @@
 }
 
 
-
+// on click for my save button
 -(IBAction)secondViewOnClick:(id)sender
 {
     UIButton *button = (UIButton*)sender;
@@ -91,17 +91,12 @@
     {
         if(button.tag == 0)
         {
-            NSLog(@"Hello");
             
             
-            [delegate returnedDate:mainTextField.text];
+            [delegate returnedString:mainTextField.text secondString:dateString];
             [self dismissViewControllerAnimated:TRUE completion:nil];
-
         }
-        else if(button.tag == 1)
-        {
-            NSLog(@"Hello");
-        }
+    
         
     }
 }

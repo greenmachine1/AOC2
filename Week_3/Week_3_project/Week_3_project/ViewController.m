@@ -41,20 +41,14 @@
 
 }
 
--(void)returnedDate:(NSString *)nameString
+-(void)returnedString:(NSString *)nameString secondString:(NSString*)date
 {
-    NSString *newReturnedString = [NSString stringWithFormat:@" %@ ", nameString];
-    NSLog(@"Hello");
+    NSString *newReturnedString = [NSString stringWithFormat:@" %@ %@", nameString,date];
     
    // textView.text = newReturnedString;
     textView.text = newReturnedString;
     
 }
 
--(void)returnedString:(NSString*)nameOfEvent
-{
-   // NSString *anotherReturnedString = [NSString stringWithFormat:@" %@", nameOfEvent];
-    NSLog(@"Hello");
-    //textView.text = anotherReturnedString;
-}
+
 @end

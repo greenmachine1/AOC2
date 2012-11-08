@@ -14,13 +14,15 @@
 
 @required
 
--(void)returnedDate:(NSString *)nameString;
--(void)returnedString:(NSString*)nameOfEvent;
+-(void)returnedString:(NSString *)nameString secondString:(NSString*)date;
+
 
 @end
 
 @interface SecondViewController : UIViewController<UITextFieldDelegate,UIPickerViewDelegate>
 {
+    NSString *dateString;
+    
     id<TopViewDelegate> delegate;
     IBOutlet UIButton *saveButton;
     
