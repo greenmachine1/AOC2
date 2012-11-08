@@ -70,12 +70,15 @@
 // upon hitting the return button
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [self dismissViewControllerAnimated:TRUE completion:nil];
+    
+    // made it so that my keyboard resigns from being the first responder
+    [textField resignFirstResponder];
+    /*[self dismissViewControllerAnimated:TRUE completion:nil];
     if(delegate != nil)
     {
         [delegate returnedString:textField.text];
         
-    }
+    } */
     
     return TRUE;
 }
