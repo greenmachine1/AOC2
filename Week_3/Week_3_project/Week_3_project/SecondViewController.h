@@ -14,10 +14,11 @@
 
 @required
 
--(void)didClose:(NSString *)nameString date:(NSString*)date ;
+-(void)didClose:(NSString *)nameString;
 
 @end
-@interface SecondViewController : UIViewController<UITextFieldDelegate>
+
+@interface SecondViewController : UIViewController<UITextFieldDelegate,UIPickerViewDelegate>
 {
     id<TopViewDelegate> delegate;
     IBOutlet UIButton *closeKeyboard;

@@ -57,6 +57,10 @@
     {
         NSDate *date = datePicker.date;
         NSLog(@"%@",[date description]);
+        
+        // getting close to understanding this
+        NSString *dateThingy = [NSString stringWithFormat:@"%@", [date description]];
+        [delegate didClose: dateThingy];
     }
 }
 
@@ -67,8 +71,10 @@
     [self dismissViewControllerAnimated:TRUE completion:nil];
     if(delegate != nil)
     {
-        [delegate didClose:textField.text date:];
+        [delegate didClose:textField.text];
+        
     }
+    
     return TRUE;
 }
 
@@ -81,7 +87,9 @@
     {
         if(button.tag == 0)
         {
-            
+            //[delegate didClose:@"NO" date:@"Yes"];
+            [self dismissViewControllerAnimated:TRUE completion:nil];
+
         }
         else if(button.tag == 1)
         {

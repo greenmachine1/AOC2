@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -41,9 +42,12 @@
 
 }
 
--(void)didClose:(NSString *)nameString date:(NSString*)date
+-(void)didClose:(NSString *)nameString 
 {
-    NSString *newReturnedString = [NSString stringWithFormat:@" %@ %@", nameString, date];
+    NSString *newReturnedString = [NSString stringWithFormat:@" %@ ", nameString];
+    
+    
     textView.text = newReturnedString;
+    
 }
 @end
