@@ -76,20 +76,6 @@
             }
         }
     }
-    /*UIDatePicker *datePicker = (UIDatePicker*)sender;
-    if(datePicker != nil)
-    {
-        NSDate *date = sender.date;
-        
-        // setting the string dateString to equal the date input
-
-       dateString = [date description];
-        //[delegate returnedString: dateThingy];
-        
-        */
-        
-    
-    
 }
 
 

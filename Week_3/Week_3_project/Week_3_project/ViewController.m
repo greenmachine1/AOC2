@@ -18,6 +18,12 @@
 
 - (void)viewDidLoad
 {
+    // need to make it so that more than one event can be present
+    if(textView.text.length != nil)
+    {
+        
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
