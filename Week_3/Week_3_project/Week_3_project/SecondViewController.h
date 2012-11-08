@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController<UITextFieldDelegate>
 {
     
 }
@@ -20,4 +20,5 @@
 -(void)didClose:(NSString*)nameString;
 
 -(IBAction)onClose:(id)sender;
+
 @end

@@ -35,6 +35,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    textField.text = @"";
+    return TRUE;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+    return TRUE;
+}
+
 // does the same thing as the return key press function
 -(IBAction)onClose:(id)sender
 {
