@@ -8,17 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController<UITextFieldDelegate>
-{
-    
-}
-
-@end
 
 @protocol TopViewDelegate <NSObject>
 
+@required
 -(void)didClose:(NSString*)nameString;
+
+@end
+
+@interface SecondViewController : UIViewController<UITextFieldDelegate>
+{
+    id<TopViewDelegate> delegate;
+}
 
 -(IBAction)onClose:(id)sender;
 
+@property (strong) id<TopViewDelegate> delegate;
 @end
+

@@ -34,9 +34,15 @@
     SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
     if(viewController != nil)
     {
+        viewController.delegate = self;
         [self presentViewController:viewController animated:TRUE completion:nil];
     }
     
     
+}
+
+-(void)didClose:(NSString *)nameString
+{
+    textView.text = nameString;
 }
 @end

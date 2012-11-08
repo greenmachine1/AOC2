@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<TopViewDelegate>
 {
     IBOutlet UITextView *textView;
     IBOutlet UIButton *addEvent;

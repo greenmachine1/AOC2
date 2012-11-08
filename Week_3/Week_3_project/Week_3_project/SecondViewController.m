@@ -14,10 +14,14 @@
 
 @implementation SecondViewController
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        
+        delegate = nil;
         // Custom initialization
     }
     return self;
@@ -44,6 +48,11 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];
+    
+    if(delegate != nil)
+    {
+        [delegate didClose:textField.text];
+    }
     return TRUE;
 }
 
