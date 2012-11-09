@@ -74,19 +74,8 @@
     if(textView.text != nil)
     {
         
-        //savedEvent = newReturnedString;
-    
-        if(savedEvent != nil)
-        {
-            NSLog(@"is full");
-        }
-        
-        else
-        {
-            NSLog(@"Something else");
-        }
-        
-        
+        savedEvent = newReturnedString;
+
         // sending the final string to the textView
         //textView.text = newReturnedString;
         textView.text = savedEvent;
