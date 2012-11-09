@@ -53,20 +53,14 @@
     if(textView.text != nil)
     {
     
+        savedEvent = newReturnedString;
         // sending the final string to the textView
-        textView.text = newReturnedString;
-
-        
-        // I think im on the right track here.... Will have to pick up tomorrow
-        NSLog(@"%u", newReturnedString.length);
-
-        // text is left Justified
+        //textView.text = newReturnedString;
+        textView.text = savedEvent;
         textView.textAlignment = NSTextAlignmentLeft;
-        
-        NSLog(@"This is not nothing");
-        //NSLog(@"%@", savedEvent);
-   
     }
+    
+    
     else if (textView.text == nil)
     {
         NSLog(@"NIL");
