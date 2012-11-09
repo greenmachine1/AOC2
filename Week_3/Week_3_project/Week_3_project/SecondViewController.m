@@ -29,7 +29,9 @@
 - (void)viewDidLoad
 {
     
+    // setting my defaults for the rest of the program
     mainTextField.text = nil;
+    enterInAnEvent.text = @"Enter the event below";
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -49,21 +51,8 @@
     return TRUE;
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    if(textField.text != @"")
-    {
-        UIAlertView *newAlert = [[UIAlertView alloc] initWithTitle:@"Wrong Entry" message:@"Please enter in a proper Event" delegate:Nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [newAlert show];
-        
-        //textField.text = @"";
-    }
-    else if(textField.text == @"")
-    {
-        NSLog(@"Field is not blank");
-    }
 
-}
+
 
 // Ok so this code actually works to pick up the date and time! Formatting now works!
 -(IBAction)datePickerView:(UIDatePicker*)sender
@@ -126,7 +115,9 @@
             
             // if the mainTextField is empty - do this
             else if(mainTextField.text == nil)
-            {  
+            {
+                // sets the text for asking to input and save
+                enterInAnEvent.text = @"Please enter an event then Save";
                 NSLog(@"The field is empty");
             }
         }

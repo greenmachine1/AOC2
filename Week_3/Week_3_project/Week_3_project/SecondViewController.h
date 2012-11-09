@@ -31,6 +31,8 @@
     
     IBOutlet UITextField *mainTextField;
 
+    
+    IBOutlet UILabel *enterInAnEvent;
 
 }
 
