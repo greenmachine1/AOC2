@@ -54,31 +54,32 @@
 {
     
     
-    if(sender != nil)
-    {
-        NSDate *newDate = sender.date;
+ 
+        UIDatePicker *newDate = (UIDatePicker*)sender;
         if(newDate != nil)
         {
-            NSDateFormatter *newFormattedDate = [[NSDateFormatter alloc] init];
+            //NSDateFormatter *newFormattedDate = [[NSDateFormatter alloc] init];
             
-            if(newFormattedDate != nil)
-            {
+            //if(newFormattedDate != nil)
+           // {
                 // date gets formatted correctly
-                [newFormattedDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
+                //[newFormattedDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
             
-                
-                NSString *newStringReturn = [NSString stringWithString:[newDate description]];
+           
+            NSDate *date = newDate.date;
+            
+                //NSString *newStringReturn = [NSString stringWithString:[newDate description]];
                 // = [newFormattedDate stringFromDate:newDate];
-                NSLog(@" %@",newStringReturn);
+                //NSLog(@" %@",newStringReturn);
             
                 
-                dateString = newStringReturn;
+                dateString = [date description ];
                 
-            }
+          //  }
             
         }
         
-    }
+    
 }
 
 

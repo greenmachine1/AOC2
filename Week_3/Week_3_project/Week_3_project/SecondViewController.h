@@ -28,7 +28,7 @@
     IBOutlet UIButton *saveButton;
     IBOutlet UIButton *closeButton;
     
-    IBOutlet UIDatePicker *datePick;
+    //IBOutlet UIDatePicker *datePick;
     IBOutlet UITextField *mainTextField;
 
 }
