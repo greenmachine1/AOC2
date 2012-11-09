@@ -51,7 +51,11 @@
     return TRUE;
 }
 
-
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    enterInAnEvent.textColor = [UIColor blackColor];
+    enterInAnEvent.text = @"Enter the event below";
+}
 
 
 // Ok so this code actually works to pick up the date and time! Formatting now works!
@@ -83,7 +87,6 @@
         }
 }
 
-
 // upon hitting the return button
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -105,8 +108,9 @@
         if(button.tag == 0)
         {
             // Ok, so if the mainTextField is not empty - do this
-            if(mainTextField.text != Nil)
+            if(mainTextField.text != nil)
             {
+            
                 // passes back the string from the Delegate back to the main screen
                 [delegate returnedString:mainTextField.text secondString:dateString];
             
@@ -118,6 +122,7 @@
             {
                 // sets the text for asking to input and save
                 enterInAnEvent.text = @"Please enter an event then Save";
+                enterInAnEvent.textColor = [UIColor redColor];
                 NSLog(@"The field is empty");
             }
         }

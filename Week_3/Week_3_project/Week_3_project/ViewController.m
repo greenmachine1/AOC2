@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad
 {
-    
+    textView.text = nil;
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -47,16 +47,22 @@
 {
     NSString *newReturnedString = [NSString stringWithFormat:@"Event Name: %@ and the date to be held: %@", nameString, date];
     
-   if(textView.text != NULL)
-   {
+    if(textView.text != nil)
+    {
        
-       // sending the final string to the textView
-       textView.text = newReturnedString;
+        // sending the final string to the textView
+        textView.text = newReturnedString;
     
-       // text is left Justified
-       textView.textAlignment = NSTextAlignmentLeft;
+        // text is left Justified
+        textView.textAlignment = NSTextAlignmentLeft;
+        
+        NSLog(@"This is not nothing");
    
-   }
+    }
+    else if (textView.text == nil)
+    {
+        NSLog(@"NIL");
+    }
 }
 
 
