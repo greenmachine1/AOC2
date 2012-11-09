@@ -70,13 +70,21 @@
     
     
     
-    //
+
     if(textView.text != nil)
     {
         
-        savedEvent = newReturnedString;
+        //savedEvent = newReturnedString;
+    
+        if(savedEvent != nil)
+        {
+            NSLog(@"is full");
+        }
         
-        NSString *newIshString = [[NSString alloc] init]
+        else
+        {
+            NSLog(@"Something else");
+        }
         
         
         // sending the final string to the textView
