@@ -68,7 +68,7 @@
             
                 
                 NSString *newStringReturn = [NSString stringWithString:[newDate description]];
-                dateString = [newFormattedDate stringFromDate:newDate];
+                // = [newFormattedDate stringFromDate:newDate];
                 NSLog(@" %@",newStringReturn);
             
                 
