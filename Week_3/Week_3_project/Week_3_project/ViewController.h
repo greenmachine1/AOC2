@@ -16,6 +16,9 @@
     IBOutlet UIButton *addEvent;
     
     NSString *savedEvent;
+    
+    int onClickButtonCounter;
+    
 }
 
 -(IBAction)onClick:(id)sender;
