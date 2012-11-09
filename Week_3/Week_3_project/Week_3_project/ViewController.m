@@ -18,7 +18,10 @@
 
 - (void)viewDidLoad
 {
-    textView.text = nil;
+    //textView.text = nil;
+    
+    
+    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -49,14 +52,19 @@
     
     if(textView.text != nil)
     {
-       
+    
         // sending the final string to the textView
         textView.text = newReturnedString;
-    
+
+        
+        // I think im on the right track here.... Will have to pick up tomorrow
+        NSLog(@"%u", newReturnedString.length);
+
         // text is left Justified
         textView.textAlignment = NSTextAlignmentLeft;
         
         NSLog(@"This is not nothing");
+        //NSLog(@"%@", savedEvent);
    
     }
     else if (textView.text == nil)

@@ -110,9 +110,10 @@
             // Ok, so if the mainTextField is not empty - do this
             if(mainTextField.text != nil)
             {
-            
+                
                 // passes back the string from the Delegate back to the main screen
                 [delegate returnedString:mainTextField.text secondString:dateString];
+                
             
                 [self dismissViewControllerAnimated:TRUE completion:nil];
             }

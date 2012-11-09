@@ -24,6 +24,8 @@
     NSString *dateString;
     NSString *event;
     
+    NSString *tempEvent;
+    
     id<TopViewDelegate> delegate;
     IBOutlet UIButton *saveButton;
     IBOutlet UIButton *closeButton;
