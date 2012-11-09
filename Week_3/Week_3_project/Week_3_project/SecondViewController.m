@@ -67,10 +67,13 @@
                 [newFormattedDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
             
                 
-               // NSString *newStringReturn = [NSString stringWithString:[newDate description]];
+                NSString *newStringReturn = [NSString stringWithString:[newDate description]];
                 dateString = [newFormattedDate stringFromDate:newDate];
-                NSLog(@" %@",dateString);
+                NSLog(@" %@",newStringReturn);
             
+                
+                dateString = newStringReturn;
+                
             }
             
         }
@@ -99,8 +102,11 @@
     {
         if(button.tag == 0)
         {
-          // passes back the string from the Delegate back to the main screen
-            [delegate returnedString:mainTextField.text secondString:dateString];
+            
+            // passes back the string from the Delegate back to the main screen
+            [delegate returnedString:mainTextField.text secondString:[dateString description]];
+            //NSLog(@"%@", dateString);
+            
             [self dismissViewControllerAnimated:TRUE completion:nil];
         }
         else if (button.tag == 1)

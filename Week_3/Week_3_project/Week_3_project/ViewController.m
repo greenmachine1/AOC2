@@ -45,16 +45,16 @@
 
 -(void)returnedString:(NSString *)nameString secondString:(NSString*)date
 {
-    NSString *newReturnedString = [NSString stringWithFormat:@" %@ %@", nameString,date];
+    NSString *newReturnedString = [NSString stringWithFormat:@" %@ %@", nameString, date];
     
-   // textView.text = newReturnedString;
+   textView.text = newReturnedString;
     
-    if(textView.text != nil)
+    /*if(textView.text != nil)
     {
         textView.text = [newReturnedString stringByAppendingString:newReturnedString];
     }
     //textView.text = newReturnedString;
-
+*/
 }
 
 
