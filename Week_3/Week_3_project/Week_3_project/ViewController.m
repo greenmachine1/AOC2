@@ -45,16 +45,19 @@
 
 -(void)returnedString:(NSString *)nameString secondString:(NSString*)date
 {
-    NSString *newReturnedString = [NSString stringWithFormat:@" %@ %@", nameString, date];
+    NSString *newReturnedString = [NSString stringWithFormat:@"Event Name: %@ and the date to be held: %@", nameString, date];
     
-   textView.text = newReturnedString;
+   if(textView.text != NULL)
+   {
+       
+       // sending the final string to the textView
+       textView.text = newReturnedString;
     
-    /*if(textView.text != nil)
-    {
-        textView.text = [newReturnedString stringByAppendingString:newReturnedString];
-    }
-    //textView.text = newReturnedString;
-*/
+       // text is left Justified
+       textView.textAlignment = NSTextAlignmentLeft;
+   
+   }
+
 }
 
 

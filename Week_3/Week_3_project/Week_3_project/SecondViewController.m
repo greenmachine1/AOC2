@@ -54,26 +54,26 @@
         if(newDate != nil)
         {
             
+            // setting up a new NSDate object
             NSDate *newNewDate = [NSDate date];
             
+            // setting up a NSDateFormatter
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            
+            // making sure theres something in dateFormatter
             if(dateFormatter != nil)
             {
+                // the actual format of the date
                 [dateFormatter setDateFormat:@" MMM.dd.yyyy hh:mm a zzzz"];
                 
+                // making a temporary string to hold the formatted date
                 NSMutableString *dateString1 = [[NSMutableString alloc] initWithString:[dateFormatter stringFromDate:newNewDate]];
                 
-                NSLog(@"%@",dateString1);
-                
+                // setting up dateString to hold that temp string
                 dateString = dateString1;
                 
             }
-            
-            
-           
         }
-        
-    
 }
 
 
