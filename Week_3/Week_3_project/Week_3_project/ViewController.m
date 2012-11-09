@@ -52,25 +52,6 @@
 {
     NSString *newReturnedString = [NSString stringWithFormat:@"Event Name: %@ and the date to be held: %@", nameString, date];
     
-    // declaring a new array to hopefully hold my return values
-    NSMutableArray *mySpecialArray;
-    
-    // declaring what is in it
-    mySpecialArray = [NSMutableArray arrayWithObjects:@"", nil];
-  
-    // declaring what is in each array
-    [mySpecialArray insertObject:@"Poopinggggg" atIndex:0];
-    [mySpecialArray insertObject:@"Poopinggggg" atIndex:1];
-    [mySpecialArray insertObject:@"Poopinggggg" atIndex:2];
-    
-    // NSloggin them
-    NSLog(@"%@", [mySpecialArray objectAtIndex:0]);
-    NSLog(@"%@", [mySpecialArray objectAtIndex:1]);
-    NSLog(@"%@", [mySpecialArray objectAtIndex:2]);
-    
-    
-    
-
     if(textView.text != nil)
     {
         
