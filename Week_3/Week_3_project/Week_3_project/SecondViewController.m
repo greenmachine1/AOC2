@@ -50,33 +50,21 @@
 // still working on my date pickerview
 // still need to figure out how to once you have selected a date
 // to not go a head and send (note, I have a bad migrane agagin)
+
+// Ok so this code actually works to pick up the date and time!  Just have to format it now!
 -(IBAction)datePickerView:(UIDatePicker*)sender
 {
-    
-    
- 
         UIDatePicker *newDate = (UIDatePicker*)sender;
         if(newDate != nil)
         {
-            //NSDateFormatter *newFormattedDate = [[NSDateFormatter alloc] init];
-            
-            //if(newFormattedDate != nil)
-           // {
-                // date gets formatted correctly
-                //[newFormattedDate setDateFormat:@"EEE, MMM d, yyyy hh:mm a"];
-            
-           
             NSDate *date = newDate.date;
             
-                //NSString *newStringReturn = [NSString stringWithString:[newDate description]];
-                // = [newFormattedDate stringFromDate:newDate];
-                //NSLog(@" %@",newStringReturn);
+            // ok this finally works!
+            NSString *newString = [NSString stringWithFormat:@" %@", [date description]];
             
-                
-                dateString = [date description ];
-                
-          //  }
             
+            NSLog(@"%@", newString);
+            dateString = newString;
         }
         
     
@@ -105,7 +93,7 @@
         {
             
             // passes back the string from the Delegate back to the main screen
-            [delegate returnedString:mainTextField.text secondString:[dateString description]];
+            [delegate returnedString:mainTextField.text secondString:dateString];
             //NSLog(@"%@", dateString);
             
             [self dismissViewControllerAnimated:TRUE completion:nil];

@@ -19,7 +19,7 @@
 
 @end
 
-@interface SecondViewController : UIViewController<UITextFieldDelegate,UIPickerViewDelegate>
+@interface SecondViewController : UIViewController<UITextFieldDelegate>
 {
     NSString *dateString;
     NSString *event;
@@ -28,8 +28,9 @@
     IBOutlet UIButton *saveButton;
     IBOutlet UIButton *closeButton;
     
-    //IBOutlet UIDatePicker *datePick;
+    
     IBOutlet UITextField *mainTextField;
+
 
 }
 
