@@ -62,7 +62,6 @@
             // ok this finally works!
             NSString *newString = [NSString stringWithFormat:@" %@", [date description]];
             
-            
             NSLog(@"%@", newString);
             dateString = newString;
         }
