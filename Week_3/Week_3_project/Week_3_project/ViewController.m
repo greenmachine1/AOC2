@@ -20,6 +20,8 @@
 {
     textView.text = nil;
     
+    finalString = nil;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -62,8 +64,7 @@
         // Ok lets say that if the returned string is not empty... lets store what ever its contents
         // are in a saved variable string called savedEvent
         
-        
-      
+      /*
         if(savedEvent == nil)
         {
             
@@ -74,9 +75,16 @@
             // Ok getting somewhere
             // going back and forth, storing dates and events in the saved event
             // while destroying the contents of secondSavedEvent
+            
+            
             savedEvent = newReturnedString;
+            
+            finalString = savedEvent;
+            
             secondSavedEvent = nil;
             
+            //finalString = [savedEvent stringByAppendingString:finalString];
+            //textView.text = savedEvent;
             
         }
     
@@ -85,15 +93,38 @@
             NSLog(@"saved events does have something in it");
             
             secondSavedEvent = newReturnedString;
+            
+            
             savedEvent = nil;
+            
+            finalString = secondSavedEvent;
+            
+            //textView.text = secondSavedEvent;
+            
+            //finalString = [finalString stringByAppendingString:secondSavedEvent];
         }
         
+        */
         
-        textView.text = [savedEvent stringByAppendingString:secondSavedEvent];
-        NSLog(@"%@", savedEvent);
-        NSLog(@"%@", secondSavedEvent);
-        NSLog(@"%@", savedEvent);
         
+        // if final string = nothing then do this
+        if(finalString == nil)
+        {
+            // if final string is nil then saved events holds the string returned
+            // by newReturnedString
+            savedEvent = newReturnedString;
+            
+            // also finalString now holds savedEvents(also known as newRetruendString)
+            finalString = savedEvent;
+        }
+        
+        // triggers if finalString has something in it
+        else if (finalString != nil)
+        {
+            
+        }
+        
+       
         // if there is something in savedEvents, I want to append what ever is coming
         // next to it
         
