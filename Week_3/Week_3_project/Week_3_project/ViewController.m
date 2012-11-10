@@ -18,9 +18,8 @@
 
 - (void)viewDidLoad
 {
-    textView.text = nil;
+    textView.text = @"";
     
-    finalString = @"";
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -45,9 +44,6 @@
         [self presentViewController:viewController animated:TRUE completion:nil];
          
     }
-    
-    
-
 
 }
 
@@ -59,23 +55,18 @@
     // so if the newReturnedString which holds all the event information in the form
     // of a string actually has something in it... do something.
     
-    if(newReturnedString != nil)
-    {
-        
-       
-        if(finalString == nil)
-        {
-            savedEvent = [NSString stringWithFormat:@" %@", newReturnedString];
-        }
-        
-        
-        
-        else if (finalString != nil)
+        if (finalString != nil)
         {
             finalString = [finalString stringByAppendingString:newReturnedString];
         }
+
+        else
+        {
+            finalString = [NSString stringWithFormat:@" %@", newReturnedString];
+        }
+    
         textView.text = finalString;
-    }
+    
 }
         
         

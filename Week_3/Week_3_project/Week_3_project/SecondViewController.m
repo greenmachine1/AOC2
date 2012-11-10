@@ -112,6 +112,7 @@
             {
                 
                 // passes back the string from the Delegate back to the main screen
+                // dateString
                 [delegate returnedString:mainTextField.text secondString:dateString];
                 
             
