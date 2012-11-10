@@ -21,16 +21,21 @@
 
 @interface SecondViewController : UIViewController<UITextFieldDelegate>
 {
+    
+    // my string variables
     NSString *dateString;
     NSString *event;
     
     NSString *tempEvent;
     
+    // my topViewDelegate
     id<TopViewDelegate> delegate;
+    
+    // my UIButtons
     IBOutlet UIButton *saveButton;
     IBOutlet UIButton *closeButton;
     
-    
+    // my main UITextField
     IBOutlet UITextField *mainTextField;
 
     

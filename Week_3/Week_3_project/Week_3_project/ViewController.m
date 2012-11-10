@@ -18,7 +18,6 @@
 
 - (void)viewDidLoad
 {
-    onClickButtonCounter = 0;
     textView.text = nil;
     
     [super viewDidLoad];
@@ -36,7 +35,7 @@
 -(IBAction)onClick:(id)sender
 {
 
-    onClickButtonCounter ++;
+
     SecondViewController *viewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
     if(viewController != nil)
     {
@@ -44,6 +43,7 @@
         [self presentViewController:viewController animated:TRUE completion:nil];
          
     }
+    
 
 
 }
@@ -52,22 +52,68 @@
 {
     NSString *newReturnedString = [NSString stringWithFormat:@"Event Name: %@ and the date to be held: %@", nameString, date];
     
-    if(textView.text != nil)
+    
+    // so if the newReturnedString which holds all the event information in the form
+    // of a string actually has something in it... do something.  If not then....
+    
+    if(newReturnedString != @"")
     {
+        NSLog(@"This is not blank");
+    }
+    else
+    {
+        NSLog(@"This is blank");
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //if(textView.text != nil)
+    //{
+        // should be doing my saving, displaying and appending here
         
-        savedEvent = newReturnedString;
+        
+        
+        
+        
+        
+        
+        
+        
+        //savedEvent = newReturnedString;
 
         // sending the final string to the textView
         //textView.text = newReturnedString;
-        textView.text = savedEvent;
-        textView.textAlignment = NSTextAlignmentLeft;
-    }
+        //textView.text = savedEvent;
+        //textView.textAlignment = NSTextAlignmentLeft;
+    //}
     
     
-    else if (textView.text == nil)
-    {
-        NSLog(@"NIL");
-    }
+    //else if (textView.text == nil)
+    //{
+    //    NSLog(@"NIL");
+    //}
 }
 
 

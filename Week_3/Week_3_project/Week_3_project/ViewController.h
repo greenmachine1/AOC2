@@ -17,7 +17,6 @@
     
     NSString *savedEvent;
     
-    int onClickButtonCounter;
     
 }
 
