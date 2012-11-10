@@ -16,6 +16,8 @@
     IBOutlet UIButton *addEvent;
     
     NSString *savedEvent;
+    NSString *secondSavedEvent;
+    NSString *finalString;
     
     
 }

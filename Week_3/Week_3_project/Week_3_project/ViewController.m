@@ -54,20 +54,57 @@
     
     
     // so if the newReturnedString which holds all the event information in the form
-    // of a string actually has something in it... do something.  If not then....
+    // of a string actually has something in it... do something.
     
-    if(newReturnedString != @"")
+    if(newReturnedString != nil)
     {
-        NSLog(@"This is not blank");
+        
+        // Ok lets say that if the returned string is not empty... lets store what ever its contents
+        // are in a saved variable string called savedEvent
+        
+        
+      
+        if(savedEvent == nil)
+        {
+            
+                // store the contents of newReturnedString into savedEvent
+                // which makes it != nil
+            
+            
+            // Ok getting somewhere
+            // going back and forth, storing dates and events in the saved event
+            // while destroying the contents of secondSavedEvent
+            savedEvent = newReturnedString;
+            secondSavedEvent = nil;
+            
+            
+        }
+    
+        else if(savedEvent != nil)
+        {
+            NSLog(@"saved events does have something in it");
+            
+            secondSavedEvent = newReturnedString;
+            savedEvent = nil;
+        }
+        
+        
+        textView.text = [savedEvent stringByAppendingString:secondSavedEvent];
+        NSLog(@"%@", savedEvent);
+        NSLog(@"%@", secondSavedEvent);
+        NSLog(@"%@", savedEvent);
+        
+        // if there is something in savedEvents, I want to append what ever is coming
+        // next to it
+        
+        
+        
     }
-    else
-    {
-        NSLog(@"This is blank");
-    }
-    
-    
-    
-    
+}
+        
+        
+        
+  
     
     
     
@@ -114,7 +151,7 @@
     //{
     //    NSLog(@"NIL");
     //}
-}
+
 
 
 @end
