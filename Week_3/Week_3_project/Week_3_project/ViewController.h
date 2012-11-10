@@ -19,7 +19,7 @@
     NSString *secondSavedEvent;
     NSString *finalString;
     
-    
+   
 }
 
 -(IBAction)onClick:(id)sender;
