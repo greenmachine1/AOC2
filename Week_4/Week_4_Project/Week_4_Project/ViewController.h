@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<SecondViewDelegate>
 {
+    IBOutlet UITextView *mainTextField;
     
+    NSString *savedEvent;
+    NSString *finalSavedString;
 }
 
 -(IBAction)onclick:(id)sender;

@@ -8,10 +8,32 @@
 
 #import <UIKit/UIKit.h>
 
+// ----------------------------------------- assigned a protocol -----------------------------------------------------
+
+// assigning my secondViewDelegate.
+// this is placed above the @interface section
+@protocol SecondViewDelegate <NSObject>
+
+// and assigning the didCLose method to be passed back into
+// the ViewController
+// made the method required - needs to be implemented
+
+@required
+-(void)didClose:(NSString*)nameString;
+
+@end
+
+// --------------------------------------- @interface section ---------------------------------------------------------
+
 @interface SecondViewController : UIViewController<UITextFieldDelegate>
 {
-    
+    id<SecondViewDelegate> delegate;
+    IBOutlet UITextField *secondViewTextInput;
 }
 
+// this allows me to set my deletage from outside
+@property (strong) id<SecondViewDelegate> delegate;
+
 -(IBAction)secondViewOnClick:(id)sender;
+
 @end

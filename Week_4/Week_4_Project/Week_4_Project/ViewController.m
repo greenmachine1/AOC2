@@ -17,9 +17,10 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    self.view.backgroundColor = [UIColor blueColor];
-    
+    finalSavedString = @"";
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -30,6 +31,7 @@
     SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     if(secondView != nil)
     {
+        secondView.delegate = self;
         [self presentViewController:secondView animated:TRUE completion:nil];
     }
 }
@@ -42,4 +44,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+// Ok this actually works to add to the overall text!
+-(void)didClose:(NSString*)nameString
+{
+    
+    if(finalSavedString != nil)
+    {
+        finalSavedString = [finalSavedString stringByAppendingString:nameString];
+    }
+    
+    // if there is nothing in the finalSavedString, put the return value of nameString in it
+    else
+    {
+        finalSavedString = [NSString stringWithFormat:@"%@", nameString];
+    }
+    mainTextField.text = finalSavedString;
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+

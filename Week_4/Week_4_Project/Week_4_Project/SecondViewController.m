@@ -14,10 +14,16 @@
 
 @implementation SecondViewController
 
+// had to synthesize the delegate property
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        
+        // nil out delegate
+        delegate = nil;
         // Custom initialization
     }
     return self;
@@ -27,7 +33,7 @@
 {
 
     
-    self.view.backgroundColor = [UIColor blueColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -51,6 +57,14 @@
 // onclick function for second view controller.
 -(IBAction)secondViewOnClick:(id)sender
 {
+
+    // upon closing of the second view, the delegate method (didClose) gets called
+    // and passes back what ever is in the secondViewTextInput.text
+    if(delegate != nil)
+    {
+        [delegate didClose:secondViewTextInput.text];
+    }
+    
     [self dismissViewControllerAnimated:TRUE completion:nil];
 }
 
