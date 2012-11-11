@@ -33,6 +33,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+// this happens when you click inside the text field on the second view controller
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     
@@ -40,12 +41,14 @@
     return  TRUE;
 }
 
+// this happens when you hit the return key on the second view controller
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return TRUE;
 }
 
+// onclick function for second view controller.
 -(IBAction)secondViewOnClick:(id)sender
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];
