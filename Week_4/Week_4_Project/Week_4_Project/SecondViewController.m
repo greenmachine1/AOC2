@@ -62,7 +62,9 @@
     // and passes back what ever is in the secondViewTextInput.text
     if(delegate != nil)
     {
-        [delegate didClose:secondViewTextInput.text];
+        NSString *tempString = secondViewTextInput.text;
+        
+        [delegate didClose:tempString];
     }
     
     [self dismissViewControllerAnimated:TRUE completion:nil];

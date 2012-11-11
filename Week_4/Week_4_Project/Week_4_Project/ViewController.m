@@ -1,4 +1,4 @@
-//
+
 //  ViewController.m
 //  Week_4_Project
 //
@@ -19,7 +19,9 @@
 {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    finalSavedString = @"";
+    //finalSavedString = nil;
+    
+    
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -50,15 +52,17 @@
 -(void)didClose:(NSString*)nameString
 {
     
+    
     if(finalSavedString != nil)
     {
         finalSavedString = [finalSavedString stringByAppendingString:nameString];
+
     }
     
     // if there is nothing in the finalSavedString, put the return value of nameString in it
-    else
+    else if(finalSavedString == nil)
     {
-        finalSavedString = [NSString stringWithFormat:@"%@", nameString];
+        finalSavedString = [NSString stringWithFormat:@"%@",nameString];
     }
     mainTextField.text = finalSavedString;
 }
