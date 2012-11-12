@@ -49,7 +49,7 @@
 
 -(void)returnedString:(NSString *)nameString secondString:(NSString*)date
 {
-    NSString *newReturnedString = [NSString stringWithFormat:@"Event Name: %@ and the date to be held: %@", nameString, date];
+    NSString *newReturnedString = [NSString stringWithFormat:@"Event Name: %@ and the date to be held: %@ \n \n", nameString, date];
     
     
     // so if the newReturnedString which holds all the event information in the form
@@ -58,6 +58,7 @@
         if (finalString != nil)
         {
             [finalString appendString:newReturnedString];
+
         }
 
         else
