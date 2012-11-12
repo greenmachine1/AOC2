@@ -51,19 +51,17 @@
 -(void)didClose:(NSString*)nameString
 {
     
-    //NSMutableString * finalSavedString = [[NSMutableString alloc] initWithString:@""];
-    
+       
     // if there is nothing in the finalSavedString, put the return value of nameString in it
     if(finalSavedString == nil)
     {
         finalSavedString =[[NSMutableString alloc] initWithString:nameString];
-        //[NSMutableString stringWithFormat:@"%@",nameString];
+       
     }
     
     else if(finalSavedString != nil)
     {
-        //finalSavedString = [finalSavedString appendString:nameString];
-        [finalSavedString appendString:nameString];
+               [finalSavedString appendString:nameString];
         
     }
     mainTextField.text = finalSavedString;

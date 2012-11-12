@@ -29,11 +29,20 @@
 {
     id<SecondViewDelegate> delegate;
     IBOutlet UITextField *secondViewTextInput;
+    IBOutlet UIDatePicker *datePicker1;
+    
+    NSString *dateString;
+    NSDate *newDate;
 }
+
+
 
 // this allows me to set my deletage from outside
 @property (strong) id<SecondViewDelegate> delegate;
 
 -(IBAction)secondViewOnClick:(id)sender;
+
+-(IBAction)datePicker:(id)sender;
+
 
 @end

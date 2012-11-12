@@ -54,6 +54,30 @@
     return TRUE;
 }
 
+// date picker section
+-(IBAction)datePicker:(id)sender
+{
+    // casting
+    UIDatePicker *datePicker = (UIDatePicker *)sender;
+    if(datePicker != nil)
+    {
+        // creating a new date
+        newDate = [datePicker date];
+        
+        NSDateFormatter *formatDate = [[NSDateFormatter alloc]init];
+        
+        if(formatDate != nil)
+        {
+            // sets the format of the date
+            [formatDate setDateFormat:@" MMM.dd.yyyy hh:mm a zzzz"];
+            
+            // sets up an NSMutableString to contain all the data, then put it into dateString
+            NSMutableString *dateStringOne = [[NSMutableString alloc] initWithString:[formatDate stringFromDate:newDate]];
+            dateString = dateStringOne;
+        }
+    }
+}
+
 // onclick function for second view controller.
 -(IBAction)secondViewOnClick:(id)sender
 {
@@ -62,13 +86,15 @@
     // and passes back what ever is in the secondViewTextInput.text
     if(delegate != nil)
     {
-        NSString *tempString = secondViewTextInput.text;
-        
-        [delegate didClose:tempString];
+        // puts the event title and date into one string then inserted in the didClose method of the delegate
+        NSString *returnedString = [NSString stringWithFormat:@"%@ %@ \n \n", secondViewTextInput.text, dateString];
+        [delegate didClose:returnedString]; 
     }
     
     [self dismissViewControllerAnimated:TRUE completion:nil];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
