@@ -29,7 +29,12 @@
 {
     id<SecondViewDelegate> delegate;
     IBOutlet UITextField *secondViewTextInput;
+    
+
     IBOutlet UIDatePicker *datePicker1;
+    
+    IBOutlet UILabel *enterNewEvent;
+
     
     NSString *dateString;
     NSDate *newDate;
@@ -41,6 +46,8 @@
 @property (strong) id<SecondViewDelegate> delegate;
 
 -(IBAction)secondViewOnClick:(id)sender;
+
+-(IBAction)closeKeyboard:(id)sender;
 
 -(IBAction)datePicker:(id)sender;
 

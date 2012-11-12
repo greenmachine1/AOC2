@@ -31,12 +31,9 @@
 
 - (void)viewDidLoad
 {
-
-    
     self.view.backgroundColor = [UIColor whiteColor];
 
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 // this happens when you click inside the text field on the second view controller
@@ -88,13 +85,26 @@
     {
         // puts the event title and date into one string then inserted in the didClose method of the delegate
         NSString *returnedString = [NSString stringWithFormat:@"%@ %@ \n \n", secondViewTextInput.text, dateString];
-        [delegate didClose:returnedString]; 
+        [delegate didClose:returnedString];
     }
     
     [self dismissViewControllerAnimated:TRUE completion:nil];
+    
 }
 
 
+// close keyboard button
+-(IBAction)closeKeyboard:(id)sender
+{
+    UIButton *closeButton = (UIButton*)sender;
+    if(closeButton != nil)
+    {
+        if(closeButton.tag == 1)
+        {
+            [secondViewTextInput resignFirstResponder];
+        }
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
