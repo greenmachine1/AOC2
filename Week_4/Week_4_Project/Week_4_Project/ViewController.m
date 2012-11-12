@@ -47,7 +47,7 @@
 }
 
 
-// Ok this doesnt work as expected
+// Ok this actually works now!!
 -(void)didClose:(NSString*)nameString
 {
     

@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     textView.text = @"";
-    finalString = @"";
+
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -57,12 +57,12 @@
     
         if (finalString != nil)
         {
-            finalString = [finalString stringByAppendingString:newReturnedString];
+            [finalString appendString:newReturnedString];
         }
 
         else
         {
-            finalString = [NSString stringWithFormat:@" %@", newReturnedString];
+            finalString = [[NSMutableString alloc] initWithString:newReturnedString];
         }
     
         textView.text = finalString;

@@ -15,9 +15,9 @@
     IBOutlet UITextView *textView;
     IBOutlet UIButton *addEvent;
     
-    NSString *savedEvent;
-    NSString *secondSavedEvent;
-    NSString *finalString;
+    
+    //NSString *secondSavedEvent;
+    NSMutableString *finalString;
     
    
 }
