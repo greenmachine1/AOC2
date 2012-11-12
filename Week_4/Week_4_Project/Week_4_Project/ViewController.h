@@ -14,8 +14,12 @@
     IBOutlet UITextView *mainTextField;
     
     NSString *savedEvent;
-    NSString *finalSavedString;
+    NSMutableString *finalSavedString;
 }
+
+
+
+
 
 -(IBAction)onclick:(id)sender;
 

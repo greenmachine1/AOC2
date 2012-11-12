@@ -15,13 +15,13 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad
 {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    //finalSavedString = nil;
-    
-    
+    finalSavedString = nil;
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -47,22 +47,24 @@
 }
 
 
-
-// Ok this actually works to add to the overall text!
+// Ok this doesnt work as expected
 -(void)didClose:(NSString*)nameString
 {
     
-    
-    if(finalSavedString != nil)
-    {
-        finalSavedString = [finalSavedString stringByAppendingString:nameString];
-
-    }
+    //NSMutableString * finalSavedString = [[NSMutableString alloc] initWithString:@""];
     
     // if there is nothing in the finalSavedString, put the return value of nameString in it
-    else if(finalSavedString == nil)
+    if(finalSavedString == nil)
     {
-        finalSavedString = [NSString stringWithFormat:@"%@",nameString];
+        finalSavedString =[[NSMutableString alloc] initWithString:nameString];
+        //[NSMutableString stringWithFormat:@"%@",nameString];
+    }
+    
+    else if(finalSavedString != nil)
+    {
+        //finalSavedString = [finalSavedString appendString:nameString];
+        [finalSavedString appendString:nameString];
+        
     }
     mainTextField.text = finalSavedString;
 }
