@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad
 {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithRed:0.0f green:100.0f blue:200.0f alpha:0.7f];
     
     finalSavedString = nil;
 
@@ -56,48 +56,29 @@
 
 }
 
-
-
-
-
-
-// this is going to need to be replaced by the swipe event
-/*
--(IBAction)onclick:(id)sender
-{
-    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    if(secondView != nil)
-    {
-        secondView.delegate = self;
-        [self presentViewController:secondView animated:TRUE completion:nil];
-    }
-}
-*/
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)onSave:(id)sender
+{
+    int temp = 0;
+}
+
 
 // Ok this actually works now!!
 -(void)didClose:(NSString*)nameString
 {
-    
-       
     // if there is nothing in the finalSavedString, put the return value of nameString in it
     if(finalSavedString == nil)
     {
         finalSavedString =[[NSMutableString alloc] initWithString:nameString];
-       
     }
-    
     else if(finalSavedString != nil)
     {
-               [finalSavedString appendString:nameString];
-        
+        [finalSavedString appendString:nameString];
     }
     mainTextField.text = finalSavedString;
 }

@@ -21,6 +21,7 @@
     UISwipeGestureRecognizer *addEvent;
 }
 
+-(IBAction)onSave:(id)sender;
 
 
 
