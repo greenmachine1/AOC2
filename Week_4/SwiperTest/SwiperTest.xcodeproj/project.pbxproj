@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D60510661652510100681554 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60510651652510100681554 /* UIKit.framework */; };
+		D60510681652510100681554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60510671652510100681554 /* Foundation.framework */; };
+		D605106A1652510100681554 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60510691652510100681554 /* CoreGraphics.framework */; };
+		D60510701652510100681554 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D605106E1652510100681554 /* InfoPlist.strings */; };
+		D60510721652510100681554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D60510711652510100681554 /* main.m */; };
+		D60510761652510100681554 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D60510751652510100681554 /* AppDelegate.m */; };
+		D60510781652510100681554 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D60510771652510100681554 /* Default.png */; };
+		D605107A1652510100681554 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D60510791652510100681554 /* Default@2x.png */; };
+		D605107C1652510100681554 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D605107B1652510100681554 /* Default-568h@2x.png */; };
+		D605107F1652510100681554 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D605107E1652510100681554 /* ViewController.m */; };
+		D60510821652510100681554 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60510801652510100681554 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D60510611652510100681554 /* SwiperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60510651652510100681554 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D60510671652510100681554 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D60510691652510100681554 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D605106D1652510100681554 /* SwiperTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwiperTest-Info.plist"; sourceTree = "<group>"; };
+		D605106F1652510100681554 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D60510711652510100681554 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D60510731652510100681554 /* SwiperTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiperTest-Prefix.pch"; sourceTree = "<group>"; };
+		D60510741652510100681554 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D60510751652510100681554 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D60510771652510100681554 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D60510791652510100681554 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D605107B1652510100681554 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D605107D1652510100681554 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D605107E1652510100681554 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D60510811652510100681554 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D605105E1652510100681554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60510661652510100681554 /* UIKit.framework in Frameworks */,
+				D60510681652510100681554 /* Foundation.framework in Frameworks */,
+				D605106A1652510100681554 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D60510561652510100681554 = {
+			isa = PBXGroup;
+			children = (
+				D605106B1652510100681554 /* SwiperTest */,
+				D60510641652510100681554 /* Frameworks */,
+				D60510621652510100681554 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D60510621652510100681554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D60510611652510100681554 /* SwiperTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D60510641652510100681554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D60510651652510100681554 /* UIKit.framework */,
+				D60510671652510100681554 /* Foundation.framework */,
+				D60510691652510100681554 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D605106B1652510100681554 /* SwiperTest */ = {
+			isa = PBXGroup;
+			children = (
+				D60510741652510100681554 /* AppDelegate.h */,
+				D60510751652510100681554 /* AppDelegate.m */,
+				D605107D1652510100681554 /* ViewController.h */,
+				D605107E1652510100681554 /* ViewController.m */,
+				D60510801652510100681554 /* ViewController.xib */,
+				D605106C1652510100681554 /* Supporting Files */,
+			);
+			path = SwiperTest;
+			sourceTree = "<group>";
+		};
+		D605106C1652510100681554 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D605106D1652510100681554 /* SwiperTest-Info.plist */,
+				D605106E1652510100681554 /* InfoPlist.strings */,
+				D60510711652510100681554 /* main.m */,
+				D60510731652510100681554 /* SwiperTest-Prefix.pch */,
+				D60510771652510100681554 /* Default.png */,
+				D60510791652510100681554 /* Default@2x.png */,
+				D605107B1652510100681554 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D60510601652510100681554 /* SwiperTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60510851652510100681554 /* Build configuration list for PBXNativeTarget "SwiperTest" */;
+			buildPhases = (
+				D605105D1652510100681554 /* Sources */,
+				D605105E1652510100681554 /* Frameworks */,
+				D605105F1652510100681554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiperTest;
+			productName = SwiperTest;
+			productReference = D60510611652510100681554 /* SwiperTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D60510581652510100681554 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Cory Green";
+			};
+			buildConfigurationList = D605105B1652510100681554 /* Build configuration list for PBXProject "SwiperTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D60510561652510100681554;
+			productRefGroup = D60510621652510100681554 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D60510601652510100681554 /* SwiperTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D605105F1652510100681554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60510701652510100681554 /* InfoPlist.strings in Resources */,
+				D60510781652510100681554 /* Default.png in Resources */,
+				D605107A1652510100681554 /* Default@2x.png in Resources */,
+				D605107C1652510100681554 /* Default-568h@2x.png in Resources */,
+				D60510821652510100681554 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D605105D1652510100681554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60510721652510100681554 /* main.m in Sources */,
+				D60510761652510100681554 /* AppDelegate.m in Sources */,
+				D605107F1652510100681554 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D605106E1652510100681554 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D605106F1652510100681554 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D60510801652510100681554 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60510811652510100681554 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D60510831652510100681554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D60510841652510100681554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D60510861652510100681554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwiperTest/SwiperTest-Prefix.pch";
+				INFOPLIST_FILE = "SwiperTest/SwiperTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D60510871652510100681554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwiperTest/SwiperTest-Prefix.pch";
+				INFOPLIST_FILE = "SwiperTest/SwiperTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D605105B1652510100681554 /* Build configuration list for PBXProject "SwiperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60510831652510100681554 /* Debug */,
+				D60510841652510100681554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60510851652510100681554 /* Build configuration list for PBXNativeTarget "SwiperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60510861652510100681554 /* Debug */,
+				D60510871652510100681554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D60510581652510100681554 /* Project object */;
+}

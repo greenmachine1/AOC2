@@ -28,6 +28,7 @@
 }
 
 
+// this is going to need to be replaced by the swipe event
 -(IBAction)onclick:(id)sender
 {
     SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];

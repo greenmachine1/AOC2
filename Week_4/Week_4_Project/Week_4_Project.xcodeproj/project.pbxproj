@@ -144,7 +144,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Cory Green";
 			};
-			buildConfigurationList = D6F30AA8164F1C04005A2334 /* Build configuration list for PBXProject "Week_4_Project" */;
+			buildConfigurationList = D6F30AA8164F1C04005A2334 /* Build configuration list for PBXProject "Week_4_project" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -284,7 +284,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6F30AA8164F1C04005A2334 /* Build configuration list for PBXProject "Week_4_Project" */ = {
+		D6F30AA8164F1C04005A2334 /* Build configuration list for PBXProject "Week_4_project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6F30AD0164F1C04005A2334 /* Debug */,
@@ -300,6 +300,7 @@
 				D6F30AD4164F1C04005A2334 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
