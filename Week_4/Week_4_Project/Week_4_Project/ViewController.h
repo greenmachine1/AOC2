@@ -15,13 +15,17 @@
     
     NSString *savedEvent;
     NSMutableString *finalSavedString;
+    
+    IBOutlet UILabel *addEventLabel;
+    
+    UISwipeGestureRecognizer *addEvent;
 }
 
 
 
 
 
--(IBAction)onclick:(id)sender;
+//-(IBAction)onclick:(id)sender;
 
 
 

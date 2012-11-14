@@ -27,8 +27,42 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    addEvent = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    addEvent.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    [addEventLabel addGestureRecognizer:addEvent];
+    
+    [super viewWillAppear:animated];
+}
+
+
+// OK this works
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    {
+        NSLog(@"You swiped to the right");
+        //swipeLabel.text = @"Right Swipe";
+        
+        SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+        if(secondView != nil)
+        {
+            secondView.delegate = self;
+            [self presentViewController:secondView animated:TRUE completion:nil];
+        }
+    }
+
+}
+
+
+
+
+
 
 // this is going to need to be replaced by the swipe event
+/*
 -(IBAction)onclick:(id)sender
 {
     SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
@@ -38,7 +72,7 @@
         [self presentViewController:secondView animated:TRUE completion:nil];
     }
 }
-
+*/
 
 
 - (void)didReceiveMemoryWarning

@@ -8,12 +8,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Week_4_Project/ViewController.m"
-         timestampString = "374378966.6925"
+         timestampString = "374568435.363797"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "51"
-         endingLineNumber = "51"
+         startingLineNumber = "84"
+         endingLineNumber = "84"
          landmarkName = "-didClose:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Week_4_Project/ViewController.m"
+         timestampString = "374568143.766281"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "40"
+         endingLineNumber = "40"
+         landmarkName = "-onSwipe:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

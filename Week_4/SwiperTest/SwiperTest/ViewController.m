@@ -45,7 +45,7 @@
     
 }
 
--(void)onSwipe:(UISwipeGestureRecognizer*)recognizer;
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     if(recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
     {
