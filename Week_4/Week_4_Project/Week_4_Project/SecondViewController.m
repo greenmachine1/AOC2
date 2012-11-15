@@ -104,17 +104,20 @@
         // creating a new date
         newDate = [datePicker date];
         
-        NSDateFormatter *formatDate = [[NSDateFormatter alloc]init];
+       
         
-        if(formatDate != nil)
-        {
-            // sets the format of the date
-            [formatDate setDateFormat:@" MMM.dd.yyyy hh:mm a zzzz"];
+            NSDateFormatter *formatDate = [[NSDateFormatter alloc]init];
+        
+            if(formatDate != nil)
+            {
+                // sets the format of the date
+                [formatDate setDateFormat:@" MMM.dd.yyyy hh:mm a zzzz"];
             
-            // sets up an NSMutableString to contain all the data, then put it into dateString
-            NSMutableString *dateStringOne = [[NSMutableString alloc] initWithString:[formatDate stringFromDate:newDate]];
-            dateString = dateStringOne;
-        }
+                // sets up an NSMutableString to contain all the data, then put it into dateString
+                NSMutableString *dateStringOne = [[NSMutableString alloc] initWithString:[formatDate stringFromDate:newDate]];
+                
+                dateString = dateStringOne;
+            }
     }
 }
 
