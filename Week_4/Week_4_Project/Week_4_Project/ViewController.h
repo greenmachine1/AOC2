@@ -12,13 +12,15 @@
 @interface ViewController : UIViewController<SecondViewDelegate>
 {
     IBOutlet UITextView *mainTextField;
+    IBOutlet UILabel *addEventLabel;
     
     NSString *savedEvent;
     NSMutableString *finalSavedString;
     
-    IBOutlet UILabel *addEventLabel;
-    
     UISwipeGestureRecognizer *addEvent;
+    
+   
+   
 }
 
 -(IBAction)onSave:(id)sender;

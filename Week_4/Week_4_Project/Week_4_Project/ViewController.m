@@ -19,9 +19,13 @@
 
 - (void)viewDidLoad
 {
+    // setting the background color
     self.view.backgroundColor = [UIColor colorWithRed:0.0f green:100.0f blue:200.0f alpha:0.7f];
     
+    // initializing the finalSavedString as nil
     finalSavedString = nil;
+    
+    
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -33,6 +37,10 @@
     addEvent.direction = UISwipeGestureRecognizerDirectionRight;
     
     [addEventLabel addGestureRecognizer:addEvent];
+    
+    
+    NSUserDefaults *defualt = []
+    
     
     [super viewWillAppear:animated];
 }
@@ -62,9 +70,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+// this is where I will be saving what is in the main text field
 -(IBAction)onSave:(id)sender
 {
-    int temp = 0;
+    NSUserDefaults *defualt = [NSUserDefaults standardUserDefaults];
+    if(defualt != nil)
+    {
+        NSString *finalSavedStringThing = finalSavedString;
+        [defualt setObject:finalSavedStringThing forKey:@"savedString"];
+        if(finalSavedStringThing != nil)
+        {
+            NSLog(@"%@", finalSavedStringThing);
+        }
+    }
+    
+    
 }
 
 

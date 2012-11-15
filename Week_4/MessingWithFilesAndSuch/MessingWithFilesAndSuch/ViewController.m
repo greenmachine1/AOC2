@@ -22,6 +22,7 @@
     
     NSString *path = (NSString*) [paths objectAtIndex:0];
     NSLog(@"%@",path);
+    
     NSArray *directoryContent;
     
     directoryContent = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:nil];
@@ -60,6 +61,7 @@
     }
     else
     {
+        // creates the file if it hasnt already
         [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
     }
     
