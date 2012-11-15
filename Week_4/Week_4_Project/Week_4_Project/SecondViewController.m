@@ -68,7 +68,6 @@
             
             // this returns them to the first view
             [self dismissViewControllerAnimated:TRUE completion:nil];
-            
         }
         else
         {
@@ -102,23 +101,26 @@
 // date picker section
 -(IBAction)datePicker:(id)sender
 {
+    
     // casting
     UIDatePicker *datePicker = (UIDatePicker *)sender;
     if(datePicker != nil)
     {
         // creating a new date
-        newDate = [datePicker date];
+        //newDate = [datePicker date];
+        
         
         NSDateFormatter *formatDate = [[NSDateFormatter alloc]init];
-        
         if(formatDate != nil)
         {
             // sets the format of the date
             [formatDate setDateFormat:@" MMM.dd.yyyy hh:mm a zzzz"];
             
+            newDate = [datePicker date];
+            
             // sets up an NSMutableString to contain all the data, then put it into dateString
             NSMutableString *dateStringOne = [[NSMutableString alloc] initWithString:[formatDate stringFromDate:newDate]];
-                
+            
             dateString = dateStringOne;
         }
     }
