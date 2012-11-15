@@ -106,13 +106,53 @@
     NSUserDefaults *defualts = [NSUserDefaults standardUserDefaults];
     if(defualts != nil)
     {
+        // this has the saved data from previous use
         NSString *newOne = [defualts objectForKey:@"savedString"];
-        NSLog(@"%@", newOne);
+     
+        // if newOne has something in it...
+        if(newOne != nil)
+        {
+            // ... and finalSavedString has something in it...
+            if(finalSavedString != nil)
+            {
+                // ... append the two strings together into finalSavedString
+                finalSavedString = [[NSMutableString alloc] initWithFormat:@"%@%@",newOne ,nameString];
+            }
+            
+            // if newOne has something in it but finalSavedString does not...
+            else if(finalSavedString == nil)
+            {
+                // finalSavedString has nameString in it.
+                finalSavedString = [[NSMutableString alloc] initWithString:nameString];
+            }
+        }
+        else if(newOne == nil)
+        {
+            if(finalSavedString != nil)
+            {
+                
+            }
+            else if(finalSavedString == nil)
+            {
+                
+            }
+        }
         
         
+        
+        /*
+        else
+        {
+            finalSavedString = [[NSMutableString alloc] initWithString:nameString];
+            //NSLog(@"There isnt information stored");
+        }
+         */
+        mainTextField.text = finalSavedString;
+    }
+    
         
     
-    
+   /*
     // if there is nothing in the finalSavedString, put the return value of nameString in it
     if(finalSavedString == nil)
     {
@@ -123,7 +163,9 @@
         [finalSavedString appendString:nameString];
     }
     mainTextField.text = finalSavedString;
-    }
+}
+*/
+    
 }
 
 @end
