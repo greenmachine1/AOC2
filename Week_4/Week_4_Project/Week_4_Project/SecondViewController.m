@@ -30,15 +30,17 @@
 
 - (void)viewDidLoad
 {
+    // setting defaults
     self.view.backgroundColor = [UIColor colorWithRed:0.0f green:100.0f blue:200.0f alpha:1.0f];
 
-    
     secondViewTextInput.text = @"default text";
     [super viewDidLoad];
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    
+    // setting up my left swipe gesture
     closeAndSave = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(closeAndSaveSwipe:)];
     closeAndSave.direction = UISwipeGestureRecognizerDirectionLeft;
     
@@ -48,6 +50,7 @@
     [super viewWillAppear:animated];
 }
 
+// setting up what happens when you close using the left swipe
 -(void)closeAndSaveSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     // upon closing of the second view, the delegate method (didClose) gets called
@@ -65,6 +68,7 @@
         }
         else
         {
+            // alerting the user to enter an event name
             UIAlertView *alertUserToEnterAnEvent = [[UIAlertView alloc] initWithTitle:@"Enter more info" message:@"Please enter an Event Name" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             
             
@@ -103,8 +107,6 @@
     {
         // creating a new date
         newDate = [datePicker date];
-        
-       
         
             NSDateFormatter *formatDate = [[NSDateFormatter alloc]init];
         
