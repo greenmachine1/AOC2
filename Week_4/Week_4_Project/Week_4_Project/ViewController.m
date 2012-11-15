@@ -35,8 +35,6 @@
         mainTextField.text = name1;
     }
     
-    NSLog(@"This loaded up once");
-
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -149,8 +147,16 @@
                 finalSavedString = [[NSMutableString alloc] initWithString:nameString];
             }
         }
-        mainTextField.text = finalSavedString;
+        
+        if(nameString.length == 0)
+        {
+            NSLog(@"Please enter a valid entry");
+        }
+        
+        
+            mainTextField.text = finalSavedString;
     }
+    
 }
 
 @end

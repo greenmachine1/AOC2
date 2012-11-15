@@ -24,7 +24,6 @@
         
         // nil out delegate
         delegate = nil;
-        // Custom initialization
     }
     return self;
 }
@@ -33,6 +32,8 @@
 {
     self.view.backgroundColor = [UIColor colorWithRed:0.0f green:100.0f blue:200.0f alpha:1.0f];
 
+    
+    secondViewTextInput.text = @"default text";
     [super viewDidLoad];
 }
 
@@ -53,13 +54,26 @@
     // and passes back what ever is in the secondViewTextInput.text
     if(delegate != nil)
     {
-        // puts the event title and date into one string then inserted in the didClose method of the delegate
-        NSString *returnedString = [NSString stringWithFormat:@"%@ %@ \n \n", secondViewTextInput.text, dateString];
-        [delegate didClose:returnedString];
+        NSString *tempStringSecondViewInput = [[NSString alloc] initWithString:secondViewTextInput.text];
+        if(!(tempStringSecondViewInput.length == 0))
+        {
+            // puts the event title and date into one string then inserted in the didClose method of the delegate
+            NSString *returnedString = [NSString stringWithFormat:@"%@ %@ \n \n", secondViewTextInput.text, dateString];
+            [delegate didClose:returnedString];
+            
+            [self dismissViewControllerAnimated:TRUE completion:nil];
+        }
+        else
+        {
+            UIAlertView *alertUserToEnterAnEvent = [[UIAlertView alloc] initWithTitle:@"Enter more info" message:@"Please enter an Event Name" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            
+            
+            [alertUserToEnterAnEvent show];
+            
+            
+        }
     }
-    
-    [self dismissViewControllerAnimated:TRUE completion:nil];
-    
+
 }
 
 
@@ -103,24 +117,7 @@
         }
     }
 }
-/*
-// onclick function for second view controller.
--(IBAction)secondViewOnClick:(id)sender
-{
 
-    // upon closing of the second view, the delegate method (didClose) gets called
-    // and passes back what ever is in the secondViewTextInput.text
-    if(delegate != nil)
-    {
-        // puts the event title and date into one string then inserted in the didClose method of the delegate
-        NSString *returnedString = [NSString stringWithFormat:@"%@ %@ \n \n", secondViewTextInput.text, dateString];
-        [delegate didClose:returnedString];
-    }
-    
-    [self dismissViewControllerAnimated:TRUE completion:nil];
-    
-}
-*/
 
 // close keyboard button
 -(IBAction)closeKeyboard:(id)sender
