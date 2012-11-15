@@ -103,6 +103,8 @@
 // Ok this actually works now!!
 -(void)didClose:(NSString*)nameString
 {
+    
+    
     NSUserDefaults *defualts = [NSUserDefaults standardUserDefaults];
     if(defualts != nil)
     {
@@ -112,43 +114,56 @@
         // if newOne has something in it...
         if(newOne != nil)
         {
-            // ... and finalSavedString has something in it...
+            if(finalSavedString == nil)
+            {
+                finalSavedString = [[NSMutableString alloc] initWithFormat:@"%@%@", newOne, nameString];
+            }
+            else if(finalSavedString != nil)
+            {
+                [finalSavedString appendString:nameString];
+            }
+        }
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        // if newOne doesnt have anything in it...
+        else if(newOne == nil)
+        {
+     
+     
+            // ... but finalSavedString does...
             if(finalSavedString != nil)
             {
-                // ... append the two strings together into finalSavedString
-                finalSavedString = [[NSMutableString alloc] initWithFormat:@"%@%@",newOne ,nameString];
+                // ... append nameString to it.
+                [finalSavedString appendString:nameString];
             }
             
-            // if newOne has something in it but finalSavedString does not...
+            // if NewOne doesnt have anything it it and neither does finalSavedstring...
             else if(finalSavedString == nil)
             {
-                // finalSavedString has nameString in it.
+                // ... finalString has nameString in it.
                 finalSavedString = [[NSMutableString alloc] initWithString:nameString];
             }
         }
-        else if(newOne == nil)
-        {
-            if(finalSavedString != nil)
-            {
-                
-            }
-            else if(finalSavedString == nil)
-            {
-                
-            }
-        }
         
-        
-        
-        /*
-        else
-        {
-            finalSavedString = [[NSMutableString alloc] initWithString:nameString];
-            //NSLog(@"There isnt information stored");
-        }
-         */
         mainTextField.text = finalSavedString;
-    }
+    
     
         
     
@@ -165,7 +180,7 @@
     mainTextField.text = finalSavedString;
 }
 */
-    
+    }
 }
 
 @end
