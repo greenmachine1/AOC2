@@ -26,20 +26,52 @@
     finalSavedString = nil;
     
     
+    // when the main view loads up, the default data loads up on it
+    NSUserDefaults *defualts = [NSUserDefaults standardUserDefaults];
+    if(defualts != nil)
+    {
+        NSString *name1 = [defualts objectForKey:@"savedString"];
+        
+        mainTextField.text = name1;
+    }
+    
+    NSLog(@"This loaded up once");
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
--(void)viewWillAppear:(BOOL)animated
+
+
+
+// this is where I will be saving what is in the main text field
+-(IBAction)onSave:(id)sender
+{
+    NSUserDefaults *default1 = [NSUserDefaults standardUserDefaults];
+    if(default1 != nil)
+    {
+        // saves what is in the mainTextField to user default
+        NSString *finalSavedStringThing = mainTextField.text;
+        
+        [default1 setObject:finalSavedStringThing forKey:@"savedString"];
+        
+        [default1 synchronize];
+    }
+    
+    
+    //NSLog(@"%@", finalSavedString);
+    
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated
 {
     addEvent = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
     addEvent.direction = UISwipeGestureRecognizerDirectionRight;
     
     [addEventLabel addGestureRecognizer:addEvent];
     
-    
-    NSUserDefaults *defualt = []
+    NSLog(@"This happened");
     
     
     [super viewWillAppear:animated];
@@ -52,7 +84,6 @@
     if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
         NSLog(@"You swiped to the right");
-        //swipeLabel.text = @"Right Swipe";
         
         SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
         if(secondView != nil)
@@ -70,22 +101,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-// this is where I will be saving what is in the main text field
--(IBAction)onSave:(id)sender
-{
-    NSUserDefaults *defualt = [NSUserDefaults standardUserDefaults];
-    if(defualt != nil)
-    {
-        NSString *finalSavedStringThing = finalSavedString;
-        [defualt setObject:finalSavedStringThing forKey:@"savedString"];
-        if(finalSavedStringThing != nil)
-        {
-            NSLog(@"%@", finalSavedStringThing);
-        }
-    }
-    
-    
-}
+
 
 
 // Ok this actually works now!!
