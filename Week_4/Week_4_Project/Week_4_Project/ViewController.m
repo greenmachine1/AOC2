@@ -101,10 +101,9 @@
 
 
 // Ok this actually works now!!
+// I do realize i spelled defaults wrong... I did it on purpose... I swear... :D
 -(void)didClose:(NSString*)nameString
 {
-    
-    
     NSUserDefaults *defualts = [NSUserDefaults standardUserDefaults];
     if(defualts != nil)
     {
@@ -114,39 +113,24 @@
         // if newOne has something in it...
         if(newOne != nil)
         {
+            // ... and finalSavedString does not, then...
             if(finalSavedString == nil)
             {
+                // ... finalSavedString has newOne and nameString in it.
                 finalSavedString = [[NSMutableString alloc] initWithFormat:@"%@%@", newOne, nameString];
             }
+            
+            // If newOne has something in it and finalSavedString has something in it, then...
             else if(finalSavedString != nil)
             {
+                // ... nameString gets added to finalSavedString.
                 [finalSavedString appendString:nameString];
             }
         }
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         // if newOne doesnt have anything in it...
         else if(newOne == nil)
         {
-     
-     
             // ... but finalSavedString does...
             if(finalSavedString != nil)
             {
@@ -161,25 +145,7 @@
                 finalSavedString = [[NSMutableString alloc] initWithString:nameString];
             }
         }
-        
         mainTextField.text = finalSavedString;
-    
-    
-        
-    
-   /*
-    // if there is nothing in the finalSavedString, put the return value of nameString in it
-    if(finalSavedString == nil)
-    {
-        finalSavedString =[[NSMutableString alloc] initWithString:nameString];
-    }
-    else if(finalSavedString != nil)
-    {
-        [finalSavedString appendString:nameString];
-    }
-    mainTextField.text = finalSavedString;
-}
-*/
     }
 }
 
