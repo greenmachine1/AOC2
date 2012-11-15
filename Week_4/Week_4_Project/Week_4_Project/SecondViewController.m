@@ -57,23 +57,25 @@
     // and passes back what ever is in the secondViewTextInput.text
     if(delegate != nil)
     {
+        // states that if tempStringSecondViewInput does not equal 0 in lenth and does not equal "default text" to pass it
+        // on through, if its false throw up an error
         NSString *tempStringSecondViewInput = [[NSString alloc] initWithString:secondViewTextInput.text];
-        if(!(tempStringSecondViewInput.length == 0))
+        if(!((tempStringSecondViewInput.length == 0) || ([tempStringSecondViewInput isEqualToString:@"default text"])))
         {
             // puts the event title and date into one string then inserted in the didClose method of the delegate
             NSString *returnedString = [NSString stringWithFormat:@"%@ %@ \n \n", secondViewTextInput.text, dateString];
             [delegate didClose:returnedString];
             
+            // this returns them to the first view
             [self dismissViewControllerAnimated:TRUE completion:nil];
+            
         }
         else
         {
             // alerting the user to enter an event name
             UIAlertView *alertUserToEnterAnEvent = [[UIAlertView alloc] initWithTitle:@"Enter more info" message:@"Please enter an Event Name" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             
-            
             [alertUserToEnterAnEvent show];
-            
             
         }
     }
@@ -86,7 +88,6 @@
 // this happens when you click inside the text field on the second view controller
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    
     textField.text = @"";
     return  TRUE;
 }
@@ -108,18 +109,18 @@
         // creating a new date
         newDate = [datePicker date];
         
-            NSDateFormatter *formatDate = [[NSDateFormatter alloc]init];
+        NSDateFormatter *formatDate = [[NSDateFormatter alloc]init];
         
-            if(formatDate != nil)
-            {
-                // sets the format of the date
-                [formatDate setDateFormat:@" MMM.dd.yyyy hh:mm a zzzz"];
+        if(formatDate != nil)
+        {
+            // sets the format of the date
+            [formatDate setDateFormat:@" MMM.dd.yyyy hh:mm a zzzz"];
             
-                // sets up an NSMutableString to contain all the data, then put it into dateString
-                NSMutableString *dateStringOne = [[NSMutableString alloc] initWithString:[formatDate stringFromDate:newDate]];
+            // sets up an NSMutableString to contain all the data, then put it into dateString
+            NSMutableString *dateStringOne = [[NSMutableString alloc] initWithString:[formatDate stringFromDate:newDate]];
                 
-                dateString = dateStringOne;
-            }
+            dateString = dateStringOne;
+        }
     }
 }
 

@@ -60,9 +60,6 @@
         
         [default1 synchronize];
     }
-
-    
-    
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -90,7 +87,6 @@
             [self presentViewController:secondView animated:TRUE completion:nil];
         }
     }
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -147,13 +143,7 @@
                 finalSavedString = [[NSMutableString alloc] initWithString:nameString];
             }
         }
-        
-        if(nameString.length == 0)
-        {
-            NSLog(@"Please enter a valid entry");
-        }
-        
-        
+            // and finally make the mainTextField.text = finalSavedString
             mainTextField.text = finalSavedString;
     }
     
