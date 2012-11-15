@@ -35,9 +35,12 @@
     
     IBOutlet UILabel *enterNewEvent;
 
+    IBOutlet UILabel *closeAndSaveLabel;
     
     NSString *dateString;
     NSDate *newDate;
+    
+    UISwipeGestureRecognizer *closeAndSave;
 }
 
 
@@ -45,7 +48,7 @@
 // this allows me to set my deletage from outside
 @property (strong) id<SecondViewDelegate> delegate;
 
--(IBAction)secondViewOnClick:(id)sender;
+//-(IBAction)secondViewOnClick:(id)sender;
 
 -(IBAction)closeKeyboard:(id)sender;
 

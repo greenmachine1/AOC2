@@ -55,6 +55,11 @@
         
         [default1 setObject:finalSavedStringThing forKey:@"savedString"];
         
+        // made an alert that lets the user know their info has been saved
+        UIAlertView *newAlert = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"Your info Has been Saved" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        
+        [newAlert show];
+        
         [default1 synchronize];
     }
 
@@ -79,8 +84,7 @@
 {
     if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
     {
-        NSLog(@"You swiped to the right");
-        
+    
         SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
         if(secondView != nil)
         {

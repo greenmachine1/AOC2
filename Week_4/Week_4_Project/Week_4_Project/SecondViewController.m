@@ -36,6 +36,35 @@
     [super viewDidLoad];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    closeAndSave = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(closeAndSaveSwipe:)];
+    closeAndSave.direction = UISwipeGestureRecognizerDirectionLeft;
+    
+    [closeAndSaveLabel addGestureRecognizer:closeAndSave];
+    
+    
+    [super viewWillAppear:animated];
+}
+
+-(void)closeAndSaveSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    // upon closing of the second view, the delegate method (didClose) gets called
+    // and passes back what ever is in the secondViewTextInput.text
+    if(delegate != nil)
+    {
+        // puts the event title and date into one string then inserted in the didClose method of the delegate
+        NSString *returnedString = [NSString stringWithFormat:@"%@ %@ \n \n", secondViewTextInput.text, dateString];
+        [delegate didClose:returnedString];
+    }
+    
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+    
+}
+
+
+
+
 // this happens when you click inside the text field on the second view controller
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
@@ -74,7 +103,7 @@
         }
     }
 }
-
+/*
 // onclick function for second view controller.
 -(IBAction)secondViewOnClick:(id)sender
 {
@@ -91,7 +120,7 @@
     [self dismissViewControllerAnimated:TRUE completion:nil];
     
 }
-
+*/
 
 // close keyboard button
 -(IBAction)closeKeyboard:(id)sender
