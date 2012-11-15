@@ -57,9 +57,7 @@
         
         [default1 synchronize];
     }
-    
-    
-    //NSLog(@"%@", finalSavedString);
+
     
     
 }
@@ -70,8 +68,6 @@
     addEvent.direction = UISwipeGestureRecognizerDirectionRight;
     
     [addEventLabel addGestureRecognizer:addEvent];
-    
-    NSLog(@"This happened");
     
     
     [super viewWillAppear:animated];
@@ -107,6 +103,16 @@
 // Ok this actually works now!!
 -(void)didClose:(NSString*)nameString
 {
+    NSUserDefaults *defualts = [NSUserDefaults standardUserDefaults];
+    if(defualts != nil)
+    {
+        NSString *newOne = [defualts objectForKey:@"savedString"];
+        NSLog(@"%@", newOne);
+        
+        
+        
+    
+    
     // if there is nothing in the finalSavedString, put the return value of nameString in it
     if(finalSavedString == nil)
     {
@@ -117,6 +123,7 @@
         [finalSavedString appendString:nameString];
     }
     mainTextField.text = finalSavedString;
+    }
 }
 
 @end
