@@ -1,0 +1,6 @@
+<FoodList NumItems="4">
+	<Food Name="Banana"	Type="Fruit" />
+	<Food Name="Pizza" Type="Vegatable" />
+	<Food Name="Burger" Type="Meat" />
+	<Food Name="Pumpkin" Type="Fruit" />
+</FoodList>	
